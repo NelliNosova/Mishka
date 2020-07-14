@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Nelli Nosova](https://up.htmlacademy.ru/adaptive/20/user/1336029).
-* Наставник: `Неизвестно`.
+- Студент: [Nelli Nosova](https://up.htmlacademy.ru/adaptive/20/user/1336029).
+- Наставник: [Алексей Зольников](https://github.com/AlekseyZolnikov).
 
 ---
 
