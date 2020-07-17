@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body class="page__body">
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img src="https://via.placeholder.com/150x150" alt="Логотип Мишка">
+      </a>
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <nav class="main-nav">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="blank.html">
+              Каталог товаров
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="blank.html">
+              Вязание на заказ
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="blank.html">
+              Поиск по сайту
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="blank.html">
+              Корзина: пока пуста
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <h1 class="main__title">
+        Каталог товаров
+      </h1>
+      <ul class="main__list catalog-list">
+        <li class="catalog-list__item catalog-item">
+          <article class="catalog-item__product product">
+            <img class="product__img--bunny" src="https://via.placeholder.com/150x150" alt="Товар">
+            <h3 class="product__title">
+              Зайчик-попрыгайчик
+            </h3>
+            <dl class="product__details details--min">
+              <dt class="details__name--min">
+                Рост
+              </dt>
+              <dd class="details__description--min">
+                30 см,
+              </dd>
+              <dt class="details__name--min">
+                вес
+              </dt>
+              <dd class="details__description--min">
+                200 г
+              </dd>
+            </dl>
+            <p class="product__price">
+              Цена: 1 200 руб.
+            </p>
+            <a class="produkt__order button--min" href="blank.html" aria-label="Заказать">
+            </a>
+          </article>
+        </li>
+        <li class="catalog-list__item catalog-item">
+          <article class="catalog-item__product product">
+            <img class="product__img--basket" src="https://via.placeholder.com/150x150" alt="Товар">
+            <h3 class="product__title">
+              Корзинка для белья
+            </h3>
+            <dl class="product__details details--min">
+              <dt class="details__name--min">
+                Диаметр
+              </dt>
+              <dd class="details__description--min">
+                15 см,
+              </dd>
+              <dt class="details__name--min">
+                высота
+              </dt>
+              <dd class="details__description--min">
+                10 см
+              </dd>
+            </dl>
+            <p class="product__price">
+              Цена: 690 руб.
+            </p>
+            <a class="produkt__order button--min" href="blank.html" aria-label="Заказать">
+            </a>
+          </article>
+        </li>
+        <li class="catalog-list__item catalog-item">
+          <article class="catalog-item__product product">
+            <img class="product__img--big-baskeet" src="https://via.placeholder.com/150x150" alt="Товар">
+            <h3 class="product__title">
+              Большая корзинка для игрушек
+            </h3>
+            <dl class="product__details details--min">
+              <dt class="details__name--min">
+                Диаметр
+              </dt>
+              <dd class="details__description--min">
+                30 см,
+              </dd>
+              <dt class="details__name--min">
+                высота
+              </dt>
+              <dd class="details__description--min">
+                30 см
+              </dd>
+            </dl>
+            <p class="product__price">
+              Цена: 1 500 руб.
+            </p>
+            <a class="produkt__order button--min" href="blank.html" aria-label="Заказать">
+            </a>
+          </article>
+        </li>
+      </ul>
+      <section class="main__video video-process">
+        <h2 class="video-process__title">
+          Процесс производства
+        </h2>
+        <img class="video-process__img" src="https://via.placeholder.com/150x150" alt="Процесс производства">
+        <p class="video-process__description process-description">
+          По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+        </p>
+        <a class="video-process__order button" href="blank.html">
+          Сделать заказ
+        </a>
+      </section>
+    </main>
+
+
+    <footer class="page-footer">
+      <section class="footer__social social">
+        <h2 class="visually-hidden">
+          Социальные сети
+        </h2>
+        <ul class="social__list social-list">
+          <li class="social-list__item">
+            <a class="social__item social__item--ig" href="blank.html">
+              <span class="visually-hidden">Instagram</span>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social__item social__item--fb" href="blank.html">
+              <span class="visually-hidden">Facebook</span>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social__item social__item--tw" href="blank.html">
+              <span class="visually-hidden">Twitter</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <div class="footer__copyright copyright">
+        Разработано
+        <a class="copyright__link">
+          <span class="visually-hidden">
+            HTMLacademy
+          </span>
+        </a>
+      </div>
+    </footer>
+    <section class="page__modal modal-order">
+      <div class="modal-order__wrapper">
+        <h2 class="modal-order__title">
+          Добавить в корзину
+        </h2>
+        <form class="modal-order__form order-form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="oreder-form__radio-size fieldset-size">
+            <label class="visually-hidden" for="small">
+              Размер s
+            </label>
+            <input class="size_input size__input--s" type="radio" name="size" value="small" id="small" aria-label="Размер s">
+            <label class="visually-hidden" for="midl">
+              Размер m
+            </label>
+            <input class="size__input size__input--s" type="radio" name="size" value="midl" id="midl" aria-label="Размер m">
+            <label class="visually-hidden" for="large">
+              Размер l
+            </label>
+            <input class="size__input size__input--s" type="radio" name="size" value="large" id="large" aria-label="Размер l">
+          </fieldset>
+          <a class="modal-order__button button button--accent" href="blank.html">
+            Добавить
+          </a>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
