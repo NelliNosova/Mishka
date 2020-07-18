@@ -1,12 +1,232 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
   </head>
-  <body>
+  <body class="page__body">
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img src="https://via.placeholder.com/150x150" alt="Логотип Мишка">
+      </a>
+      <nav class="header-nav">
+        <button class="header-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="header-nav__list site-list">
+          <li class="site-list__item">
+            <a href="catalog.html">
+              Каталог товаров
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="blank.html">
+              Вязание на заказ
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="blank.html">
+              Поиск по сайту
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">
+              Корзина: пока пуста
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+    <main class="page-main">
+      <h1 class="visually-hidden">
+        Мишка - магазин товаровручной работы для дома
+      </h1>
+      <div class="main__promo promo">
+        <p class="promo__tagline">
+          Милые штуки ручной работы для дома
+        </p>
+      </div>
+      <section class="main__catalog nav-additional">
+        <h2 class="visually-hidden">Навигация по каталогу товаров</h2>
+        <ul class="nav-additional__list additional-list">
+          <li class="additional-list__item additional-list__item--interior">
+            <a href="blank.html">
+              Предметы интерьера
+            </a>
+          </li>
+          <li class="additional-list__item additional-list__item--toys">
+            <a href="blank.html">
+              Детские игрушки
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="main__product-week products-week">
+        <h2 class="visually-hidden">Товар недели</h2>
+        <article class="products-week__product product">
+          <h3 class="product__title">
+            Вязаные корзинки
+          </h3>
+          <p class="product__sticker">
+            Товар недели
+          </p>
+          <p class="product__description">
+            Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
+          </p>
+          <dl class="product__details details">
+            <dt class="details__name">
+              Цвет:
+            </dt>
+            <dd class="details__description">
+              «Тиффани»/серый
+            </dd>
+            <dt class="details__name">
+              Диаметр:
+            </dt>
+            <dd class="details__description">
+              25 см
+            </dd>
+            <dt class="details__name">
+              Высота:
+            </dt>
+            <dd class="details__description">
+              15 см
+            </dd>
+          </dl>
+          <img class="product__img" src="https://via.placeholder.com/150x150" alt="Товар">
+          <p class="product__price">
+            Цена: 990 руб.
+          </p>
+          <a class="product__order button" href="blank.html">
+            Заказать
+          </a>
+        </article>
+      </section>
+      <section class="main__about-us about-us">
+        <h2 class="about-us__title">
+          Коротко о нас:
+        </h2>
+        <ul class="about-us__list advantage-list">
+          <li class="advantage-list__item advantage-item advantage-item--eco">
+            Экологически чистые материалы
+          </li>
+          <li class="advantage-list__item advantage-item advantage-item--price">
+            Скандинавский стиль по российской цене
+          </li>
+          <li class="advantage-list__item advantage-item advantage-item--like">
+            Увеличивает лайки на фотографиях
+          </li>
+          <li class="advantage-list__item advantage-item advantage-item--love">
+            Связано вручную с любовью и умилением
+          </li>
+          <li class="advantage-list__item advantage-item advantage-item--rus">
+            Поддержка отечественного производителя
+          </li>
+          <li class="advantage-list__item advantage-item advantage-item--gift">
+            Поставляется в подарочной упаковке
+          </li>
+        </ul>
+      </section>
+      <section class="main__reviews reviews">
+        <h2 class="reviews__title">
+          Отзывы
+        </h2>
+        <div class="reviews__list reviews-list">
+          <blockquote class="reviews-list__item reviews-item--show">
+            <p class="reviews__text">
+              Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+            </p>
+            <cite class="reviews__author-name">Анастасия Красильникова</cite>
+            <cite class="reviews__author-mail">@misssssiskras</cite>
+          </blockquote>
+          <button class="reviews__prev" type="button">Предыдущий отзыв</button>
+          <button class="reviews__next" type="button">Следующий отзыв</button>
+          <a class="reviews__write button" href="blank.html">Оставить свой</a>
+        </div>
+      </section>
+      <section class="main__contacts contacts">
+        <h2 class="contacts__title">
+          Контакты
+        </h2>
+        <dl class="contacts__item">
+          <dt class="contacts__mail-title">
+            e-mail:
+          </dt>
+          <dd class="contacts__mail-item">
+            info@mimimishkashop.ru
+          </dd>
+          <dt class="contacts__adres-title">
+            адрес:
+          </dt>
+          <dd class="contacts__adres-item">
+            г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101
+          </dd>
+        </dl>
+        <img class="contacts__map" src="https://via.placeholder.com/150x150" alt="Карта">
+        <a class="contacts__write-us button">
+          Нaпишите нам
+        </a>
+      </section>
+    </main>
 
+    <footer class="page-footer">
+      <section class="footer__social social">
+        <h2 class="visually-hidden">
+          Социальные сети
+        </h2>
+        <ul class="social__list social-list">
+          <li class="social-list__item">
+            <a class="social__item social__item--ig" href="blank.html">
+              <span class="visually-hidden">Instagram</span>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social__item social__item--fb" href="blank.html">
+              <span class="visually-hidden">Facebook</span>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social__item social__item--tw" href="blank.html">
+              <span class="visually-hidden">Twitter</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <div class="footer__copyright copyright">
+        Разработано
+        <a class="copyright__link">
+          <span class="visually-hidden">
+            HTMLacademy
+          </span>
+        </a>
+      </div>
+    </footer>
+    <section class="page__modal modal-order">
+      <div class="modal-order__wrapper">
+        <h2 class="modal-order__title">
+          Добавить в корзину
+        </h2>
+        <form class="modal-order__form order-form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="oreder-form__radio-size fieldset-size">
+            <label class="visually-hidden" for="small">
+              Размер s
+            </label>
+            <input class="size__input size__input--s" type="radio" name="size" value="small" id="small" aria-label="Размер s">
+            <label class="visually-hidden" for="midl">
+              Размер m
+            </label>
+            <input class="size__input size__input--s" type="radio" name="size" value="midl" id="midl" aria-label="Размер m">
+            <label class="visually-hidden" for="large">
+              Размер l
+            </label>
+            <input class="size__input size__input--s" type="radio" name="size" value="large" id="large" aria-label="Размер l">
+          </fieldset>
+          <a class="modal-order__button button button--accent" href="form.html">
+            Добавить
+          </a>
+        </form>
+      </div>
+    </section>
   </body>
 </html>
