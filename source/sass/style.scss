@@ -1,4 +1,10 @@
-@import "color.scss";
-@import "font.scss";
+@import "base/color.scss";
+@import "base/fonts.scss";
+@import "base/general.scss";
+@import "block/page-header__header-nav.scss";
+
+body {
+  background: $basic-mint;
+}
 
 
