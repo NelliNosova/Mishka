@@ -1,0 +1,30 @@
+.header-nav {
+  @include weight-font;
+  @include padding;
+}
+
+.nav-button {
+  @include size(21px, 20px);
+  background-image: url(../../img/icon-menu-open.svg);
+  background-color: inherit;
+  border: none;
+}
+
+.site-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-list__item {
+  position: relative;
+  padding: 28px 26px;
+}
+
+
+.site-list__item a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
