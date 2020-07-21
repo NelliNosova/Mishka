@@ -1,0 +1,6 @@
+.social-list {
+  @include padding;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}

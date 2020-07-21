@@ -12,8 +12,7 @@
 
 .site-list {
   list-style: none;
-  margin: 0;
-  padding: 0;
+  @include zero;
 }
 
 .site-list__item {
@@ -21,10 +20,7 @@
   padding: 28px 26px;
 }
 
-
 .site-list__item a {
   color: inherit;
   text-decoration: none;
 }
-
-

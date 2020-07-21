@@ -1,0 +1,31 @@
+.contacts {
+  @include padding;
+  padding-top: 31px;
+  padding-bottom: 30px;
+}
+
+.contacts__title {
+  @include zero;
+  @include weight-font(30px, 18px);
+  padding-bottom: 27px;
+}
+
+.contacts__item {
+  display: flex;
+  flex-wrap: wrap;
+  @include zero;
+  @include basic-font(30px);
+}
+
+.contacts__dt-title,
+.contacts__dd-item {
+  @include zero;
+}
+
+.contacts__dt-title {
+  min-width: 76px;
+}
+
+.contacts__dd-item {
+  width: 180px;
+}

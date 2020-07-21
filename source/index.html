@@ -95,7 +95,7 @@
               15 см
             </dd>
           </dl>
-          <img class="product__img" src="https://via.placeholder.com/150x150" alt="Товар">
+          <img class="product__img" src="img/triple-set-mobile@1x.jpg" alt="Товар">
           <p class="product__price">
             Цена: 990 руб.
           </p>
@@ -141,8 +141,10 @@
             <cite class="reviews__author-name">Анастасия Красильникова</cite>
             <cite class="reviews__author-mail">@misssssiskras</cite>
           </blockquote>
-          <button class="reviews__prev" type="button">Предыдущий отзыв</button>
-          <button class="reviews__next" type="button">Следующий отзыв</button>
+          <div class="reviews__wrap">
+            <button class="reviews__prev button button--prev-next" type="button" aria-label="Предыдущий отзыв"></button>
+          <button class="reviews__next button button--prev-next" type="button" aria-label="Следующий отзыв"></button>
+          </div>
           <a class="reviews__write button" href="blank.html">Оставить свой</a>
         </div>
       </section>
@@ -151,16 +153,16 @@
           Контакты
         </h2>
         <dl class="contacts__item">
-          <dt class="contacts__mail-title">
+          <dt class="contacts__dt-title">
             e-mail:
           </dt>
-          <dd class="contacts__mail-item">
+          <dd class="contacts__dd-item">
             info@mimimishkashop.ru
           </dd>
-          <dt class="contacts__adres-title">
+          <dt class="contacts__dt-title">
             адрес:
           </dt>
-          <dd class="contacts__adres-item">
+          <dd class="contacts__dd-item">
             г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101
           </dd>
         </dl>
@@ -208,6 +210,9 @@
         <h2 class="modal-order__title">
           Добавить в корзину
         </h2>
+        <p class="modal-order__hint">
+          Выберите размер: 
+        </p>
         <form class="modal-order__form order-form" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="order-form__radio-size size">
             <label class="visually-hidden" for="small">

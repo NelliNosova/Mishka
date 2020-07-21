@@ -1,0 +1,47 @@
+.product {
+  @include padding;
+  padding-top: 31px;
+  padding-bottom: 36px;
+}
+
+.product__title {
+  @include zero;
+  @include weight-font(30px, 25px);
+}
+
+.product__sticker {
+  @include zero;
+  @include weight-font(20px);
+  color: $basic-mint;
+}
+
+.product__description {
+  @include zero;
+  padding-top: 17px;
+  padding-bottom: 28px;
+  @include basic-font;
+}
+
+.details {
+  display: flex;
+  flex-wrap: wrap;
+  @include zero;
+  padding-bottom: 28px;
+  @include basic-font(20px);
+ }
+
+ .details__name,
+ .details__description {
+  min-width: 97px;
+  @include zero;
+  padding-top: 10px;
+  padding-bottom: 10px;
+ }
+
+ .product__price {
+   @include zero;
+   padding-top: 26px;
+   padding-bottom: 25px;
+   @include weight-font;
+   text-align: center;
+ }

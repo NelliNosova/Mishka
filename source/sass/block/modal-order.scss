@@ -1,0 +1,23 @@
+.modal-order {
+  @include padding;
+}
+
+.modal-order__title {
+  padding-left: 90px;
+  padding-right: 90px;
+  @include weight-font(30px, 25px);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.modal-order__hint {
+  @include zero;
+  @include padding;
+  @include basic-font(30px);
+  text-align: center;
+}
+
+.button--accent {
+  color: $basic-white;
+  background-color: $basic-mint;
+}
