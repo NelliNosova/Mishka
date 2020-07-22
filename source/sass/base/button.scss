@@ -1,5 +1,5 @@
 .button {
-  display: inline-block;
+  display: block;
   vertical-align: middle;
   @include zero;
   width: 255px;
@@ -27,6 +27,7 @@
 .button--min {
   border: none;
   margin-left: auto;
+  margin-right: 0;
   @include size (20px, 19px);
   background-color: red;
 }

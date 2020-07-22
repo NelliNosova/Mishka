@@ -1,0 +1,20 @@
+.video-process {
+  @include padding;
+  padding-top: 21px;
+  padding-bottom: 33px;
+}
+
+.video-process__title {
+  @include zero;
+  padding-left: 91px;
+  padding-bottom: 27px;
+  @include weight-font;
+}
+
+.process-description {
+  @include zero;
+  padding-top: 35px;
+  padding-bottom: 41px;
+  @include basic-font;
+  font-size: 13px;
+}
