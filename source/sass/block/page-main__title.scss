@@ -1,0 +1,9 @@
+.page-main__title {
+  @include zero;
+  @include padding;
+  @include weight-font (30px, 27px);
+  padding-top: 75px;
+  padding-bottom: 74px;
+  text-align: center;
+  background-color: $other-grey;
+}

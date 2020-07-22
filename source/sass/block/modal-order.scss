@@ -3,8 +3,8 @@
 }
 
 .modal-order__title {
-  padding-left: 90px;
-  padding-right: 90px;
+  padding-left: 60px;
+  padding-right: 60px;
   @include weight-font(30px, 25px);
   text-align: center;
   text-transform: uppercase;
@@ -17,7 +17,4 @@
   text-align: center;
 }
 
-.button--accent {
-  color: $basic-white;
-  background-color: $basic-mint;
-}
+

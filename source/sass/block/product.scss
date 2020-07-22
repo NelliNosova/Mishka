@@ -9,6 +9,12 @@
   @include weight-font(30px, 25px);
 }
 
+.product__title--min {
+  @include weight-font(24px, 17px);
+  padding-top: 27px;
+  padding-bottom: 6px;
+}
+
 .product__sticker {
   @include zero;
   @include weight-font(20px);
@@ -30,18 +36,36 @@
   @include basic-font(20px);
  }
 
- .details__name,
- .details__description {
-  min-width: 97px;
-  @include zero;
-  padding-top: 10px;
-  padding-bottom: 10px;
- }
+.details__name,
+.details__description {
+min-width: 97px;
+@include zero;
+padding-top: 10px;
+padding-bottom: 10px;
+}
 
- .product__price {
-   @include zero;
-   padding-top: 26px;
-   padding-bottom: 25px;
-   @include weight-font;
-   text-align: center;
- }
+.details__name--min,
+.details__description--min {
+  min-width: 0;
+}
+
+.details__name--min,
+.details__description--min:not(:last-child) {
+  padding-right: 5px;
+}
+
+.product__price {
+  @include zero;
+  padding-top: 26px;
+  padding-bottom: 25px;
+  @include weight-font;
+  text-align: center;
+}
+
+.product__price--min {
+  display: inline-block;
+  @include zero;
+  font-size: 15px;
+  vertical-align: middle;
+  text-align: left;
+}

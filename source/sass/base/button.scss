@@ -2,14 +2,31 @@
   display: inline-block;
   vertical-align: middle;
   @include zero;
-  padding-top: 16px;
-  padding-bottom: 16px;
   width: 255px;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   @include weight-font(20px, 17px);
   text-align: center;
   color: inherit;
   background-color: inherit;
   text-decoration: none;
   border: 2px solid $darkest-grey;
+}
+
+.button--padding {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.button--accent {
+  color: $basic-white;
+  background-color: $basic-mint;
+  border: none;
+}
+
+.button--min {
+  border: none;
+  margin-left: auto;
+  @include size (20px, 19px);
+  background-color: red;
 }
