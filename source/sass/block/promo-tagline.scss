@@ -1,10 +1,14 @@
-.promo__tagline {
+.promo-tagline {
+  display: flex;
+  align-items: center;
+
   @include zero;
   @include padding;
   margin: auto;
+  padding-top: 73px;
+  padding-bottom: 120px;
 
   @include weight-font(30px, 27px);
-  min-height: 283px;
   vertical-align: middle;
   text-align: center;
 }

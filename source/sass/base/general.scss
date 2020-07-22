@@ -25,3 +25,8 @@
 .page__body {
   @include zero;
 }
+
+.container {
+  @include padding;
+  margin: 0 auto;
+}

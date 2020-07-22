@@ -1,4 +1,4 @@
-.nav-additional__list {
+.additional-list {
   @include zero;
   @include weight-font(24px, 19px);
   list-style: none;
@@ -18,10 +18,9 @@
   }
 }
 
-.additional-list__item a {
-  display: inline-block;
+.additional-list__link-item {
+  display: block;
   vertical-align: middle;
-  padding-right: 150px;
   color: $basic-white;
   text-decoration: none;
 }

@@ -1,6 +1,5 @@
 .header-nav {
   @include weight-font;
-  @include padding;
 }
 
 .nav-button {
@@ -21,7 +20,7 @@
   padding: 28px 26px;
 }
 
-.site-list__item a {
+.site-list__item-link {
   color: inherit;
   text-decoration: none;
 }
