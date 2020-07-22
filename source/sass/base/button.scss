@@ -3,7 +3,8 @@
   vertical-align: middle;
 
   @include zero;
-  width: 255px;
+  width: 100%;
+  max-width: 255px;
   margin-left: auto;
   margin-right: auto;
 
@@ -16,8 +17,7 @@
 }
 
 .button--padding {
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding: 16px 5px;
 }
 
 .button--accent {
@@ -31,6 +31,20 @@
   margin-left: auto;
   margin-right: 0;
 
-  @include size (20px, 19px);
+  @include size(20px, 19px);
   background-color: red;
+}
+
+.nav-button {
+  @include size(21px, 20px);
+  background-image: url("../../img/icon-menu-open.svg");
+  background-color: inherit;
+  border: none;
+}
+
+.button--prev-next {
+  width: 50%;
+  max-width: 130px;
+  height: 52px;
+  border: 1px solid $grey;
 }

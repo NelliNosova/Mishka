@@ -2,13 +2,6 @@
   @include weight-font;
 }
 
-.nav-button {
-  @include size(21px, 20px);
-  background-image: url("../../img/icon-menu-open.svg");
-  background-color: inherit;
-  border: none;
-}
-
 .site-list {
   list-style: none;
 

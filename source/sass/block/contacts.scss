@@ -10,22 +10,18 @@
 }
 
 .contacts__item {
-  display: flex;
-  flex-wrap: wrap;
-
   @include zero;
   @include basic-font(30px);
 }
 
-.contacts__dt-title,
-.contacts__dd-item {
-  @include zero;
+.contacts-table {
+  border-spacing: 10px;
 }
 
-.contacts__dt-title {
-  min-width: 76px;
+.contacts-table__line {
+  vertical-align: top;
 }
 
-.contacts__dd-item {
-  width: 180px;
+.contacts-table__name {
+  white-space: nowrap;
 }

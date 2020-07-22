@@ -3,11 +3,6 @@
   padding-bottom: 30px;
 }
 
-.about-us__title {
-  @include zero;
-  @include weight-font(30px, 25px);
-}
-
 .advantage-list {
   @include zero;
   @include weight-font(20px, 17px);

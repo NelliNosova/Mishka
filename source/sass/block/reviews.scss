@@ -3,11 +3,6 @@
   padding-bottom: 30px;
 }
 
-.reviews__title {
-  @include zero;
-  @include weight-font(30px, 25px);
-}
-
 .reviews-item {
   @include zero;
   padding-bottom: 30px;
@@ -39,9 +34,4 @@
   display: flex;
   justify-content: center;
   padding-bottom: 28px;
-}
-
-.button--prev-next {
-  @include size(130px, 52px);
-  border: 1px solid $grey;
 }

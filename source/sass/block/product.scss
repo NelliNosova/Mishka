@@ -3,11 +3,6 @@
   padding-bottom: 36px;
 }
 
-.product__title {
-  @include zero;
-  @include weight-font(30px, 25px);
-}
-
 .product__title--min {
   @include weight-font(24px, 17px);
   padding-top: 27px;
@@ -36,25 +31,12 @@
   padding-bottom: 28px;
 
   @include basic-font(20px);
+  border: none;
+  border-spacing: 10px;
 }
 
-.details__name,
 .details__description {
-  min-width: 97px;
-
-  @include zero;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.details__name--min,
-.details__description--min {
-  min-width: 0;
-}
-
-.details__name--min,
-.details__description--min:not(:last-child) {
-  padding-right: 5px;
+  padding-left: 20px;
 }
 
 .product__price {

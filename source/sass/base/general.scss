@@ -30,3 +30,8 @@
   @include padding;
   margin: 0 auto;
 }
+
+.section__title {
+  @include zero;
+  @include weight-font(30px, 25px);
+}
