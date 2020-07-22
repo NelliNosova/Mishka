@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Open Sans";
   src: url("../fonts/opensans.woff2") format("woff2"),
-       url("../fonts/opensans.woff") format("woff");
+    url("../fonts/opensans.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -9,13 +9,13 @@
 @font-face {
   font-family: "Open Sans";
   src: url("../fonts/opensansbold.woff2") format("woff2"),
-       url("../fonts/opensansbold.woff") format("woff");
+    url("../fonts/opensansbold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
 
 @mixin basic-font($line-height: 24px) {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   font-size: 15px;
   line-height: $line-height;
   font-weight: normal;
@@ -23,7 +23,7 @@
 }
 
 @mixin weight-font($line-height: 24px, $font-size: 17px) {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   font-size: $font-size;
   line-height: $line-height;
   font-weight: bold;

@@ -12,6 +12,7 @@
 .reviews-item {
   @include zero;
   padding-bottom: 30px;
+
   @include basic-font(30px);
 }
 
@@ -23,13 +24,13 @@
 
 .reviews__author-name {
   @include zero;
-  @include  weight-font;
+  @include weight-font;
   font-style: normal;
 }
 
 .reviews__author-mail {
   @include zero;
-  @include  basic-font(30px);
+  @include basic-font(30px);
   font-size: 17px;
   color: $darkest-grey;
   font-style: normal;

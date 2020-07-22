@@ -5,6 +5,7 @@
 .modal-order__title {
   padding-left: 60px;
   padding-right: 60px;
+
   @include weight-font(30px, 25px);
   text-align: center;
   text-transform: uppercase;
@@ -16,5 +17,3 @@
   @include basic-font(30px);
   text-align: center;
 }
-
-

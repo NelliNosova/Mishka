@@ -2,6 +2,7 @@
   @include zero;
   @include padding;
   margin: auto;
+
   @include weight-font(30px, 27px);
   min-height: 283px;
   vertical-align: middle;

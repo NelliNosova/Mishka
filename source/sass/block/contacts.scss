@@ -13,6 +13,7 @@
 .contacts__item {
   display: flex;
   flex-wrap: wrap;
+
   @include zero;
   @include basic-font(30px);
 }

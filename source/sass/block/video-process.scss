@@ -8,6 +8,7 @@
   @include zero;
   padding-left: 91px;
   padding-bottom: 27px;
+
   @include weight-font;
 }
 
@@ -15,6 +16,7 @@
   @include zero;
   padding-top: 35px;
   padding-bottom: 41px;
+
   @include basic-font;
   font-size: 13px;
 }
