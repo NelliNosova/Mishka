@@ -10,10 +10,10 @@
     <header class="page-header">
       <div class="container">
         <a class="page-header__logo">
-          <img src="https://via.placeholder.com/150x150" alt="Логотип Мишка">
+          <img class="logo" src="img/logo-mobile.svg" alt="Логотип Мишка">
         </a>
         <nav class="page-header__header-nav header-nav">
-          <button class="header-nav__toggle nav-button" type="button">
+          <button class="header-nav__toggle button button--nav" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
           <ul class="header-nav__list site-list">
@@ -57,14 +57,18 @@
         <h2 class="visually-hidden">Навигация по каталогу товаров</h2>
         <ul class="nav-additional__list additional-list">
           <li class="additional-list__item additional-list__item--interior">
-            <a class="additional-list__link-item" href="blank.html">
-              Предметы интерьера
-            </a>
+            <div class="container">
+              <a class="additional-list__link-item" href="blank.html">
+                Предметы интерьера
+              </a>
+            </div>
           </li>
           <li class="additional-list__item additional-list__item--toys">
-            <a class="additional-list__link-item" href="blank.html">
-              Детские игрушки
-            </a>
+            <div class="container">
+              <a class="additional-list__link-item" href="blank.html">
+                Детские игрушки
+              </a>
+            </div>
           </li>
         </ul>
       </section>
@@ -176,11 +180,12 @@
               </td>
             </tr>
           </table>
-          <img class="contacts__map" src="https://via.placeholder.com/150x150" alt="Карта">
-          <a class="contacts__write-us button button--padding">
-            Нaпишите нам
-          </a>
         </div>
+        <img class="contacts__map" src="img/map-mobile@1x.jpg" alt="Карта">
+        <a class="contacts__write-us button button--padding">
+          Нaпишите нам
+        </a>
+
       </section>
     </main>
 
@@ -221,7 +226,7 @@
       </div>
     </footer>
     <section class="page__modal modal-order">
-      <div class="modal-order__wrapper">
+      <div class="modal-order__wrapper container">
         <h2 class="modal-order__title">
           Добавить в корзину
         </h2>
@@ -233,15 +238,15 @@
             <label class="visually-hidden" for="small">
               Размер s
             </label>
-            <input class="size__input size__input--s" type="radio" name="size" value="small" id="small" aria-label="Размер s">
+            <input class="size__input size-input size-input--s" type="radio" name="size" value="small" id="small" aria-label="Размер s">
             <label class="visually-hidden" for="midl">
               Размер m
             </label>
-            <input class="size__input size__input--s" type="radio" name="size" value="midl" id="midl" aria-label="Размер m">
+            <input class="size__input size-input size-input--m" type="radio" name="size" value="midl" id="midl" aria-label="Размер m">
             <label class="visually-hidden" for="large">
               Размер l
             </label>
-            <input class="size__input size__input--s" type="radio" name="size" value="large" id="large" aria-label="Размер l">
+            <input class="size__input size-input size-input--l" type="radio" name="size" value="large" id="large" aria-label="Размер l">
           </fieldset>
           <a class="modal-order__button button button--padding button--accent" href="form.html">
             Добавить

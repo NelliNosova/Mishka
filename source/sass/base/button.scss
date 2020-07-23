@@ -1,6 +1,6 @@
 .button {
   display: block;
-  vertical-align: middle;
+  box-sizing: border-box;
 
   @include zero;
   width: 100%;
@@ -10,8 +10,9 @@
 
   @include weight-font(20px, 17px);
   text-align: center;
-  color: inherit;
+  color: $darkest-grey;
   background-color: inherit;
+  text-transform: uppercase;
   text-decoration: none;
   border: 2px solid $darkest-grey;
 }
@@ -35,10 +36,9 @@
   background-color: red;
 }
 
-.nav-button {
+.button--nav {
   @include size(21px, 20px);
   background-image: url("../../img/icon-menu-open.svg");
-  background-color: inherit;
   border: none;
 }
 
