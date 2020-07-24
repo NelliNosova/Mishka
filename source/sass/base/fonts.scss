@@ -15,7 +15,6 @@
 }
 
 @mixin basic-font($line-height: 24px, $font-size: 15px) {
-  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   font-size: $font-size;
   line-height: $line-height;
   font-weight: normal;

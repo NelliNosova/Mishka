@@ -7,6 +7,16 @@
   white-space: nowrap;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page {
+  height: 100%;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
+}
+
 @mixin size ($width: 20px, $height: 20px) {
   width: $width;
   height: $height;
@@ -28,7 +38,8 @@
 
 .container {
   @include padding;
-  width: 260px;
+  box-sizing: border-box;
+  width: 320px;
   margin: 0 auto;
 }
 
