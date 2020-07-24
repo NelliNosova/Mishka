@@ -2,11 +2,6 @@
   display: flex;
   align-items: center;
 
-  @include zero;
-  margin: auto;
-  padding-top: 73px;
-  padding-bottom: 120px;
-
   @include weight-font(30px, 27px);
   vertical-align: middle;
   text-align: center;

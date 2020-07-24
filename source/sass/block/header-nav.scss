@@ -1,5 +1,13 @@
 .header-nav {
+  position: relative;
+
   @include weight-font;
+}
+
+.header-nav__toggle {
+  position: absolute;
+  top: -50px;
+  right: 0;
 }
 
 .site-list {
@@ -10,7 +18,9 @@
 
 .site-list__item {
   position: relative;
-  padding: 28px 26px;
+  padding-top: 29px;
+  padding-bottom: 26px;
+  padding-left: 48px;
 }
 
 .site-list__item-link {

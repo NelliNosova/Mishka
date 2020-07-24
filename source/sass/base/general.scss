@@ -1,3 +1,6 @@
+$min-tablet: 768px;
+$min-desktop: 1150px;
+
 .visually-hidden {
   position: absolute;
   height: 1px;
@@ -19,6 +22,13 @@ img {
 .page {
   height: 100%;
   font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
+}
+
+.page__body {
+  min-height: 100%;
+  margin: 0;
+  background-color: $basic-white;
+  color: $basic-black;
 }
 
 @mixin size ($width: 20px, $height: 20px) {

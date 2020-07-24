@@ -1,5 +1,13 @@
 .social-list {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  width: 202px;
   list-style: none;
+  padding: 30px;
+  margin: 0 auto;
+}
+
+.social-list__item {
+  @include size(22px, 21px);
+  background-color: red;
 }

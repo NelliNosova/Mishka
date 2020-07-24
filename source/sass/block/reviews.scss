@@ -1,6 +1,6 @@
 .reviews {
   padding-top: 31px;
-  padding-bottom: 30px;
+  padding-bottom: 58px;
 }
 
 .reviews-item {
@@ -13,7 +13,7 @@
 .reviews__text {
   @include zero;
   padding-top: 14px;
-  padding-bottom: 33px;
+  padding-bottom: 31px;
 }
 
 .reviews__author-name {
@@ -33,5 +33,5 @@
 .reviews__wrap {
   display: flex;
   justify-content: center;
-  padding-bottom: 28px;
+  padding-bottom: 37px;
 }

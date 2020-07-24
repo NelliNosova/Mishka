@@ -1,5 +1,13 @@
 .promo {
   background-image: url("../img/hero-mobile@1x.jpg");
-  background-position: center, center;
+  background-position-x: center;
+  background-position-y: -17px;
   background-repeat: no-repeat;
+}
+
+.promo__tagline {
+  @include zero;
+  margin: auto;
+  padding-top: 73px;
+  padding-bottom: 120px;
 }
