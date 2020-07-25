@@ -1,0 +1,37 @@
+.reviews {
+  padding-top: 31px;
+  padding-bottom: 30px;
+}
+
+.reviews-item {
+  @include zero;
+  padding-bottom: 30px;
+
+  @include basic-font(30px);
+}
+
+.reviews__text {
+  @include zero;
+  padding-top: 14px;
+  padding-bottom: 33px;
+}
+
+.reviews__author-name {
+  @include zero;
+  @include weight-font;
+  font-style: normal;
+}
+
+.reviews__author-mail {
+  @include zero;
+  @include basic-font(30px);
+  font-size: 17px;
+  color: $darkest-grey;
+  font-style: normal;
+}
+
+.reviews__wrap {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 28px;
+}

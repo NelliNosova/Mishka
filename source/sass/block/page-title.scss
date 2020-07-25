@@ -1,0 +1,11 @@
+.page-title {
+  @include zero;
+  @include padding;
+  margin: 0 auto;
+
+  @include weight-font (30px, 27px);
+  padding-top: 75px;
+  padding-bottom: 74px;
+  text-align: center;
+  background-color: $other-grey;
+}

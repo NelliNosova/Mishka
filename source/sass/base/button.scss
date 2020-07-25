@@ -1,0 +1,50 @@
+.button {
+  display: block;
+  box-sizing: border-box;
+
+  @include zero;
+  width: 100%;
+  max-width: 255px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include weight-font(20px, 17px);
+  text-align: center;
+  color: $darkest-grey;
+  background-color: inherit;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid $darkest-grey;
+}
+
+.button--padding {
+  padding: 16px 5px;
+}
+
+.button--accent {
+  color: $basic-white;
+  background-color: $basic-mint;
+  border: none;
+}
+
+.button--min {
+  border: none;
+  margin-left: auto;
+  margin-right: 0;
+
+  @include size(20px, 19px);
+  background-color: red;
+}
+
+.button--nav {
+  @include size(21px, 20px);
+  background-image: url("../img/icon-menu-open.svg");
+  border: none;
+}
+
+.button--prev-next {
+  width: 50%;
+  max-width: 130px;
+  height: 52px;
+  border: 1px solid $grey;
+}

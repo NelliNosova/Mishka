@@ -1,0 +1,14 @@
+.about-us {
+  padding-top: 31px;
+  padding-bottom: 30px;
+}
+
+.advantage-list {
+  @include zero;
+  @include weight-font(20px, 17px);
+  list-style: none;
+}
+
+.advantage-item {
+  padding-top: 83px;
+}

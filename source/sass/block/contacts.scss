@@ -1,0 +1,32 @@
+.contacts {
+  padding-top: 31px;
+  padding-bottom: 30px;
+}
+
+.contacts__title {
+  @include zero;
+  @include weight-font(30px, 18px);
+  padding-bottom: 27px;
+}
+
+.contacts__item {
+  @include zero;
+  @include basic-font(30px);
+}
+
+.contacts-table {
+  border-spacing: 10px;
+}
+
+.contacts-table__line {
+  vertical-align: top;
+}
+
+.contacts-table__name {
+  white-space: nowrap;
+}
+
+.contacts__map {
+  display: block;
+  margin: 0 auto;
+}

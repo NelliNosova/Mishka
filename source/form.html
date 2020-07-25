@@ -2,51 +2,56 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="device-width, initial-scale=1.0">
     <title>HTML Academy: Мишка</title>
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img src="https://via.placeholder.com/150x150" alt="Логотип Мишка">
-      </a>
-      <nav class="header-nav">
-        <button class="header-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <ul class="header-nav__list site-list">
-          <li class="site-list__item">
-            <a href="catalog.html">
-              Каталог товаров
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a href="blank.html">
-              Вязание на заказ
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a href="blank.html">
-              Поиск по сайту
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a href="blank.html">
-              Корзина: пока пуста
-            </a>
-          </li>
-        </ul>
-      </nav>
+      <div class="container">
+        <a class="page-header__logo" href="index.html">
+          <img class="logo" src="img/logo-mobile.svg" alt="Логотип Мишка">
+        </a>
+        <nav class="header-nav">
+          <button class="header-nav__toggle button button--nav" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <ul class="header-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__item-link" href="catalog.html">
+                Каталог товаров
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__item-link" href="blank.html">
+                Вязание на заказ
+              </a>
+            </li>
+            <li class="site-list__item site-list__item--search">
+              <a class="site-list__item-link" href="blank.html">
+                Поиск по сайту
+              </a>
+            </li>
+            <li class="site-list__item site-list__item--order">
+              <a class="site-list__item-link" href="form.html">
+                Корзина: пока пуста
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main class="page-main">
-      <h1 class="page-main__title">
+      <h1 class="page-main__title page-title">
         Вязание на заказ
       </h1>
-      <p class="page-main__promise">
+      <p class="page-main__promise promise container">
         Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
       </p>
-      <form class="page-main__form form">
-        <fieldset class="form__type type">
+      <form class="page-main__form form container">
+        <fieldset class="form__type type form-fieldset">
           <legend class="type__legent form-title">
             Тип
           </legend>
@@ -59,7 +64,7 @@
             Детская игрушка
           </label>
         </fieldset>
-        <fieldset class="form__color color">
+        <fieldset class="form__color color form-fieldset">
           <legend class="color__legent form-title">
             Цвет
           </legend>
@@ -88,7 +93,7 @@
             Оранжевый
           </label>
         </fieldset>
-        <fieldset class="form__name name">
+        <fieldset class="form__name name form-fieldset">
           <legend class="name__legent form-title">
             ФИО
           </legend>
@@ -116,39 +121,41 @@
         <label class="form__add form-title">
           Доп
         </label>
-        <textarea class="form__add-input input-text">
+        <textarea class="form__add-input input-text wishes">
           Опишите все ваши пожелания к заказу
         </textarea>
-        <p class="form__explanation">
+        <p class="form__explanation explanation">
           *Поля обязательны для заполнения
         </p>
-        <button class="form__submit button" type="submit">
+        <button class="form__submit button button--padding" type="submit">
           Отправить заказ
         </button>
       </form>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer footer">
       <section class="page-footer__social social">
-        <h2 class="visually-hidden">
-          Социальные сети
-        </h2>
-        <ul class="social__list social-list">
-          <li class="social-list__item">
-            <a class="social__item social__item--ig" href="blank.html">
-              <span class="visually-hidden">Instagram</span>
-            </a>
-          </li>
-          <li class="social-list__item">
-            <a class="social__item social__item--fb" href="blank.html">
-              <span class="visually-hidden">Facebook</span>
-            </a>
-          </li>
-          <li class="social-list__item">
-            <a class="social__item social__item--tw" href="blank.html">
-              <span class="visually-hidden">Twitter</span>
-            </a>
-          </li>
-        </ul>
+        <div class="container">
+          <h2 class="visually-hidden">
+            Социальные сети
+          </h2>
+          <ul class="social__list social-list">
+            <li class="social-list__item">
+              <a class="social__item social__item--ig" href="blank.html">
+                <span class="visually-hidden">Instagram</span>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social__item social__item--fb" href="blank.html">
+                <span class="visually-hidden">Facebook</span>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social__item social__item--tw" href="blank.html">
+                <span class="visually-hidden">Twitter</span>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
       <div class="page-footer__copyright copyright">
         Разработано

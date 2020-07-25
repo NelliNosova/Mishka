@@ -1,0 +1,25 @@
+.additional-list {
+  @include zero;
+  @include weight-font(24px, 19px);
+  list-style: none;
+}
+
+.additional-list__item {
+  padding-top: 24px;
+  padding-bottom: 31px;
+
+  &--interior {
+    background-color: $basic-mint;
+  }
+
+  &--toys {
+    background-color: $dark-mint;
+  }
+}
+
+.additional-list__link-item {
+  display: block;
+  vertical-align: middle;
+  color: $basic-white;
+  text-decoration: none;
+}

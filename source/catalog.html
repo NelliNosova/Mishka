@@ -2,172 +2,153 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="device-width, initial-scale=1.0">
     <title>HTML Academy: Мишка</title>
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img src="https://via.placeholder.com/150x150" alt="Логотип Мишка">
-      </a>
-      <nav class="header-nav">
-        <button class="header-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <ul class="header-nav__list site-list">
-          <li class="site-list__item">
-            <a>
-              Каталог товаров
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a href="blank.html">
-              Вязание на заказ
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a href="blank.html">
-              Поиск по сайту
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a href="form.html">
-              Корзина: пока пуста
-            </a>
-          </li>
-        </ul>
-      </nav>
+      <div class="container">
+        <a class="page-header__logo" href="index.html">
+          <img class="logo" src="img/logo-mobile.svg" alt="Логотип Мишка">
+        </a>
+        <nav class="page-header__header-nav header-nav">
+          <button class="header-nav__toggle button button--nav" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <ul class="header-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__item-link">
+                Каталог товаров
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__item-link" href="blank.html">
+                Вязание на заказ
+              </a>
+            </li>
+            <li class="site-list__item site-list__item--search">
+              <a class="site-list__item-link" href="blank.html">
+                Поиск по сайту
+              </a>
+            </li>
+            <li class="site-list__item site-list__item--order">
+              <a class="site-list__item-link" href="form.html">
+                Корзина: пока пуста
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main class="page-main">
-      <h1 class="page-main__title">
+      <h1 class="page-main__title page-title">
         Каталог товаров
       </h1>
       <ul class="page-main__list catalog-list">
-        <li class="catalog-list__item catalog-item">
+        <li class="catalog-list__item catalog-item container">
           <article class="catalog-item__product product">
-            <img class="product__img product__img--bunny" src="https://via.placeholder.com/150x150" alt="Товар">
-            <h3 class="product__title">
+            <img class="product__img product__img--bunny" src="img/photo-hare-mobile@1x.jpg" alt="Товар">
+            <h3 class="product__title product__title--min">
               Зайчик-попрыгайчик
             </h3>
-            <dl class="product__details details details--min">
-              <dt class="details__name details__name--min">
-                Рост
-              </dt>
-              <dd class="details__description details__description--min">
-                30 см,
-              </dd>
-              <dt class="details__name details__name--min">
-                вес
-              </dt>
-              <dd class="details__description details__description--min">
-                200 г
-              </dd>
-            </dl>
-            <p class="product__price">
-              Цена: 1 200 руб.
-            </p>
-            <a class="product__order button button--min" href="blank.html" aria-label="Заказать">
-            </a>
+            <div class="product__details details details--min">
+              Рост 30 см, вес 200 г
+            </div>
+            <div class="product__price-order-wrap">
+              <p class="product__price product__price--min">
+                1 200 руб.
+              </p>
+              <a class="product__order button button--min" href="blank.html" aria-label="Заказать">
+              </a>
+            </div>
           </article>
         </li>
-        <li class="catalog-list__item catalog-item">
+        <li class="catalog-list__item catalog-item container">
           <article class="catalog-item__product product">
-            <img class="product__img product__img--basket" src="https://via.placeholder.com/150x150" alt="Товар">
-            <h3 class="product__title">
+            <img class="product__img product__img--basket" src="img/photo-toys-mobile@1x.jpg" alt="Товар">
+            <h3 class="product__title product__title--min">
               Корзинка для белья
             </h3>
-            <dl class="product__details details details--min">
-              <dt class="details__name details__name--min">
-                Диаметр
-              </dt>
-              <dd class="details__description details__description--min">
-                15 см,
-              </dd>
-              <dt class="details__name details__name--min">
-                высота
-              </dt>
-              <dd class="details__description details__description--min">
-                10 см
-              </dd>
-            </dl>
-            <p class="product__price">
-              Цена: 690 руб.
-            </p>
-            <a class="product__order button button--min" href="blank.html" aria-label="Заказать">
-            </a>
+            <div class="product__details details details--min">
+              Диаметр 15 см, высота 10 см
+            </div>
+            <div class="product__price-order-wrap">
+              <p class="product__price product__price--min">
+                690 руб.
+              </p>
+              <a class="product__order button button--min" href="blank.html" aria-label="Заказать">
+              </a>
+            </div>
           </article>
         </li>
-        <li class="catalog-list__item catalog-item">
+        <li class="catalog-list__item catalog-item container">
           <article class="catalog-item__product product">
-            <img class="product__img product__img--big-baskeet" src="https://via.placeholder.com/150x150" alt="Товар">
-            <h3 class="product__title">
+            <img class="product__img product__img--big-baskeet" src="img/photo-bowl-mobile@1x.jpg" alt="Товар">
+            <h3 class="product__title product__title--min">
               Большая корзинка для игрушек
             </h3>
-            <dl class="product__details details details--min">
-              <dt class="details__name details__name--min">
-                Диаметр
-              </dt>
-              <dd class="details__description details__description--min">
-                30 см,
-              </dd>
-              <dt class="details__name details__name--min">
-                высота
-              </dt>
-              <dd class="details__description details__description--min">
-                30 см
-              </dd>
-            </dl>
-            <p class="product__price">
-              Цена: 1 500 руб.
-            </p>
-            <a class="product__order button button--min" href="blank.html" aria-label="Заказать">
-            </a>
+            <div class="product__details details details--min">
+              Диаметр 30 см, высота 30 см
+            </div>
+            <div class="product__price-order-wrap">
+              <p class="product__price product__price--min">
+                1 500 руб.
+              </p>
+              <a class="product__order button button--min" href="blank.html" aria-label="Заказать">
+              </a>
+            </div>
           </article>
         </li>
       </ul>
       <section class="page-main__video video-process">
-        <h2 class="video-process__title">
-          Процесс производства
-        </h2>
-        <div class="video-process__video video">
-          <a class="video__link" href="blank.html">
-            <img class="video-process__img" src="https://via.placeholder.com/150x150" alt="Процесс производства">
+        <div class="container">
+          <h2 class="video-process__title">
+            Процесс производства
+          </h2>
+          <div class="video-process__video video">
+            <a class="video__link" href="blank.html">
+              <img class="video-process__img" src="img/video-mobile@1x.jpg" alt="Процесс производства">
+            </a>
+            <button class="video__button" aria-label="Включить видео">
+            </button>
+          </div>
+          <p class="video-process__description process-description">
+            По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+          </p>
+          <a class="video-process__order button button--padding" href="form.html">
+            Сделать заказ
           </a>
-          <button class="video__button" aria-label="Включить видео">
-          </button>
         </div>
-        <p class="video-process__description process-description">
-          По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
-        </p>
-        <a class="video-process__order button" href="blank.html">
-          Сделать заказ
-        </a>
       </section>
     </main>
 
-
-    <footer class="page-footer">
+    <footer class="page-footer footer">
       <section class="page-footer__social social">
-        <h2 class="visually-hidden">
-          Социальные сети
-        </h2>
-        <ul class="social__list social-list">
-          <li class="social-list__item">
-            <a class="social__item social__item--ig" href="blank.html">
-              <span class="visually-hidden">Instagram</span>
-            </a>
-          </li>
-          <li class="social-list__item">
-            <a class="social__item social__item--fb" href="blank.html">
-              <span class="visually-hidden">Facebook</span>
-            </a>
-          </li>
-          <li class="social-list__item">
-            <a class="social__item social__item--tw" href="blank.html">
-              <span class="visually-hidden">Twitter</span>
-            </a>
-          </li>
-        </ul>
+        <div class="container">
+          <h2 class="visually-hidden">
+            Социальные сети
+          </h2>
+          <ul class="social__list social-list">
+            <li class="social-list__item">
+              <a class="social__item social__item--ig" href="blank.html">
+                <span class="visually-hidden">Instagram</span>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social__item social__item--fb" href="blank.html">
+                <span class="visually-hidden">Facebook</span>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social__item social__item--tw" href="blank.html">
+                <span class="visually-hidden">Twitter</span>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
       <div class="page-footer__copyright copyright">
         Разработано
@@ -179,7 +160,7 @@
       </div>
     </footer>
     <section class="page__modal modal-order">
-      <div class="modal-order__wrapper">
+      <div class="modal-order__wrapper container">
         <h2 class="modal-order__title">
           Добавить в корзину
         </h2>
@@ -198,7 +179,7 @@
             </label>
             <input class="size__input size__input--s" type="radio" name="size" value="large" id="large" aria-label="Размер l">
           </fieldset>
-          <a class="modal-order__button button button--accent" href="form.html">
+          <a class="modal-order__button button button--padding button--accent" href="form.html">
             Добавить
           </a>
         </form>

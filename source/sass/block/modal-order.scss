@@ -1,0 +1,16 @@
+.modal-order {
+  position: relative;
+}
+
+.modal-order__title {
+  @include weight-font(30px, 25px);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.modal-order__hint {
+  @include zero;
+  @include padding;
+  @include basic-font(30px);
+  text-align: center;
+}

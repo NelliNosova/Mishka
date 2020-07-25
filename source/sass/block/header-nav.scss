@@ -1,0 +1,19 @@
+.header-nav {
+  @include weight-font;
+}
+
+.site-list {
+  list-style: none;
+
+  @include zero;
+}
+
+.site-list__item {
+  position: relative;
+  padding: 28px 26px;
+}
+
+.site-list__item-link {
+  color: inherit;
+  text-decoration: none;
+}
