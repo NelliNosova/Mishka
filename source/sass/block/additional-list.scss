@@ -5,6 +5,7 @@
   @media (min-width: $min-tablet) {
     display: flex;
     @include padding(50px, 50px)
+    margin: 0 auto;
     width: 768px;
     @include weight-font(30px, 20px);
   }
