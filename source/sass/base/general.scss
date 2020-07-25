@@ -50,7 +50,6 @@ img {
 
 .container {
   @include padding;
-  box-sizing: border-box;
   width: 320px;
   margin: 0 auto;
   @media (min-width: $min-tablet) {

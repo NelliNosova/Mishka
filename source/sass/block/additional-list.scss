@@ -2,12 +2,30 @@
   @include zero;
   @include weight-font(24px, 19px);
   list-style: none;
+  @media (min-width: $min-tablet) {
+    display: flex;
+    @include padding(50px, 50px)
+    width: 768px;
+    @include weight-font(30px, 20px);
+  }
+}
+
+.additional-wraper {
+  @include padding;
+  max-width: 320px;
+  margin: 0 auto;
+  @media (min-width: $min-tablet) {
+    max-width: 334px;
+    margin: 0;
+  }
 }
 
 .additional-list__item {
   padding-top: 24px;
   padding-bottom: 31px;
-
+  @media (min-width: $min-tablet) {
+    padding-top: 26px;
+  }
   &--interior {
     background-color: $basic-mint;
   }
@@ -15,11 +33,16 @@
   &--toys {
     background-color: $dark-mint;
   }
+
 }
 
 .additional-list__link-item {
   display: block;
   padding-right: 90px;
+  @media (min-width: $min-tablet) {
+    padding-left: 8px;
+  }
   color: $basic-white;
   text-decoration: none;
+
 }

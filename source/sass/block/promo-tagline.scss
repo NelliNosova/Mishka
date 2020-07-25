@@ -1,8 +1,12 @@
 .promo-tagline {
   display: flex;
   align-items: center;
+  justify-content: center;
 
   @include weight-font(30px, 27px);
+  @media (min-width: $min-tablet) {
+    @include weight-font(50px, 43px);
+  }
   vertical-align: middle;
   text-align: center;
   color: $other-black;
