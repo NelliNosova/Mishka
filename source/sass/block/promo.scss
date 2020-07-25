@@ -4,6 +4,7 @@
     background-position-x: center;
     background-position-y: -17px;
   }
+
   @media (min-width: $min-tablet) {
     background-image: url("../img/hero-tablet@1x.jpg");
     background-position-x: center;
@@ -17,6 +18,7 @@
   margin: auto;
   padding-top: 73px;
   padding-bottom: 120px;
+
   @media (min-width: $min-tablet) {
     padding-top: 155px;
     padding-bottom: 372px;

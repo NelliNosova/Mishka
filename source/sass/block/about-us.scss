@@ -1,9 +1,11 @@
 .about-us {
   padding-top: 36px;
-  padding-bottom: 83px;
+  padding-bottom: 58px;
+
   @media (min-width: $min-tablet) {
     padding-top: 88px;
     padding-left: 3px;
+    padding-bottom: 83px;
   }
 }
 
@@ -13,10 +15,12 @@
   list-style: none;
   display: flex;
   flex-direction: column;
+
   @media (min-width: $min-tablet) {
     flex-direction: row;
     flex-wrap: wrap;
     padding-top: 98px;
+
     @include weight-font(22px, 20px);
     margin-bottom: -110px;
   }
@@ -24,6 +28,7 @@
 
 .advantage-item {
   padding-top: 83px;
+
   @media (min-width: $min-tablet) {
     flex-basis: 50%;
     padding-top: 0;
@@ -66,5 +71,3 @@
     order: 5;
   }
 }
-
-

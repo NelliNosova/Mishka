@@ -40,6 +40,7 @@
   @include size(21px, 20px);
   background-image: url("../img/icon-menu-open.svg");
   border: none;
+
   @media (max-width: $min-tablet) {
     display: none;
   }
@@ -53,6 +54,14 @@
   background-color: red;
 }
 
+.button--write {
+  font-size: 18px;
+}
+
 .button--write-us {
   font-size: 18px;
+
+  @media (min-width: $min-tablet) {
+    font-size: 17px;
+  }
 }

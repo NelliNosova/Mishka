@@ -1,3 +1,22 @@
 .footer {
+  padding-top: 30px;
   background-color: $other-grey;
+
+  @media (min-width: $min-tablet) {
+    padding-top: 50px;
+    padding-bottom: 59px;
+  }
+}
+
+.container--footer {
+  @media (min-width: $min-tablet) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.footer__logo {
+  @media (max-width: $min-tablet) {
+    display: none;
+  }
 }

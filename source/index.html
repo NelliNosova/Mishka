@@ -11,7 +11,7 @@
     <header class="page-header">
       <div class="container">
         <a class="page-header__logo">
-          <img class="logo" src="img/logo-mobile.svg" alt="Логотип Мишка">
+          <img class="logo logo--center" src="img/logo-mobile.svg" alt="Логотип Мишка">
         </a>
         <nav class="page-header__header-nav header-nav">
           <button class="header-nav__toggle button button--nav" type="button">
@@ -163,13 +163,13 @@
               <button class="reviews__prev button button--prev-next" type="button" aria-label="Предыдущий отзыв"></button>
             <button class="reviews__next button button--prev-next" type="button" aria-label="Следующий отзыв"></button>
             </div>
-            <a class="reviews__write button button--padding" href="blank.html">Написать</a>
+            <a class="reviews__write button button--padding button--write" href="blank.html">Написать</a>
           </div>
         </div>
       </section>
       <section class="page-main__contacts contacts">
         <div class="container">
-          <h2 class="contacts__title">
+          <h2 class="contacts__title sec">
             Контакты
           </h2>
           <table class="contacts__item contacts-table">
@@ -199,8 +199,11 @@
     </main>
 
     <footer class="page-footer footer">
-      <section class="page-footer__social social">
-        <div class="container">
+      <div class="container container--footer">
+        <a class="footer__logo">
+          <img class="logo logo--footer" src="img/logo-footer.svg" alt="Логотип Мишка">
+        </a>
+        <section class="page-footer__social social">
           <h2 class="visually-hidden">
             Социальные сети
           </h2>
@@ -221,15 +224,15 @@
               </a>
             </li>
           </ul>
+        </section>
+        <div class="page-footer__copyright copyright">
+            Разработано
+            <a class="copyright__link">
+              <span class="visually-hidden">
+                HTMLacademy
+              </span>
+            </a>
         </div>
-      </section>
-      <div class="page-footer__copyright copyright">
-          Разработано
-          <a class="copyright__link">
-            <span class="visually-hidden">
-              HTMLacademy
-            </span>
-          </a>
       </div>
     </footer>
     <section class="page__modal modal-order">

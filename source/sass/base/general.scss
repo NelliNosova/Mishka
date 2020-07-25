@@ -52,8 +52,9 @@ img {
   @include padding;
   width: 320px;
   margin: 0 auto;
+
   @media (min-width: $min-tablet) {
-    @include padding(50px, 50px)
+    @include padding(50px, 50px);
     width: 768px;
   }
 }
@@ -61,8 +62,8 @@ img {
 .section__title {
   @include zero;
   @include weight-font(30px, 25px);
+
   @media (min-width: $min-tablet) {
     @include weight-font(50px, 43px);
   }
 }
-

@@ -5,6 +5,7 @@
 
 .container--reviews {
   position: relative;
+
   @media (min-width: $min-tablet) {
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
@@ -22,6 +23,7 @@
   padding-bottom: 30px;
 
   @include basic-font(30px);
+
   @media (min-width: $min-tablet) {
     @include basic-font(30px, 17px);
   }
@@ -31,6 +33,7 @@
   @include zero;
   padding-top: 14px;
   padding-bottom: 31px;
+
   @media (min-width: $min-tablet) {
     padding-top: 38px;
     padding-bottom: 58px;
@@ -41,6 +44,7 @@
   @include zero;
   @include weight-font;
   font-style: normal;
+
   @media (min-width: $min-tablet) {
     @include weight-font(24px, 18px);
   }
@@ -52,6 +56,7 @@
   font-size: 17px;
   color: $darkest-grey;
   font-style: normal;
+
   @media (min-width: $min-tablet) {
     display: block;
   }
@@ -61,6 +66,7 @@
   display: flex;
   justify-content: center;
   padding-bottom: 37px;
+
   @media (min-width: $min-tablet) {
     width: 180px;
     margin-left: auto;
