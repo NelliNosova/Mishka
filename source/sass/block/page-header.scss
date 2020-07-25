@@ -1,0 +1,10 @@
+.page-header {
+  position: relative;
+}
+
+.page-header__logo {
+  @media (min-width: $min-tablet) {
+    position: absolute;
+  }
+}
+

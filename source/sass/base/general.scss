@@ -25,8 +25,10 @@ img {
 }
 
 .page__body {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
   min-height: 100%;
-  margin: 0;
+  margin: 0 auto;
   background-color: $basic-white;
   color: $basic-black;
 }
@@ -46,15 +48,15 @@ img {
   padding: 0;
 }
 
-.page__body {
-  @include zero;
-}
-
 .container {
   @include padding;
   box-sizing: border-box;
   width: 320px;
   margin: 0 auto;
+  @media (min-width: $min-tablet) {
+    @include padding(50px, 50px)
+    width: 768px;
+  }
 }
 
 .section__title {
