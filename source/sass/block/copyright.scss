@@ -1,6 +1,5 @@
 .copyright {
   @include weight-font(18px, 19px);
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 79px;
+  max-width: 320px;
+  margin: 0 auto
 }

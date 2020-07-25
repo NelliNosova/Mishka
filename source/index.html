@@ -7,7 +7,7 @@
     <link href="css/normalize.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
   </head>
-  <body class="page__body">
+  <body class="page__body body">
     <header class="page-header">
       <div class="container">
         <a class="page-header__logo">
@@ -17,20 +17,24 @@
           <button class="header-nav__toggle button button--nav" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
-          <ul class="header-nav__list site-list">
-            <li class="site-list__item">
+          <ul class="header-nav__list site-list site-list--lead">
+            <li class="site-list__item site-list__item--lead">
               <a class="site-list__item-link" href="catalog.html">
                 Каталог товаров
               </a>
             </li>
-            <li class="site-list__item">
+            <li class="site-list__item site-list__item--lead">
               <a class="site-list__item-link" href="blank.html">
                 Вязание на заказ
               </a>
             </li>
+          </ul>
+          <ul class="header-nav__list site-list site-list--other">
             <li class="site-list__item site-list__item--search">
-              <a class="site-list__item-link" href="blank.html">
-                Поиск по сайту
+              <a class="site-list__item-link " href="blank.html">
+                <span class="site-list__search">
+                  Поиск по сайту
+                </span>
               </a>
             </li>
             <li class="site-list__item site-list__item--order">
@@ -39,6 +43,10 @@
               </a>
             </li>
           </ul>
+          <p class="header__clasrifiction clasrifiction">
+            Бесплатная доставка по России
+          </p>
+
         </nav>
       </div>
     </header>
@@ -215,14 +223,12 @@
         </div>
       </section>
       <div class="page-footer__copyright copyright">
-        <div class="container">
           Разработано
           <a class="copyright__link">
             <span class="visually-hidden">
               HTMLacademy
             </span>
           </a>
-        </div>
       </div>
     </footer>
     <section class="page__modal modal-order">
