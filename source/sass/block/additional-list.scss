@@ -8,9 +8,13 @@
 
     @include padding(50px, 50px);
     margin: 0 auto;
-    width: 768px;
+    width: $min-tablet;
 
     @include weight-font(30px, 20px);
+  }
+
+  @media (min-width: $min-desktop) {
+    width: $min-desktop;
   }
 }
 
@@ -20,8 +24,13 @@
   margin: 0 auto;
 
   @media (min-width: $min-tablet) {
-    max-width: 334px;
+    max-width: ($min-tablet - 100px) / 2;
     margin: 0;
+  }
+
+  @media (min-width: $min-desktop) {
+    max-width: ($min-desktop - 100px) / 2;
+    padding-right: 250px;
   }
 }
 

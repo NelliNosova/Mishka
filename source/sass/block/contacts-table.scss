@@ -8,6 +8,7 @@
     display: inline-block;
   }
   vertical-align: top;
+  text-align: left;
 }
 
 .contacts-table__line:not(:nth-child(2n)) {
@@ -34,5 +35,9 @@
 
   @media (min-width: $min-tablet) {
     padding-bottom: 46px;
+  }
+
+  @media (min-width: $min-desktop) {
+    padding-bottom: 10px;
   }
 }
