@@ -6,4 +6,9 @@
   @media (min-width: $min-tablet) {
     position: absolute;
   }
+
+  @media (min-width: $min-desktop) {
+    position: relative;
+    margin: 0 auto;
+  }
 }

@@ -1,4 +1,6 @@
 .clarifiction {
+  z-index: 10;
+
   @include zero;
   flex-basis: 50%;
   padding-top: 25px;
@@ -9,5 +11,10 @@
 
   @media (max-width: $min-tablet) {
     display: none;
+  }
+
+  @media (min-width: $min-desktop) {
+    margin-left: 50%;
+    margin-top: -75px;
   }
 }

@@ -53,6 +53,10 @@ img {
     @include padding(50px, 50px);
     width: 768px;
   }
+
+  @media (min-width: $min-desktop) {
+    width: 1150px;
+  }
 }
 
 .section-title {

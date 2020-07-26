@@ -8,10 +8,18 @@
     flex-wrap: wrap;
     flex-direction: row;
   }
+
+  @media (min-width: $min-desktop) {
+    @include weight-font (24px, 17px);
+  }
 }
 
 .header-nav__toggle {
   position: absolute;
   top: -50px;
   right: 0;
+
+  @media (min-width: $min-tablet) {
+    display: none;
+  }
 }
