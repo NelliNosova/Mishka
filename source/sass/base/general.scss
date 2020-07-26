@@ -25,12 +25,8 @@ img {
 }
 
 .page__body {
-  display: grid;
-  grid-template-rows: min-content 1fr min-content;
   min-height: 100%;
   margin: 0 auto;
-  background-color: $basic-white;
-  color: $basic-black;
 }
 
 @mixin size ($width: 20px, $height: 20px) {
@@ -59,7 +55,7 @@ img {
   }
 }
 
-.section__title {
+.section-title {
   @include zero;
   @include weight-font(30px, 25px);
 

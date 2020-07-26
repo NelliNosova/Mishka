@@ -1,0 +1,40 @@
+.page-main {
+  position: relative;
+}
+
+.page-main__promo {
+  @media (min-width: $min-tablet) {
+    margin-top: -70px;
+  }
+}
+
+.page-main__product-week {
+  @media (min-width: $min-tablet) {
+    padding-top: 55px;
+  }
+}
+
+.page-main__about-us {
+  padding-top: 36px;
+  padding-bottom: 58px;
+
+  @media (min-width: $min-tablet) {
+    padding-top: 88px;
+    padding-left: 3px;
+    padding-bottom: 83px;
+  }
+}
+
+.page-main__reviews {
+  padding-bottom: 58px;
+}
+
+.page-main__contacts {
+  padding-top: 31px;
+  padding-bottom: 39px;
+
+  @media (min-width: $min-tablet) {
+    padding-top: 96px;
+    padding-bottom: 57px;
+  }
+}

@@ -1,0 +1,13 @@
+.clarifiction {
+  @include zero;
+  flex-basis: 50%;
+  padding-top: 25px;
+
+  @include basic-font;
+  text-align: right;
+  color: $darkest-grey;
+
+  @media (max-width: $min-tablet) {
+    display: none;
+  }
+}

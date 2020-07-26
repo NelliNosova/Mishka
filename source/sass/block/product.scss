@@ -3,9 +3,8 @@
   padding-bottom: 37px;
 }
 
-.products-week__product {
+.product--full {
   @media (min-width: $min-tablet) {
-    padding-top: 55px;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-areas:
@@ -65,35 +64,9 @@
   }
 }
 
-.details {
-  grid-area: product__details;
-  display: flex;
-  flex-wrap: wrap;
-
+.product__details {
   @include zero;
   padding-bottom: 29px;
-
-  @include basic-font(20px);
-  border: none;
-  border-collapse: collapse;
-}
-
-.details__line {
-  vertical-align: top;
-}
-
-.details__name {
-  padding-top: 8px;
-  padding-bottom: 11px;
-  border-bottom: 1px solid $grey;
-}
-
-.details__description {
-  padding-top: 8px;
-  padding-left: 29px;
-  padding-right: 26px;
-  padding-bottom: 11px;
-  border-bottom: 1px solid $grey;
 }
 
 .product__img {

@@ -20,3 +20,16 @@
     display: none;
   }
 }
+
+.page-footer__copyright {
+  margin: 0 auto;
+  padding-top: 28px;
+  padding-bottom: 32px;
+  padding-left: 40px;
+
+  @media (min-width: $min-tablet) {
+    margin: 0;
+    text-align: left;
+    padding-top: 15px;
+  }
+}

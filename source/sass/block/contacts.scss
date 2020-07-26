@@ -1,11 +1,5 @@
 .contacts {
-  padding-top: 31px;
-  padding-bottom: 39px;
-
-  @media (min-width: $min-tablet) {
-    padding-top: 96px;
-    padding-bottom: 57px;
-  }
+  position: relative;
 }
 
 .contacts__title {
@@ -26,45 +20,6 @@
 
   @media (min-width: $min-tablet) {
     @include basic-font(30px, 17px);
-  }
-}
-
-.contacts-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-.contacts-table__line {
-  @media (min-width: $min-tablet) {
-    display: inline-block;
-  }
-  vertical-align: top;
-}
-
-.contacts-table__line:not(:nth-child(2n)) {
-  @media (min-width: $min-tablet) {
-    padding-right: 50px;
-  }
-}
-
-.contacts-table__name {
-  white-space: nowrap;
-
-  @include zero;
-  padding-right: 30px;
-  padding-bottom: 30px;
-
-  @media (min-width: $min-tablet) {
-    padding-right: 24px;
-  }
-}
-
-.contacts-table__description {
-  @include zero;
-  padding-bottom: 30px;
-
-  @media (min-width: $min-tablet) {
-    padding-bottom: 46px;
   }
 }
 
