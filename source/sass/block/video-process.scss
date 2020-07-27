@@ -1,6 +1,5 @@
 .video-process {
-  padding-top: 21px;
-  padding-bottom: 33px;
+  position: relative;
 }
 
 .video-process__title {
@@ -11,11 +10,16 @@
   @include weight-font;
 }
 
-.process-description {
+.video-process__description {
   @include zero;
-  padding-top: 35px;
-  padding-bottom: 41px;
+  padding-top: 12px;
+  padding-bottom: 42px;
+  padding-left: 35px;
 
   @include basic-font;
   font-size: 13px;
+}
+
+.video-process__order {
+  max-width: 192px;
 }

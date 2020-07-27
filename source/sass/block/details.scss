@@ -8,6 +8,10 @@
   border-collapse: collapse;
 }
 
+.details--min {
+  @include basic-font(30px, 13px);
+}
+
 .details__line {
   vertical-align: top;
 }
