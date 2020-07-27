@@ -16,4 +16,10 @@
 
     @include weight-font (50px, 43px);
   }
+
+  @media (min-width: $min-desktop) {
+    padding-bottom: 92px;
+
+    @include weight-font (57px, 53px);
+  }
 }

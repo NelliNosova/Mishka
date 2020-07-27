@@ -5,4 +5,22 @@
   @media (min-width: $min-tablet) {
     padding-top: 49px;
   }
+  @media (min-width: $min-desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 52px;
+
+    padding-left: 48px;
+    padding-right: 50px;
+    margin: 0 auto;
+    width: 1150px;
+    padding-top: 100px;
+  }
+}
+
+.catalog-list__item {
+  @media (min-width: $min-desktop) {
+    flex-basis: 316px;
+    padding: 0;
+  }
 }

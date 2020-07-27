@@ -57,4 +57,9 @@
     padding-top: 29px;
     padding-bottom: 109px;
   }
+
+  @media (min-width: $min-desktop) {
+    padding-top: 59px;
+    padding-bottom: 102px;
+  }
 }
