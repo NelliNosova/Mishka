@@ -7,10 +7,20 @@
 .form__type {
   @include zero;
   padding-bottom: 15px;
+
+  @media (min-width: $min-tablet) {
+    padding-bottom: 8px;
+  }
 }
 
 .form__color {
   padding-top: 20px;
+
+  @media (min-width: $min-tablet) {
+    @include zero;
+    padding-top: 66px;
+    padding-left: 181px;
+  }
 }
 
 .form__phone {

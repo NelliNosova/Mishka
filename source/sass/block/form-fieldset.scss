@@ -1,11 +1,20 @@
 .form-fieldset {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   width: 100%;
 
-  @include zero;
+
   border: none;
+}
+
+.form-fieldset--color {
+  @media (min-width: $min-tablet) {
+    /* display: grid;
+    grid-template-columns: 50% 50%; */
+    flex-direction: row;
+  }
 }
 
 .form-fieldset__input {
@@ -15,6 +24,12 @@
 
 .form-fieldset__legent {
   padding-bottom: 35px;
+
+  @media (min-width: $min-tablet) {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 }
 
 .form-fieldset__legent--color {
@@ -29,15 +44,27 @@
 .form-fieldset__label{
   padding-bottom: 24px;
   padding-left: 64px;
+  @media (min-width: $min-tablet) {
+    padding-bottom: 58px;
+    padding-left: 246px;
+  }
 }
 
 .form-fieldset__label--color {
   padding-bottom: 43px;
   padding-left: 65px;
+
+  @media (min-width: $min-tablet) {
+    width: 181px;
+  }
 }
 
 .label-item {
   @include weight-font (18px, 17px);
+
+  @media (min-width: $min-tablet) {
+    font-size: 19px;
+  }
 }
 
 .form-title {
