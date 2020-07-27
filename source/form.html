@@ -11,26 +11,40 @@
     <header class="page-header">
       <div class="container">
         <a class="page-header__logo" href="index.html">
-          <img class="logo" src="img/logo-mobile.svg" alt="Логотип Мишка">
+          <img class="logo logo--center" src="img/logo-mobile.svg" alt="Логотип Мишка">
         </a>
-        <nav class="header-nav">
+        <nav class="page-header__header-nav header-nav">
           <button class="header-nav__toggle button button--nav" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
-          <ul class="header-nav__list site-list">
-            <li class="site-list__item">
+          <ul class="header-nav__list site-list site-list--lead">
+            <li class="site-list__item site-list__item--lead">
               <a class="site-list__item-link" href="catalog.html">
                 Каталог товаров
               </a>
             </li>
-            <li class="site-list__item">
+            <li class="site-list__item site-list__item--lead">
               <a class="site-list__item-link" href="blank.html">
                 Вязание на заказ
               </a>
             </li>
-            <li class="site-list__item site-list__item--search">
+            <li class="site-list__item site-list__item--lead site-list__item--hide">
               <a class="site-list__item-link" href="blank.html">
-                Поиск по сайту
+                Новые поступления
+              </a>
+            </li>
+            <li class="site-list__item site-list__item--lead site-list__item--hide">
+              <a class="site-list__item-link" href="blank.html">
+                Распродажа
+              </a>
+            </li>
+          </ul>
+          <ul class="header-nav__list site-list site-list--other">
+            <li class="site-list__item site-list__item--search">
+              <a class="site-list__item-link " href="blank.html">
+                <span class="site-list__search">
+                  Поиск по сайту
+                </span>
               </a>
             </li>
             <li class="site-list__item site-list__item--order">
@@ -39,6 +53,9 @@
               </a>
             </li>
           </ul>
+          <p class="page-header__clarifiction clarifiction">
+            Бесплатная доставка по России
+          </p>
         </nav>
       </div>
     </header>
@@ -52,49 +69,49 @@
       </p>
       <form class="page-main__form form container">
         <fieldset class="form__type type form-fieldset">
-          <legend class="type__legent form-title">
+          <legend class="form-fieldset__legent form-title">
             Тип
           </legend>
-          <input class="type__input type__input--interior" type="radio" name="type-input" value="interior" id="interior">
-          <label class="type__label label-item" for="interior" checked>
+          <input class="form-fieldset__input type__input--interior" type="radio" name="type-input" value="interior" id="interior">
+          <label class="form-fieldset__label label-item" for="interior" checked>
             Аксессуар для интерьера
           </label>
-          <input class="type__input type__input--toys" type="radio" name="type-input" value="toys" id="toys">
-          <label class="type__label label-item" for="toys">
+          <input class="form-fieldset__input type__input--toys" type="radio" name="type-input" value="toys" id="toys">
+          <label class="form-fieldset__label label-item" for="toys">
             Детская игрушка
           </label>
         </fieldset>
-        <fieldset class="form__color color form-fieldset">
-          <legend class="color__legent form-title">
+        <fieldset class="form__color  form-fieldset">
+          <legend class="form-fieldset__legent form-fieldset__legent--color form-title">
             Цвет
           </legend>
-          <input class="color__input" type="checkbox" id="white" checked>
-          <label class="color__label label-item" for="white">
+          <input class="form-fieldset__input" type="checkbox" id="white" checked>
+          <label class="form-fieldset__label form-fieldset__label--color label-item" for="white">
             Белый
           </label>
-          <input class="color__input" type="checkbox" id="grey" checked>
-          <label class="color__label label-item" for="grey">
+          <input class="form-fieldset__input" type="checkbox" id="grey" checked>
+          <label class="form-fieldset__label form-fieldset__label--color label-item" for="grey">
             Серый
           </label>
-          <input class="color__input" type="checkbox" id="tiffany">
-          <label class="color__label label-item" for="tiffany">
+          <input class="form-fieldset__input" type="checkbox" id="tiffany">
+          <label class="form-fieldset__label form-fieldset__label--color label-item" for="tiffany">
             «Тиффани»
           </label>
-          <input class="color__input" type="checkbox" id="black">
-          <label class="color__label label-item" for="black">
+          <input class="form-fieldset__input" type="checkbox" id="black">
+          <label class="form-fieldset__label form-fieldset__label--color label-item" for="black">
             Черный
           </label>
-          <input class="color__input" type="checkbox" id="pinck">
-          <label class="color__label label-item" for="pinck">
+          <input class="form-fieldset__input" type="checkbox" id="pinck">
+          <label class="form-fieldset__label form-fieldset__label--color label-item" for="pinck">
             Розовый
           </label>
-          <input class="color__input" type="checkbox" id="orange">
-          <label class="color__label label-item" for="orange">
+          <input class="form-fieldset__input" type="checkbox" id="orange">
+          <label class="form-fieldset__label form-fieldset__label--color label-item" for="orange">
             Оранжевый
           </label>
         </fieldset>
         <fieldset class="form__name name form-fieldset">
-          <legend class="name__legent form-title">
+          <legend class="form-fieldset__legent form-fieldset__legent--name form-title">
             ФИО
           </legend>
           <label class="name__label label-item" for="name">
@@ -121,7 +138,7 @@
         <label class="form__add form-title">
           Доп
         </label>
-        <textarea class="form__add-input input-text wishes">
+        <textarea class="form__add-input input-text input-text--wishes">
           Опишите все ваши пожелания к заказу
         </textarea>
         <p class="form__explanation explanation">
@@ -133,8 +150,11 @@
       </form>
     </main>
     <footer class="page-footer footer">
-      <section class="page-footer__social social">
-        <div class="container">
+      <div class="container container--footer">
+        <a class="footer__logo">
+          <img class="logo logo--footer" src="img/logo-footer.svg" alt="Логотип Мишка">
+        </a>
+        <section class="page-footer__social social">
           <h2 class="visually-hidden">
             Социальные сети
           </h2>
@@ -155,15 +175,15 @@
               </a>
             </li>
           </ul>
+        </section>
+        <div class="page-footer__copyright copyright">
+            Разработано
+            <a class="copyright__link">
+              <span class="visually-hidden">
+                HTMLacademy
+              </span>
+            </a>
         </div>
-      </section>
-      <div class="page-footer__copyright copyright">
-        Разработано
-        <a class="copyright__link">
-          <span class="visually-hidden">
-            HTMLacademy
-          </span>
-        </a>
       </div>
     </footer>
   </body>

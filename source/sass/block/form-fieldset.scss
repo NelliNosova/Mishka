@@ -1,0 +1,47 @@
+.form-fieldset {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%;
+
+  @include zero;
+  border: none;
+}
+
+.form-fieldset__input {
+  position: absolute;
+  appearance: none;
+}
+
+.form-fieldset__legent {
+  padding-bottom: 35px;
+}
+
+.form-fieldset__legent--color {
+  padding-top: 20px;
+  padding-bottom: 34px;
+}
+
+.form-fieldset__legent--name {
+  padding-bottom: 29px;
+}
+
+.form-fieldset__label{
+  padding-bottom: 24px;
+  padding-left: 64px;
+}
+
+.form-fieldset__label--color {
+  padding-bottom: 43px;
+  padding-left: 65px;
+}
+
+.label-item {
+  @include weight-font (18px, 17px);
+}
+
+.form-title {
+  @include weight-font (16px, 17px);
+  color: $basic-mint;
+  text-transform: uppercase;
+}
