@@ -2,4 +2,7 @@
   @include zero;
   margin: 0 auto;
   list-style: none;
+  @media (min-width: $min-tablet) {
+    padding-top: 49px;
+  }
 }

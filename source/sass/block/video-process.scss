@@ -2,12 +2,28 @@
   position: relative;
 }
 
+.container--video {
+  @media (min-width: $min-tablet) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .video-process__title {
   @include zero;
   padding-left: 91px;
   padding-bottom: 27px;
+  padding-right: 10px;
 
   @include weight-font;
+
+  @media (min-width: $min-tablet) {
+    padding-top: 39px;
+    padding-left: 107px;
+    padding-bottom: 24px;
+    font-size: 20px;
+  }
+
 }
 
 .video-process__description {
@@ -15,11 +31,23 @@
   padding-top: 32px;
   padding-bottom: 40px;
   padding-left: 35px;
+  padding-right: 10px;
 
   @include basic-font;
   font-size: 13px;
+
+  @media (min-width: $min-tablet) {
+    padding-top: 0;
+    padding-left: 40px;
+
+    @include basic-font(30px, 15px);
+  }
 }
 
 .video-process__order {
   max-width: 192px;
+
+  @media (min-width: $min-tablet) {
+    max-width: 584px;
+  }
 }

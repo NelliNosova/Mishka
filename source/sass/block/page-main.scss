@@ -52,4 +52,9 @@
 .page-main__video {
   padding-top: 53px;
   padding-bottom: 91px;
+
+  @media (min-width: $min-tablet) {
+    padding-top: 29px;
+    padding-bottom: 109px;
+  }
 }

@@ -26,8 +26,18 @@
   }
 }
 
-.product--min{
+.product--min {
   padding-bottom: 27px;
+
+  @media (min-width: $min-tablet) {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+      "product__img product__title"
+      "product__img product__details"
+      "product__img product__price-order-wrap";
+      padding-bottom: 23px;
+  }
 }
 
 .product__title {
@@ -44,11 +54,21 @@
 }
 
 .product__title--min {
+  grid-area: product__title;
+
   @include weight-font(24px, 17px);
   padding-top: 24px;
   padding-bottom: 6px;
   padding-left: 30px;
   padding-right: 30px;
+
+  @media (min-width: $min-tablet) {
+    padding-top: 28px;
+    padding-bottom: 0;
+    padding-left: 33px;
+    padding-right: 20px;
+    font-size: 20px;
+  }
 }
 
 .product__sticker {
@@ -110,6 +130,11 @@
 .product__details--min {
   padding-left: 30px;
   padding-bottom: 40px;
+
+  @media (min-width: $min-tablet) {
+    padding-bottom: 180px;
+    padding-left: 33px;
+  }
 }
 
 .product__img {
@@ -125,10 +150,21 @@
   }
 }
 
+.product__img--min {
+  @media (min-width: $min-tablet) {
+    margin-top: 0;
+  }
+}
+
 .product__price-order-wrap {
+  grid-area: product__price-order-wrap;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
+
+  @media (min-width: $min-tablet) {
+    margin-top: auto;
+    padding-bottom: 25px;
+  }
 }
 
 .product__price {
@@ -164,6 +200,11 @@
   font-size: 15px;
   vertical-align: middle;
   text-align: left;
+
+  @media (min-width: $min-tablet) {
+    padding-left: 33px;
+    font-size: 17px;
+  }
 }
 
 .product__order {

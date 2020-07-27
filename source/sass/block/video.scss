@@ -1,5 +1,9 @@
 .video {
   position: relative;
+
+  @media (min-width: $min-tablet) {
+    order: -1;
+  }
 }
 
 .video__button {
