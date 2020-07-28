@@ -6,7 +6,7 @@
 
 .form__type {
   @include zero;
-  padding-bottom: 15px;
+  padding-bottom: 19px;
 
   @media (min-width: $min-tablet) {
     padding-bottom: 8px;
@@ -14,17 +14,24 @@
 }
 
 .form__color {
-  padding-top: 20px;
+  @include zero;
+  padding-top: 0;
 
-  @media (min-width: $min-tablet) {
+  /* @media (min-width: $min-tablet) {
     @include zero;
     padding-top: 66px;
     padding-left: 181px;
-  }
+  } */
+}
+
+.form__name {
+  @include zero;
+  padding-top: 0;
 }
 
 .form__phone {
   padding-top: 11px;
+
 }
 
 .input-text {

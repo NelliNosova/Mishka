@@ -2,20 +2,26 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
   width: 100%;
-
-
   border: none;
 }
 
-.form-fieldset--color {
+.form-fieldset__wrapper {
+  display: flex;
+  flex-direction: column;
+
   @media (min-width: $min-tablet) {
-    /* display: grid;
-    grid-template-columns: 50% 50%; */
-    flex-direction: row;
+    width: 266px;
   }
 }
+
+/* .form-fieldset--color {
+  @media (min-width: $min-tablet) {
+    /* display: grid;
+    grid-template-columns: 50% 50%;
+    flex-direction: row;
+  }
+} */
 
 .form-fieldset__input {
   position: absolute;
@@ -25,15 +31,14 @@
 .form-fieldset__legent {
   padding-bottom: 35px;
 
-  @media (min-width: $min-tablet) {
+  /* @media (min-width: $min-tablet) {
     position: absolute;
     top: 0;
     left: 0;
-  }
+  } */
 }
 
 .form-fieldset__legent--color {
-  padding-top: 20px;
   padding-bottom: 34px;
 }
 
@@ -44,19 +49,19 @@
 .form-fieldset__label{
   padding-bottom: 24px;
   padding-left: 64px;
-  @media (min-width: $min-tablet) {
+ /*  @media (min-width: $min-tablet) {
     padding-bottom: 58px;
     padding-left: 246px;
-  }
+  } */
 }
 
 .form-fieldset__label--color {
   padding-bottom: 43px;
   padding-left: 65px;
 
-  @media (min-width: $min-tablet) {
+  /* @media (min-width: $min-tablet) {
     width: 181px;
-  }
+  } */
 }
 
 .label-item {
@@ -71,4 +76,8 @@
   @include weight-font (16px, 17px);
   color: $basic-mint;
   text-transform: uppercase;
+
+  @media (min-width: $min-tablet) {
+    width: 168px
+  }
 }
