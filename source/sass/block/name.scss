@@ -16,11 +16,11 @@
   padding-bottom: 16px;
 
   @media (min-width: $min-tablet) {
-  flex-grow: 2;
-  align-self: baseline;
-  padding-top: 0;
-  padding-left: 18px;
-  padding-bottom: 13px;
+    flex-grow: 2;
+    align-self: baseline;
+    padding-top: 0;
+    padding-left: 18px;
+    padding-bottom: 13px;
   }
 }
 
@@ -28,5 +28,5 @@
   @media (min-width: $min-tablet) {
     align-self: baseline;
     margin-right: 27px;
-    }
+  }
 }

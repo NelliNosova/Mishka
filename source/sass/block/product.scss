@@ -36,14 +36,13 @@
       "product__img product__title"
       "product__img product__details"
       "product__img product__price-order-wrap";
-      padding-bottom: 23px;
+    padding-bottom: 23px;
   }
 
   @media (min-width: $min-desktop) {
     display: flex;
     flex-direction: column;
     min-height: 688px;
-
   }
 }
 

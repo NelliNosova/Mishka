@@ -6,6 +6,7 @@
   @media (min-width: $min-tablet) {
     padding-top: 69px;
     padding-bottom: 79px;
+
     @include basic-font(30px, 17px);
   }
 }

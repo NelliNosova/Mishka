@@ -10,6 +10,7 @@
 
 .details--min {
   @include basic-font(30px, 13px);
+
   @media (min-width: $min-tablet) {
     font-size: 15px;
   }
