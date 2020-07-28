@@ -2,6 +2,10 @@
   display: flex;
   flex-direction: column;
   padding-bottom: 55px;
+
+  @media (min-width: $min-tablet) {
+    padding-bottom: 31px;
+  }
 }
 
 .form__type {
@@ -17,52 +21,96 @@
   @include zero;
   padding-top: 0;
 
-  /* @media (min-width: $min-tablet) {
-    @include zero;
+  @media (min-width: $min-tablet) {
     padding-top: 66px;
-    padding-left: 181px;
-  } */
+    padding-bottom: 10px;
+  }
 }
 
 .form__name {
   @include zero;
   padding-top: 0;
+
+  @media (min-width: $min-tablet) {
+    padding-top: 63px;
+    padding-bottom: 13px;
+  }
+}
+
+.form__contact {
+  padding-top: 12px;
+
+  @media (min-width: $min-tablet) {
+    padding-top: 55px;
+    padding-bottom: 15px;
+  }
 }
 
 .form__phone {
   padding-top: 11px;
+}
 
+.form__email {
+  @media (min-width: $min-tablet) {
+    padding-top: 8px;
+  }
+}
+
+.form__add {
+  @media (min-width: $min-tablet) {
+    padding-top: 42px;
+  }
 }
 
 .input-text {
+  @include zero;
   @include basic-font (18px, 17px);
   font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   padding-top: 15px;
-  padding-bottom: 18px;
+  padding-bottom: 13px;
   margin-bottom: 23px;
   border: none;
   box-shadow: inset 0 -2px 0 $basic-black;
   color: rgba($basic-black, 0.3%);
   background-color: inherit;
+
+  @media (min-width: $min-tablet) {
+    font-size: 19px;
+  }
 }
 
 .input-text--phone {
   padding-bottom: 15px;
   margin-bottom: 35px;
   font-size: 19px;
+  @media (min-width: $min-tablet) {
+    flex-grow: 2;
+    padding-top: 6px;
+    padding-left: 18px;
+  }
 }
 
 .input-text--email {
   padding-top: 20px;
   margin-bottom: 35px;
+  @media (min-width: $min-tablet) {
+    flex-grow: 2;
+    padding-top: 0px;
+    padding-left: 18px;
+    padding-bottom: 15px;
+  }
 }
 
 .input-text--wishes {
   margin-top: 22px;
   min-height: 142px;
   margin-bottom: 17px;
+  padding-left: 16px;
   border: 2px solid $darkest-grey;
   box-shadow: inset 0 0 0 $darkest-grey;
+  @media (min-width: $min-tablet) {
+    flex-grow: 2;
+  }
 }
 
 .form__explanation {
@@ -72,4 +120,27 @@
   @include basic-font(16px, 14px);
   color: $darkest-grey;
   box-shadow: none;
+
+  @media (min-width: $min-tablet) {
+    @include basic-font(30px, 17px);
+    padding-top: 11px;
+  }
+}
+
+.reverse {
+  @media (min-width: $min-tablet) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 36px;
+  }
+}
+
+.button--form {
+  @media (min-width: $min-tablet) {
+    margin-left: 0;
+    align-self: flex-start;
+    max-width: 230px;
+  }
 }
