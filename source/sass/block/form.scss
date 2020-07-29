@@ -48,17 +48,29 @@
 
 .form__phone {
   padding-top: 11px;
+
+  @media (min-width: $min-desktop) {
+    padding-left: 60px;
+  }
 }
 
 .form__email {
   @media (min-width: $min-tablet) {
     padding-top: 8px;
   }
+
+  @media (min-width: $min-desktop) {
+    padding-left: 60px;
+  }
 }
 
 .form__add {
   @media (min-width: $min-tablet) {
     padding-top: 42px;
+  }
+
+  @media (min-width: $min-desktop) {
+    padding-left: 60px;
   }
 }
 
@@ -83,6 +95,12 @@
     justify-content: space-between;
     width: 100%;
     padding-top: 36px;
+  }
+
+  @media (min-width: $min-desktop) {
+    width: 700px;
+    margin: 0 auto;
+    padding-top: 31px;
   }
 }
 

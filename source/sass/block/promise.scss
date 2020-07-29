@@ -10,3 +10,11 @@
     @include basic-font(30px, 17px);
   }
 }
+
+.container--promise {
+  @media (min-width: $min-desktop) {
+    padding-left: 225px;
+    padding-right: 225px;
+    padding-top: 120px;
+  }
+}

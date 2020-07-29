@@ -25,6 +25,10 @@
     padding-top: 6px;
     padding-left: 18px;
   }
+
+  @media (min-width: $min-desktop) {
+    margin-left: 10px;
+  }
 }
 
 .input-text--email {
@@ -36,6 +40,10 @@
     padding-top: 0;
     padding-left: 18px;
     padding-bottom: 15px;
+  }
+
+  @media (min-width: $min-desktop) {
+    margin-left: 10px;
   }
 }
 
@@ -49,5 +57,9 @@
 
   @media (min-width: $min-tablet) {
     flex-grow: 2;
+  }
+
+  @media (min-width: $min-desktop) {
+    margin-left: 10px;
   }
 }

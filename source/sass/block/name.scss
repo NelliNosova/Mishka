@@ -29,4 +29,9 @@
     align-self: baseline;
     margin-right: 27px;
   }
+
+  @media (min-width: $min-desktop) {
+    margin-left: 12px;
+    margin-right: 24px;
+  }
 }
