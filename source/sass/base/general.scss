@@ -55,7 +55,8 @@ img {
   }
 
   @media (min-width: $min-desktop) {
-    width: 1150px;
+    width: 100%;
+    max-width: 1250px;
   }
 }
 
