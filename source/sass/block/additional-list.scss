@@ -5,10 +5,8 @@
 
   @media (min-width: $min-tablet) {
     display: flex;
-
-    @include padding(50px, 50px);
     margin: 0 auto;
-    width: $min-tablet;
+    width: 100%;
 
     @include weight-font(30px, 20px);
   }
@@ -24,12 +22,12 @@
   margin: 0 auto;
 
   @media (min-width: $min-tablet) {
-    max-width: ($min-tablet - 100px) / 2;
+    max-width: ($min-tablet -100) / 2;
     margin: 0;
   }
 
   @media (min-width: $min-desktop) {
-    max-width: ($min-desktop - 100px) / 2;
+    max-width: ($min-desktop - 100) / 2;
     padding-right: 250px;
   }
 }
@@ -40,10 +38,16 @@
 
   @media (min-width: $min-tablet) {
     padding-top: 26px;
+    flex-basis: 50%;
   }
 
   &--interior {
     background-color: $basic-mint;
+
+
+    @media (min-width: $min-tablet) {
+      padding-left: 50px;
+    }
   }
 
   &--toys {

@@ -2,6 +2,18 @@
   position: relative;
 }
 
+
+.page-header__header-nav {
+  @media (max-width: $min-tablet) {
+    width: 260px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $min-desktop) {
+    padding-top: 8px;
+  }
+}
+
 .page-header__logo {
   z-index: 10;
 
@@ -9,7 +21,6 @@
   @media (min-width: $min-tablet) {
     position: absolute;
     top: 5px;
-
   }
 
   @media (min-width: $min-desktop) {
@@ -21,17 +32,11 @@
   }
 }
 
-.page-header__header-nav {
-  @media (min-width: $min-desktop) {
-    padding-top: 8px;
-  }
-}
-
 .container--header {
   position: relative;
 
- @media (max-width: $min-tablet) {
-   display: flex;
-   flex-direction: column-reverse;
- }
+  @media (max-width: $min-tablet) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }

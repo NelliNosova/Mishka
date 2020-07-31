@@ -30,11 +30,12 @@
   @media (min-width: $min-tablet) {
     flex-direction: row;
     flex-wrap: wrap;
-    width: 500px;
+    width: 72%;
+    max-width: 680px;
   }
 
   @media (min-width: $min-desktop) {
-    width: 710px;
+    max-width: 710px;
   }
 }
 

@@ -1,3 +1,4 @@
+$min-phone: 320px;
 $min-tablet: 768px;
 $min-desktop: 1150px;
 
@@ -46,17 +47,17 @@ img {
 
 .container {
   @include padding;
-  width: 320px;
+  width: 100%;
+  min-width: 260px;
   margin: 0 auto;
 
   @media (min-width: $min-tablet) {
     @include padding(50px, 50px);
-    width: 768px;
   }
 
   @media (min-width: $min-desktop) {
-    width: 100%;
-    max-width: 1250px;
+
+    max-width: 1150px;
   }
 }
 

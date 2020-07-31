@@ -1,3 +1,11 @@
+.advantage-item {
+  @media (max-width: $min-tablet) {
+    width: 260px;
+    margin: 0 auto;
+  }
+}
+
+
 .advantage-item--eco {
   @media (max-width: $min-tablet) {
     order: 0;

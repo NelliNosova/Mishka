@@ -11,6 +11,7 @@
   background-color: $other-grey;
 
   @media (min-width: $min-tablet) {
+    margin-top: -71px;
     padding-top: 102px;
     padding-bottom: 73px;
 
@@ -19,6 +20,7 @@
 
   @media (min-width: $min-desktop) {
     padding-bottom: 92px;
+    /* margin-top: 0; */
 
     @include weight-font (57px, 53px);
   }
