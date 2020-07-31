@@ -1,19 +1,25 @@
 .header-nav {
-  @include weight-font;
-}
-
-.site-list {
-  list-style: none;
-
-  @include zero;
-}
-
-.site-list__item {
   position: relative;
-  padding: 28px 26px;
+
+  @include weight-font;
+
+  @media (min-width: $min-tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  @media (min-width: $min-desktop) {
+    @include weight-font (24px, 17px);
+  }
 }
 
-.site-list__item-link {
-  color: inherit;
-  text-decoration: none;
+.header-nav__toggle {
+  position: absolute;
+  top: -50px;
+  right: 0;
+
+  @media (min-width: $min-tablet) {
+    display: none;
+  }
 }

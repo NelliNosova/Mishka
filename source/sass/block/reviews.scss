@@ -1,25 +1,73 @@
 .reviews {
-  padding-top: 31px;
-  padding-bottom: 30px;
+  position: relative;
 }
 
-.reviews-item {
+.container--reviews {
+  position: relative;
+
+  @media (min-width: $min-tablet) {
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $min-desktop) {
+    background-position-x: 50px;
+  }
+}
+
+.reviews__title {
+  @media (min-width: $min-tablet) {
+    padding-top: 84px;
+  }
+
+  @media (min-width: $min-desktop) {
+    padding-top: 79px;
+  }
+}
+
+.reviews-list__item {
   @include zero;
   padding-bottom: 30px;
 
   @include basic-font(30px);
+
+  @media (min-width: $min-tablet) {
+    @include basic-font(30px, 17px);
+  }
+
+  @media (min-width: $min-desktop) {
+    padding-bottom: 77px;
+  }
 }
 
 .reviews__text {
   @include zero;
   padding-top: 14px;
-  padding-bottom: 33px;
+  padding-bottom: 31px;
+
+  @media (min-width: $min-tablet) {
+    padding-top: 38px;
+    padding-bottom: 58px;
+  }
+
+  @media (min-width: $min-desktop) {
+    padding-top: 35px;
+    padding-bottom: 42px;
+  }
 }
 
 .reviews__author-name {
   @include zero;
   @include weight-font;
   font-style: normal;
+
+  @media (min-width: $min-tablet) {
+    @include weight-font(24px, 18px);
+  }
+
+  @media (min-width: $min-desktop) {
+    font-size: 17px;
+  }
 }
 
 .reviews__author-mail {
@@ -28,10 +76,35 @@
   font-size: 17px;
   color: $darkest-grey;
   font-style: normal;
+
+  @media (min-width: $min-tablet) {
+    display: block;
+  }
 }
 
 .reviews__wrap {
   display: flex;
   justify-content: center;
-  padding-bottom: 28px;
+  padding-bottom: 37px;
+
+  @media (min-width: $min-tablet) {
+    width: 180px;
+    margin-left: auto;
+    margin-top: -85px;
+    padding-bottom: 50px;
+  }
+
+  @media (min-width: $min-tablet) {
+    margin-top: -130px;
+    padding-bottom: 100px;
+  }
+}
+
+.reviews__write {
+  @media (min-width: $min-tablet) {
+    position: absolute;
+    top: 79px;
+    right: 50px;
+    max-width: 175px;
+  }
 }

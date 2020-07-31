@@ -1,0 +1,43 @@
+.advantage-item {
+  @media (max-width: $min-tablet) {
+    width: 260px;
+    margin: 0 auto;
+  }
+}
+
+
+.advantage-item--eco {
+  @media (max-width: $min-tablet) {
+    order: 0;
+  }
+}
+
+.advantage-item--price {
+  @media (max-width: $min-tablet) {
+    order: 1;
+  }
+}
+
+.advantage-item--like {
+  @media (max-width: $min-tablet) {
+    order: 2;
+  }
+}
+
+.advantage-item--love {
+  @media (max-width: $min-tablet) {
+    order: 3;
+  }
+}
+
+.advantage-item--rus {
+  @media (max-width: $min-tablet) {
+    order: 4;
+  }
+}
+
+.advantage-item--gift {
+  @media (max-width: $min-tablet) {
+    order: 5;
+  }
+}

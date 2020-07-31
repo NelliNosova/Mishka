@@ -1,5 +1,23 @@
 .social-list {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+
+  @include zero;
+  width: 140px;
+  margin: 0 auto;
+  margin-bottom: 30px;
   list-style: none;
+
+  @media (min-width: $min-tablet) {
+    padding: 0;
+    padding-top: 10px;
+    margin-bottom: 0;
+    justify-content: space-around;
+    width: 180px;
+  }
+}
+
+.social-list__item {
+  @include size(22px, 21px);
+  background-color: red;
 }

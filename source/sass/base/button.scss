@@ -4,7 +4,7 @@
 
   @include zero;
   width: 100%;
-  max-width: 255px;
+  max-width: 260px;
   margin-left: auto;
   margin-right: auto;
 
@@ -18,7 +18,7 @@
 }
 
 .button--padding {
-  padding: 16px 5px;
+  padding: 14px 5px;
 }
 
 .button--accent {
@@ -40,6 +40,10 @@
   @include size(21px, 20px);
   background-image: url("../img/icon-menu-open.svg");
   border: none;
+
+  @media (max-width: $min-tablet) {
+    display: none;
+  }
 }
 
 .button--prev-next {
@@ -47,4 +51,17 @@
   max-width: 130px;
   height: 52px;
   border: 1px solid $grey;
+  background-color: red;
+}
+
+.button--write {
+  font-size: 18px;
+}
+
+.button--write-us {
+  font-size: 18px;
+
+  @media (min-width: $min-tablet) {
+    font-size: 17px;
+  }
 }

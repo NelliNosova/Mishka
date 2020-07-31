@@ -1,0 +1,134 @@
+.form-fieldset {
+  position: relative;
+  width: 100%;
+  border: none;
+}
+
+.form-fieldset--color {
+  @media (min-width: $min-tablet) {
+    background-color: $other-grey;
+  }
+}
+
+.form-fieldset__flex {
+  @media (min-width: $min-tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.form-fieldset__flex--add {
+  @media (min-width: $min-tablet) {
+    padding-top: 28px;
+  }
+}
+
+.form-fieldset__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $min-tablet) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 72%;
+    max-width: 680px;
+  }
+
+  @media (min-width: $min-desktop) {
+    max-width: 710px;
+  }
+}
+
+.form-fieldset__input {
+  position: absolute;
+  appearance: none;
+}
+
+.form-fieldset__legent {
+  padding-bottom: 35px;
+
+  @media (min-width: $min-desktop) {
+    text-align: center;
+  }
+}
+
+.form-fieldset__legent--color {
+  padding-bottom: 34px;
+}
+
+.form-fieldset__legent--name {
+  padding-bottom: 29px;
+
+  @media (min-width: $min-tablet) {
+    padding-top: 5px;
+  }
+}
+
+.form-fieldset__label {
+  padding-bottom: 24px;
+  padding-left: 64px;
+
+  @media (min-width: $min-tablet) {
+    padding-bottom: 58px;
+    padding-left: 80px;
+  }
+
+  @media (min-width: $min-desktop) {
+    padding-left: 90px;
+  }
+}
+
+.form-fieldset__label--type {
+  @media (min-width: $min-desktop) {
+    width: 100%;
+  }
+}
+
+.form-fieldset__label--color {
+  padding-bottom: 43px;
+  padding-left: 65px;
+
+  @media (min-width: $min-tablet) {
+    width: 180px;
+    padding-left: 85px;
+    padding-bottom: 58px;
+  }
+
+  @media (min-width: $min-desktop) {
+    padding-left: 91px;
+  }
+}
+
+.form-fieldset__label--color:nth-child(4n+2) {
+  @media (min-width: $min-tablet) {
+    margin-right: 82px;
+  }
+
+  @media (min-width: $min-desktop) {
+    margin-right: 0;
+  }
+}
+
+.form-fieldset__label--color:not(:nth-child(3n)) {
+  @media (min-width: $min-desktop) {
+    margin-right: 82px;
+  }
+}
+
+.label-item {
+  @include weight-font (18px, 17px);
+
+  @media (min-width: $min-tablet) {
+    font-size: 19px;
+  }
+}
+
+.form-title {
+  @include weight-font (16px, 17px);
+  color: $basic-mint;
+  text-transform: uppercase;
+
+  @media (min-width: $min-tablet) {
+    width: 165px;
+  }
+}

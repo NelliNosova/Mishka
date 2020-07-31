@@ -2,10 +2,26 @@
   @include zero;
   @include padding;
   margin: 0 auto;
+  width: 100%;
 
   @include weight-font (30px, 27px);
   padding-top: 75px;
-  padding-bottom: 74px;
+  padding-bottom: 72px;
   text-align: center;
   background-color: $other-grey;
+
+  @media (min-width: $min-tablet) {
+    margin-top: -71px;
+    padding-top: 102px;
+    padding-bottom: 73px;
+
+    @include weight-font (50px, 43px);
+  }
+
+  @media (min-width: $min-desktop) {
+    padding-bottom: 92px;
+    /* margin-top: 0; */
+
+    @include weight-font (57px, 53px);
+  }
 }

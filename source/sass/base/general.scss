@@ -1,3 +1,7 @@
+$min-phone: 320px;
+$min-tablet: 768px;
+$min-desktop: 1150px;
+
 .visually-hidden {
   position: absolute;
   height: 1px;
@@ -21,6 +25,11 @@ img {
   font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
 }
 
+.page__body {
+  min-height: 100%;
+  margin: 0 auto;
+}
+
 @mixin size ($width: 20px, $height: 20px) {
   width: $width;
   height: $height;
@@ -36,18 +45,43 @@ img {
   padding: 0;
 }
 
-.page__body {
-  @include zero;
-}
-
 .container {
   @include padding;
-  box-sizing: border-box;
-  width: 320px;
+  width: 100%;
+  min-width: 260px;
   margin: 0 auto;
+
+  @media (min-width: $min-tablet) {
+    @include padding(50px, 50px);
+  }
+
+  @media (min-width: $min-desktop) {
+
+    max-width: 1150px;
+  }
 }
 
-.section__title {
+.container--min {
+  @media (min-width: $min-desktop) {
+    padding-left: 224px;
+  }
+}
+
+.container--about-us {
+  @media (min-width: $min-desktop) {
+    width: 800px;
+  }
+}
+
+.section-title {
   @include zero;
   @include weight-font(30px, 25px);
+
+  @media (min-width: $min-tablet) {
+    @include weight-font(50px, 43px);
+  }
+
+  @media (min-width: $min-desktop) {
+    @include weight-font(57px, 53px);
+  }
 }

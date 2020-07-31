@@ -1,46 +1,113 @@
 .form {
   display: flex;
   flex-direction: column;
+  padding-bottom: 55px;
+
+  @media (min-width: $min-tablet) {
+    padding-bottom: 31px;
+  }
 }
 
-.form-fieldset {
-  display: flex;
-  flex-direction: column;
-
+.form__type {
   @include zero;
-  border: none;
+  padding-bottom: 19px;
+
+  @media (min-width: $min-tablet) {
+    padding-bottom: 8px;
+  }
 }
 
-.form-title {
-  @include weight-font (16px, 17px);
-  color: $basic-mint;
-  text-transform: uppercase;
-}
-
-.label-item {
-  @include weight-font (18px, 17px);
-}
-
-.input-text {
-  @include basic-font (18px, 17px);
-  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
-  padding-top: 15px;
-  padding-bottom: 20px;
-  margin-bottom: 20px;
-  border: none;
-  box-shadow: inset 0 -2px 0 $basic-black;
-  color: rgba($basic-black, 0.3%);
-  background-color: inherit;
-}
-
-.wishes {
-  border: 2px solid $darkest-grey;
-  box-shadow: inset 0 0 0 $darkest-grey;
-}
-
-.explanation {
+.form__color {
   @include zero;
+  padding-top: 0;
+
+  @media (min-width: $min-tablet) {
+    padding-top: 66px;
+    padding-bottom: 10px;
+  }
+}
+
+.form__name {
+  @include zero;
+  padding-top: 0;
+
+  @media (min-width: $min-tablet) {
+    padding-top: 63px;
+    padding-bottom: 13px;
+  }
+}
+
+.form__contact {
+  padding-top: 12px;
+
+  @media (min-width: $min-tablet) {
+    padding-top: 55px;
+    padding-bottom: 15px;
+  }
+}
+
+.form__phone {
+  padding-top: 11px;
+
+  @media (min-width: $min-desktop) {
+    padding-left: 60px;
+  }
+}
+
+.form__email {
+  @media (min-width: $min-tablet) {
+    padding-top: 8px;
+  }
+
+  @media (min-width: $min-desktop) {
+    padding-left: 60px;
+  }
+}
+
+.form__add {
+  @media (min-width: $min-tablet) {
+    padding-top: 42px;
+  }
+
+  @media (min-width: $min-desktop) {
+    padding-left: 60px;
+  }
+}
+
+.form__explanation {
+  @include zero;
+  padding-bottom: 30px;
+
   @include basic-font(16px, 14px);
   color: $darkest-grey;
   box-shadow: none;
+
+  @media (min-width: $min-tablet) {
+    @include basic-font(30px, 17px);
+    padding-top: 11px;
+  }
+}
+
+.reverse {
+  @media (min-width: $min-tablet) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 36px;
+  }
+
+  @media (min-width: $min-desktop) {
+    width: 700px;
+    margin: 0 auto;
+    padding-top: 31px;
+  }
+}
+
+.button--form {
+  @media (min-width: $min-tablet) {
+    margin-left: 0;
+    align-self: flex-start;
+    max-width: 230px;
+  }
 }

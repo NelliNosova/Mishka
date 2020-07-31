@@ -1,0 +1,69 @@
+.page-main {
+  position: relative;
+}
+
+.page-main__promo {
+  @media (min-width: $min-tablet) {
+    margin-top: -70px;
+  }
+
+  /* @media (min-width: $min-desktop) {
+    margin-top: 0;
+  } */
+}
+
+.page-main__product-week {
+  @media (min-width: $min-tablet) {
+    padding-top: 23px;
+  }
+
+  @media (min-width: $min-desktop) {
+    padding-top: 42px;
+  }
+}
+
+.page-main__about-us {
+  padding-top: 36px;
+  padding-bottom: 58px;
+
+  @media (min-width: $min-tablet) {
+    padding-top: 88px;
+    padding-left: 3px;
+    padding-bottom: 83px;
+  }
+
+  @media (min-width: $min-desktop) {
+    padding-top: 127px;
+    padding-left: 0;
+    padding-bottom: 88px;
+  }
+}
+
+.page-main__reviews {
+  padding-bottom: 54px;
+}
+
+.page-main__contacts {
+  padding-top: 31px;
+  padding-bottom: 39px;
+
+  @media (min-width: $min-tablet) {
+    padding-top: 96px;
+    padding-bottom: 57px;
+  }
+}
+
+.page-main__video {
+  padding-top: 53px;
+  padding-bottom: 91px;
+
+  @media (min-width: $min-tablet) {
+    padding-top: 29px;
+    padding-bottom: 109px;
+  }
+
+  @media (min-width: $min-desktop) {
+    padding-top: 59px;
+    padding-bottom: 105px;
+  }
+}

@@ -1,14 +1,18 @@
 .promo-tagline {
   display: flex;
   align-items: center;
-
-  @include zero;
-  margin: auto;
-  padding-top: 73px;
-  padding-bottom: 120px;
+  justify-content: center;
 
   @include weight-font(30px, 27px);
+
+  @media (min-width: $min-tablet) {
+    @include weight-font(50px, 43px);
+  }
   vertical-align: middle;
   text-align: center;
   color: $other-black;
+
+  @media (min-width: $min-desktop) {
+    @include weight-font(57px, 53px);
+  }
 }

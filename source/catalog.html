@@ -9,28 +9,39 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <div class="container">
-        <a class="page-header__logo" href="index.html">
-          <img class="logo" src="img/logo-mobile.svg" alt="Логотип Мишка">
-        </a>
+      <div class="container container--header">
         <nav class="page-header__header-nav header-nav">
           <button class="header-nav__toggle button button--nav" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
-          <ul class="header-nav__list site-list">
-            <li class="site-list__item">
+          <ul class="header-nav__list site-list site-list--lead">
+            <li class="site-list__item site-list__item--lead">
               <a class="site-list__item-link">
                 Каталог товаров
               </a>
             </li>
-            <li class="site-list__item">
+            <li class="site-list__item site-list__item--lead">
               <a class="site-list__item-link" href="blank.html">
                 Вязание на заказ
               </a>
             </li>
-            <li class="site-list__item site-list__item--search">
+            <li class="site-list__item site-list__item--lead site-list__item--hide">
               <a class="site-list__item-link" href="blank.html">
-                Поиск по сайту
+                Новые поступления
+              </a>
+            </li>
+            <li class="site-list__item site-list__item--lead site-list__item--hide">
+              <a class="site-list__item-link" href="blank.html">
+                Распродажа
+              </a>
+            </li>
+          </ul>
+          <ul class="header-nav__list site-list site-list--other">
+            <li class="site-list__item site-list__item--search">
+              <a class="site-list__item-link " href="blank.html">
+                <span class="site-list__search">
+                  Поиск по сайту
+                </span>
               </a>
             </li>
             <li class="site-list__item site-list__item--order">
@@ -39,7 +50,13 @@
               </a>
             </li>
           </ul>
+          <p class="page-header__clarifiction clarifiction">
+            Бесплатная доставка по России
+          </p>
         </nav>
+        <a class="page-header__logo" href="index.html">
+          <img class="logo logo--center" src="img/logo-mobile.svg" alt="Логотип Мишка">
+        </a>
       </div>
     </header>
 
@@ -49,12 +66,12 @@
       </h1>
       <ul class="page-main__list catalog-list">
         <li class="catalog-list__item catalog-item container">
-          <article class="catalog-item__product product">
-            <img class="product__img product__img--bunny" src="img/photo-hare-mobile@1x.jpg" alt="Товар">
+          <article class="catalog-item__product product product--min">
+            <img class="product__img product__img--min product__img--bunny" src="img/photo-hare-mobile@1x.jpg" alt="Товар">
             <h3 class="product__title product__title--min">
               Зайчик-попрыгайчик
             </h3>
-            <div class="product__details details details--min">
+            <div class="product__details product__details--min details details--min">
               Рост 30 см, вес 200 г
             </div>
             <div class="product__price-order-wrap">
@@ -67,12 +84,12 @@
           </article>
         </li>
         <li class="catalog-list__item catalog-item container">
-          <article class="catalog-item__product product">
-            <img class="product__img product__img--basket" src="img/photo-toys-mobile@1x.jpg" alt="Товар">
+          <article class="catalog-item__product product product--min">
+            <img class="product__img product__img--min product__img--basket" src="img/photo-bowl-mobile@1x.jpg" alt="Товар">
             <h3 class="product__title product__title--min">
               Корзинка для белья
             </h3>
-            <div class="product__details details details--min">
+            <div class="product__details product__details--min details details--min">
               Диаметр 15 см, высота 10 см
             </div>
             <div class="product__price-order-wrap">
@@ -85,12 +102,12 @@
           </article>
         </li>
         <li class="catalog-list__item catalog-item container">
-          <article class="catalog-item__product product">
-            <img class="product__img product__img--big-baskeet" src="img/photo-bowl-mobile@1x.jpg" alt="Товар">
+          <article class="catalog-item__product product product--min">
+            <img class="product__img product__img--min product__img--big-baskeet" src="img/photo-toys-mobile@1x.jpg" alt="Товар">
             <h3 class="product__title product__title--min">
-              Большая корзинка для игрушек
+              Большая корзинка<br> для игрушек
             </h3>
-            <div class="product__details details details--min">
+            <div class="product__details product__details--min details details--min">
               Диаметр 30 см, высота 30 см
             </div>
             <div class="product__price-order-wrap">
@@ -104,18 +121,18 @@
         </li>
       </ul>
       <section class="page-main__video video-process">
-        <div class="container">
+        <div class="container container--video">
           <h2 class="video-process__title">
             Процесс производства
           </h2>
           <div class="video-process__video video">
             <a class="video__link" href="blank.html">
-              <img class="video-process__img" src="img/video-mobile@1x.jpg" alt="Процесс производства">
+              <img class="video-process__img" src="img/video-mobile@1x.jpg" width="260" alt="Процесс производства">
             </a>
             <button class="video__button" aria-label="Включить видео">
             </button>
           </div>
-          <p class="video-process__description process-description">
+          <p class="video-process__description">
             По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
           </p>
           <a class="video-process__order button button--padding" href="form.html">
@@ -126,8 +143,11 @@
     </main>
 
     <footer class="page-footer footer">
-      <section class="page-footer__social social">
-        <div class="container">
+      <div class="container container--footer">
+        <a class="footer__logo">
+          <img class="logo logo--footer" src="img/logo-footer.svg" alt="Логотип Мишка">
+        </a>
+        <section class="page-footer__social social">
           <h2 class="visually-hidden">
             Социальные сети
           </h2>
@@ -148,15 +168,15 @@
               </a>
             </li>
           </ul>
+        </section>
+        <div class="page-footer__copyright copyright">
+            Разработано
+            <a class="copyright__link">
+              <span class="visually-hidden">
+                HTMLacademy
+              </span>
+            </a>
         </div>
-      </section>
-      <div class="page-footer__copyright copyright">
-        Разработано
-        <a class="copyright__link">
-          <span class="visually-hidden">
-            HTMLacademy
-          </span>
-        </a>
       </div>
     </footer>
     <section class="page__modal modal-order">

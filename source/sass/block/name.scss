@@ -1,0 +1,37 @@
+.name {
+  position: relative;
+}
+
+.name__wrapper {
+  @media (min-width: $min-tablet) {
+    display: flex;
+    width: 100%;
+    padding-bottom: 14px;
+  }
+}
+
+.name__input {
+  width: 100%;
+  padding-top: 17px;
+  padding-bottom: 16px;
+
+  @media (min-width: $min-tablet) {
+    flex-grow: 2;
+    align-self: baseline;
+    padding-top: 0;
+    padding-left: 18px;
+    padding-bottom: 13px;
+  }
+}
+
+.name__label {
+  @media (min-width: $min-tablet) {
+    align-self: baseline;
+    margin-right: 27px;
+  }
+
+  @media (min-width: $min-desktop) {
+    margin-left: 12px;
+    margin-right: 24px;
+  }
+}
