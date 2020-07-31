@@ -3,12 +3,35 @@
 }
 
 .page-header__logo {
+  z-index: 10;
+
+
   @media (min-width: $min-tablet) {
     position: absolute;
+    top: 5px;
+
   }
 
   @media (min-width: $min-desktop) {
-    position: relative;
+    left: 46%;
+    /* position: relative; */
+    /* display: block;
     margin: 0 auto;
+    margin-top: -148px; */
   }
+}
+
+.page-header__header-nav {
+  @media (min-width: $min-desktop) {
+    padding-top: 8px;
+  }
+}
+
+.container--header {
+  position: relative;
+
+ @media (max-width: $min-tablet) {
+   display: flex;
+   flex-direction: column-reverse;
+ }
 }

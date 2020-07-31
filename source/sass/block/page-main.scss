@@ -6,11 +6,15 @@
   @media (min-width: $min-tablet) {
     margin-top: -70px;
   }
+
+  /* @media (min-width: $min-desktop) {
+    margin-top: 0;
+  } */
 }
 
 .page-main__product-week {
   @media (min-width: $min-tablet) {
-    padding-top: 55px;
+    padding-top: 23px;
   }
 
   @media (min-width: $min-desktop) {
@@ -36,7 +40,7 @@
 }
 
 .page-main__reviews {
-  padding-bottom: 58px;
+  padding-bottom: 54px;
 }
 
 .page-main__contacts {
