@@ -14,21 +14,23 @@
     background-image: url("../img/hero-desktop@1x.jpg");
   }
   background-repeat: no-repeat;
+  border-top: solid 1px $grey;
+
 }
 
 .promo__tagline {
   @include zero;
   margin: auto;
   padding-top: 73px;
-  padding-bottom: 120px;
+  padding-bottom: 119px;
 
   @media (min-width: $min-tablet) {
     padding-top: 155px;
-    padding-bottom: 372px;
+    padding-bottom: 371px;
   }
 
   @media (min-width: $min-desktop) {
-    padding-top: 15.2%;
-    padding-bottom: 33.85%;
+    padding-top: 14.99%;
+    padding-bottom: 355px;
   }
 }

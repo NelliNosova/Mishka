@@ -237,13 +237,14 @@
 
 .product__order {
   grid-area: product__order;
+  align-self: flex-end;
   /* max-width: 292px; */
   max-width: 260px;
   margin-left: auto;
   margin-right: auto;
 
-  @media (max-width: $min-tablet) {
-    margin-right: 0;
+  @media (min-width: $min-tablet) {
+    margin-left: 0;
   }
   /* margin-left: 0;
   margin-right: 26px; */
