@@ -68,6 +68,7 @@
 }
 
 .site-list__item-link {
+  position: relative;
   color: inherit;
   text-decoration: none;
 }
@@ -92,4 +93,12 @@
   @media (min-width: $min-tablet) {
     display: none;
   }
+}
+
+.site-list__icon {
+  position: absolute;
+  left: -45px;
+  top: 3px;
+  fill: $basic-black;
+  fill-opacity: 0.2;
 }
