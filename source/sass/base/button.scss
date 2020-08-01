@@ -38,10 +38,10 @@
 
 .button--nav {
   @include size(21px, 20px);
-  background-image: url("../img/icon-menu-open.svg");
+  fill: $botton-menu;
   border: none;
 
-  @media (max-width: $min-tablet) {
+  @media (min-width: $min-tablet) {
     display: none;
   }
 }
