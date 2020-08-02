@@ -25,7 +25,8 @@
   margin: 0 auto;
 
   @media (min-width: $min-tablet) {
-    max-width: ($min-tablet - 100) / 2;
+    min-width: ($min-tablet - 100) / 2;
+    max-width: ($min-desktop - 100) / 2;
     margin: 0;
   }
 
@@ -54,7 +55,6 @@
   &--interior {
     background-color: $basic-mint;
 
-
     @media (min-width: $min-tablet) {
       padding-left: 50px;
     }
@@ -62,6 +62,10 @@
 
   &--toys {
     background-color: $dark-mint;
+
+    @media (min-width: $min-tablet) {
+      padding-right: 50px;
+    }
   }
 }
 
@@ -75,10 +79,6 @@
   color: $basic-white;
   text-decoration: none;
 }
-
-/* .additional-list__icon {
-
-} */
 
 .additional-list__icon {
   fill: $darkest-mint;
