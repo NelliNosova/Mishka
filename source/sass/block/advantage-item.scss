@@ -12,6 +12,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
   @include size (55px, 50px);
   fill: $basic-mint;
 
