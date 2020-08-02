@@ -20,7 +20,6 @@
   display: flex;
   justify-content: space-between;
   @include padding;
-  /* padding-right: 25px; */
   max-width: 320px;
   margin: 0 auto;
 
@@ -37,15 +36,13 @@
 
 .additional-wraper--interior {
   @media (min-width: $min-tablet) {
-     margin-left: auto;
+    margin-left: auto;
   }
 }
 
 .additional-list__item {
-  /* display: flex;
-  justify-content: space-around; */
   padding-top: 24px;
-  padding-bottom: 12px;
+  padding-bottom: 25px;
 
   @media (min-width: $min-tablet) {
     padding-top: 26px;
