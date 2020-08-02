@@ -5,11 +5,33 @@
   }
 }
 
+.advantage-item::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: -5px;
+  @include size (55px, 50px);
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media (min-width: $min-tablet) {
+    top: -62px;
+    left: -5px;
+  }
+}
+
+.advantage-item--eco::before {
+  background-image: url("../img/icon-feature-flower.svg");
+}
 
 .advantage-item--eco {
   @media (max-width: $min-tablet) {
     order: 0;
   }
+}
+
+.advantage-item--price::before {
+  background-image: url("../img/icon-feature-money.svg");
 }
 
 .advantage-item--price {
@@ -18,10 +40,18 @@
   }
 }
 
+.advantage-item--like::before {
+  background-image: url("../img/icon-feature-heart.svg");
+}
+
 .advantage-item--like {
   @media (max-width: $min-tablet) {
     order: 2;
   }
+}
+
+.advantage-item--love::before {
+  background-image: url("../img/icon-feature-ball.svg");
 }
 
 .advantage-item--love {
@@ -30,10 +60,18 @@
   }
 }
 
+.advantage-item--rus::before {
+  background-image: url("../img/icon-feature-rocket.svg");
+}
+
 .advantage-item--rus {
   @media (max-width: $min-tablet) {
     order: 4;
   }
+}
+
+.advantage-item--gift::before {
+  background-image: url("../img/icon-feature-gift.svg");
 }
 
 .advantage-item--gift {
