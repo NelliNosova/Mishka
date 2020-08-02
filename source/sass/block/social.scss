@@ -1,0 +1,13 @@
+.social {
+  position: relative;
+}
+
+.social__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social__icon {
+  fill: $lite-black;
+}

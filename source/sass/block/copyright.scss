@@ -1,3 +1,16 @@
 .copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 152px;
+
   @include weight-font(18px, 19px);
+
+  @media (min-width: $min-tablet) {
+    min-width: 182px;
+  }
+}
+
+.copyright__icon {
+  fill: $basic-mint;
 }
