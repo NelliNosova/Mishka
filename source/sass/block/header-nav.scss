@@ -28,7 +28,9 @@
 }
 
 .header-nav--closed .header-nav__list {
-  display: none;
+  @media (max-width: $min-tablet) {
+    display: none;
+  }
 }
 
 .toggle--close {

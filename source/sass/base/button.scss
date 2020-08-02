@@ -27,15 +27,6 @@
   border: none;
 }
 
-.button--min {
-  border: none;
-  margin-left: auto;
-  margin-right: 0;
-
-  @include size(20px, 19px);
-  background-color: red;
-}
-
 .button--nav {
   @include size(21px, 20px);
   fill: $botton-menu;
