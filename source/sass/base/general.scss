@@ -11,7 +11,9 @@ $min-desktop: 1150px;
   white-space: nowrap;
 }
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -44,17 +46,6 @@ img {
   margin: 0;
   padding: 0;
 }
-
-/* @mixin advantage-icon {
-  content: "";
-  position: absolute;
-  top: 20px;
-  left: -5px;
-  @include size (55px, 50px);
-  background-color: red;
-  background-position: center;
-  background-repeat: no-repeat;
-} */
 
 .container {
   @include padding;
@@ -95,4 +86,8 @@ img {
   @media (min-width: $min-desktop) {
     @include weight-font(57px, 53px);
   }
+}
+
+.none {
+  display: none;
 }

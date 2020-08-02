@@ -1,16 +1,81 @@
 .modal-order {
-  position: relative;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($basic-white, 0.9);
+}
+
+.modal-order__wrapper {
+  position: fixed;
+  width: 100%;
+  max-width: 566px;
+  height: 336px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: $basic-white;
+  border: 1px solid $modal-border;
+  box-shadow: 0 5px 10px rgba($other-black, 0.25);
 }
 
 .modal-order__title {
+  @include zero;
+  padding-top: 29px;
+  padding-bottom: 15px;
+  max-width: 260px;
+  margin: 0 auto;
+
   @include weight-font(30px, 25px);
-  text-align: center;
   text-transform: uppercase;
+  text-align: center;
+
+  @media (min-width: $min-tablet) {
+    max-width: 355px;
+    margin: 0 auto;
+    padding-top: 38px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 12px;
+    text-align: center;
+
+    @include weight-font (57px, 30px);
+  }
 }
 
 .modal-order__hint {
   @include zero;
-  @include padding;
+  padding-bottom: 21px;
+
   @include basic-font(30px);
+  color: $darkest-grey;
   text-align: center;
+
+  @media (min-width: $min-tablet) {
+    font-size: 17px;
+    padding-left: 0;
+    padding-bottom: 20px;
+  }
+}
+
+.modal-order__form {
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.modal-order__button {
+  margin-top: 83px;
+  padding-top: 17px;
+
+  @media (min-width: $min-tablet) {
+    max-width: 350px;
+  }
+}
+
+.modal-order__br {
+  @media (min-width: $min-tablet) {
+    display: none;
+  }
 }
