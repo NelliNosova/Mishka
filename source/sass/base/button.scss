@@ -47,11 +47,13 @@
 }
 
 .button--prev-next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 50%;
   max-width: 130px;
   height: 52px;
   border: 1px solid $grey;
-  background-color: red;
 }
 
 .button--write {

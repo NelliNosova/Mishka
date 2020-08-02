@@ -2,6 +2,30 @@
   position: relative;
 }
 
+.reviews::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 15px;
+  bottom: -5px;
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-repeat: repeat-x;
+  background-size: 100%;
+
+  @media (min-width: $min-tablet) {
+    height: 25px;
+    bottom: -40px;
+    background-image: url("../img/bg-zigzag-line.svg");
+  }
+
+  @media (min-width: $min-desktop) {
+    height: 30px;
+    bottom: -39px;
+    background-size: 90%;
+    background-position-x: 5px;
+  }
+}
+
 .container--reviews {
   position: relative;
 
@@ -94,7 +118,7 @@
     padding-bottom: 50px;
   }
 
-  @media (min-width: $min-tablet) {
+  @media (min-width: $min-desktop) {
     margin-top: -130px;
     padding-bottom: 100px;
   }
