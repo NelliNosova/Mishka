@@ -1,9 +1,15 @@
 .video-process {
   position: relative;
+
 }
 
 .container--video {
+  border: 1px solid $grey;
+  padding: 0;
+  padding-top: 22px;
+
   @media (min-width: $min-tablet) {
+    padding-top: 0;
     display: flex;
     flex-direction: column;
   }
@@ -12,15 +18,34 @@
     position: relative;
     display: block;
     min-height: 455px;
-    padding-left: 810px;
+    padding-left: 757px;
+  }
+}
+
+.video-process__icon {
+  position: absolute;
+  left: 40px;
+  top: -8px;
+  fill: $basic-mint;
+
+  @media (min-width: $min-tablet) {
+    top: 33px;
+  }
+
+  @media (min-width: $min-desktop) {
+    left: 0;
+    top: 41px;
   }
 }
 
 .video-process__title {
+  position: relative;
+
   @include zero;
   padding-left: 91px;
   padding-bottom: 27px;
   padding-right: 10px;
+  min-height: 48px;
 
   @include weight-font;
 
@@ -44,14 +69,14 @@
   @media (min-width: $min-desktop) {
     position: absolute;
     top: 0;
-    left: 50px;
+    left: 0;
   }
 }
 
 .video-process__description {
   @include zero;
   padding-top: 32px;
-  padding-bottom: 40px;
+  padding-bottom: 41px;
   padding-left: 35px;
   padding-right: 10px;
 
@@ -73,6 +98,7 @@
 
 .video-process__order {
   max-width: 192px;
+  margin-bottom: 31px;
 
   @media (min-width: $min-tablet) {
     max-width: 584px;

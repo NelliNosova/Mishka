@@ -50,16 +50,18 @@
 }
 
 .page-main__video {
-  padding-top: 53px;
-  padding-bottom: 91px;
+  @include padding;
+  margin-top: 30px;
+  padding-bottom: 59px;
 
   @media (min-width: $min-tablet) {
+    @include padding(50px, 50px);
     padding-top: 29px;
     padding-bottom: 109px;
   }
 
   @media (min-width: $min-desktop) {
-    padding-top: 59px;
+    padding-top: 27px;
     padding-bottom: 105px;
   }
 }

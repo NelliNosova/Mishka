@@ -1,9 +1,29 @@
 .video {
+  position: relative;
+
   @media (min-width: $min-tablet) {
     order: -1;
+    min-width: 668px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $min-desktop) {
+    position: absolute;
+    min-width: 682px;
   }
 }
 
-.video__button {
+.video__button-wrap {
   position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  width: 100%;
+  height: 100%;
+}
+
+.video__button {
+  border: none;
+  background-color: transparent;
 }
