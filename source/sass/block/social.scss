@@ -8,6 +8,15 @@
   align-items: center;
 }
 
+.social__item:hover .social__icon,
+.social__item:focus .social__icon {
+  fill: $hover-dark-mint;
+}
+
+.social__item:active .social__icon {
+  fill-opacity: 0.3;
+}
+
 .social__icon {
   fill: $lite-black;
 }

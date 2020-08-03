@@ -24,7 +24,7 @@
 }
 
 .button:active {
-  color: rgba($basic-white, 0.3);
+  color: rgba($basic-white, 0.6);
 }
 
 .button--padding {
@@ -35,6 +35,16 @@
   color: $basic-white;
   background-color: $basic-mint;
   border: none;
+}
+
+.button--accent:hover,
+.button--accent:focus {
+  background: none;
+  background-color: $hover-dark-mint;
+}
+
+.button--accent:active {
+  opacity: 0.3;
 }
 
 .button--nav {

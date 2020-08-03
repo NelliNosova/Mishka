@@ -18,9 +18,20 @@
   padding-top: 17px;
 
   @include weight-font (16px, 17px);
-  border: 2px solid rgba($darkest-grey, 0.4);
+  border: 2px solid rgba($darkest-grey, 0.1);
   text-align: center;
   cursor: pointer;
+}
+
+.size__input:hover + .size__label::before,
+.size__input:focus + .size__label::before {
+  border: 2px solid rgba($darkest-grey, 0.3);
+}
+
+.size__input:active + .size__label::before,
+.size__input:checked + .size__label::before {
+  outline: none;
+  border: 2px solid $border-mint;
 }
 
 .size__label--s::before {

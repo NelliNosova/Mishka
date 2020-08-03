@@ -26,4 +26,23 @@
 .video__button {
   border: none;
   background-color: transparent;
+  height: 10%;
+  margin-top: auto;
+  margin-bottom: auto;
+  cursor: pointer;
+}
+
+.video__button:focus {
+  outline: none;
+}
+
+.video__button:hover .video__button-play,
+.video__button:focus .video__button-play {
+  transform: scale(1.2);
+  transition: 0.3s;
+}
+
+.video__button:active .video__button-play {
+  transform: scale(0.8);
+  transition: 0.3s;
 }

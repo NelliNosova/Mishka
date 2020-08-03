@@ -15,6 +15,16 @@
   }
 }
 
+.input-text:hover,
+.input-text:focus {
+  box-shadow: inset 0 -2px 0 $border-mint;
+}
+
+.input-text:active {
+  outline: none;
+  color: $darkest-grey;
+}
+
 .input-text--phone {
   padding-bottom: 20px;
   padding-right: 30px;
@@ -32,6 +42,12 @@
   @media (min-width: $min-desktop) {
     margin-left: 10px;
   }
+}
+
+.input-text:hover + .form__icon,
+.input-text:focus + .form__icon {
+  fill: $border-mint;
+  fill-opacity: 1;
 }
 
 .input-text--email {
@@ -68,4 +84,10 @@
   @media (min-width: $min-desktop) {
     margin-left: 10px;
   }
+}
+
+.input-text--wishes:hover,
+.input-text--wishes:focus {
+  border-color: $border-mint;
+  box-shadow: none;
 }

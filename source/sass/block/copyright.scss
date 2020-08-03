@@ -14,3 +14,12 @@
 .copyright__icon {
   fill: $basic-mint;
 }
+
+.copyright__link:hover .copyright__icon,
+.copyright__link:focus .copyright__icon {
+  fill: $hover-dark-mint;
+}
+
+.copyright__link:active .copyright__icon {
+  fill-opacity: 0.3;
+}
