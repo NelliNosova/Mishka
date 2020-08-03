@@ -16,14 +16,17 @@
 }
 
 .input-text--phone {
-  padding-bottom: 15px;
+  padding-bottom: 20px;
+  padding-right: 30px;
   margin-bottom: 35px;
-  font-size: 19px;
+  font-size: 17px;
 
   @media (min-width: $min-tablet) {
     flex-grow: 2;
     padding-top: 6px;
     padding-left: 18px;
+    padding-bottom: 15px;
+    font-size: 19px;
   }
 
   @media (min-width: $min-desktop) {
@@ -32,7 +35,9 @@
 }
 
 .input-text--email {
+  padding-bottom: 17px;
   padding-top: 20px;
+  padding-right: 30px;
   margin-bottom: 35px;
 
   @media (min-width: $min-tablet) {
@@ -48,7 +53,7 @@
 }
 
 .input-text--wishes {
-  margin-top: 22px;
+  margin-top: 20px;
   min-height: 142px;
   margin-bottom: 17px;
   padding-left: 16px;
@@ -57,6 +62,7 @@
 
   @media (min-width: $min-tablet) {
     flex-grow: 2;
+    margin-top: 22px;
   }
 
   @media (min-width: $min-desktop) {

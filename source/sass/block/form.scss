@@ -54,6 +54,18 @@
   }
 }
 
+.form__icon {
+  position: absolute;
+  top: 13px;
+  right: 5px;
+  fill-opacity: 0.2;
+
+  @media (min-width: $min-tablet) {
+    top: 5px;
+    right: 20px;
+  }
+}
+
 .form__email {
   @media (min-width: $min-tablet) {
     padding-top: 8px;
@@ -79,6 +91,7 @@
   padding-bottom: 30px;
 
   @include basic-font(16px, 14px);
+  padding-right: 30px;
   color: $darkest-grey;
   box-shadow: none;
 
