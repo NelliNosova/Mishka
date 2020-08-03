@@ -64,6 +64,10 @@
     top: 5px;
     right: 20px;
   }
+
+  @media (min-width: $min-desktop) {
+    right: 10px;
+  }
 }
 
 .form__email {
@@ -111,9 +115,9 @@
   }
 
   @media (min-width: $min-desktop) {
-    width: 700px;
+    width: 732px;
     margin: 0 auto;
-    padding-top: 31px;
+    padding-top: 32px;
   }
 }
 

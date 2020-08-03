@@ -104,6 +104,10 @@
 
     @include size (53px, 52px);
   }
+
+  @media (min-width: $min-desktop) {
+    left: 10px;
+  }
 }
 
 .form-fieldset__input:checked + .form-fieldset__label--radio::before {
@@ -153,6 +157,10 @@
 
     @include size (55px, 52px);
   }
+
+  @media (min-width: $min-desktop) {
+    left: 10px;
+  }
 }
 
 .form-fieldset__label--color:nth-child(4n+2) {
@@ -182,6 +190,10 @@
     left: 20px;
 
     @include size (17px, 30px);
+  }
+
+  @media (min-width: $min-desktop) {
+    left: 30px;
   }
 }
 
