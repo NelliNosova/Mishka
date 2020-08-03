@@ -11,7 +11,6 @@
 
   @media (min-width: $min-desktop) {
     flex-direction: row;
-    /* margin-top: -70px; */
   }
 }
 
@@ -23,6 +22,15 @@
   @media (min-width: $min-desktop) {
     font-size: 17px;
   }
+}
+
+.site-list__item-link:hover,
+.site-list__item-link:focus {
+  color: rgba($basic-black, 0.6);
+}
+
+.site-list__item-link:active {
+  opacity: rgba($basic-black, 0.3);
 }
 
 .site-list--other {
@@ -143,6 +151,16 @@
   @media (min-width: $min-desktop) {
     left: -54px;
   }
+}
+
+.site-list__icon:hover,
+.site-list__icon:focus {
+  fill-opacity: 1;
+  fill: $basic-mint;
+}
+
+.site-list__icon:active {
+  fill-opacity: 0.3;
 }
 
 .site-list__icon--search {

@@ -17,6 +17,16 @@
   border: 2px solid $darkest-grey;
 }
 
+.button:hover,
+.button:focus {
+  background: linear-gradient(0deg, $darkest-grey, $darkest-grey);
+  color: $basic-white;
+}
+
+.button:active {
+  color: rgba($basic-white, 0.3);
+}
+
 .button--padding {
   padding: 14px 5px;
 }
@@ -45,6 +55,20 @@
   max-width: 130px;
   height: 52px;
   border: 1px solid $grey;
+}
+
+.button--prev-next:hover,
+.button--prev-next:focus {
+  background: none;
+}
+
+.button--prev-next:hover .button__arrow,
+.button--prev-next:focus .button__arrow {
+  fill-opacity: 0.6;
+}
+
+.button--prev-next:active .button__arrow {
+  fill-opacity: 0.3;
 }
 
 .button--write {

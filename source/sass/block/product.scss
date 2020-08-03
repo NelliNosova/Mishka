@@ -85,6 +85,20 @@
   }
 }
 
+.product__link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.product__link:hover,
+.product__link:focus {
+  opacity: 0.6;
+}
+
+.product__link:active {
+  opacity: 0.3;
+}
+
 .product__sticker {
   grid-area: product__sticker;
 
@@ -286,6 +300,16 @@
   }
 }
 
+.product__order--min:hover .product__icon,
+.product__order--min:focus .product__icon {
+  fill: $basic-mint;
+  fill-opacity: 1;
+}
+
+.product__order--min:active .product__icon {
+  fill-opacity: 0.3;
+}
+
 .product__wrapper {
   padding-bottom: 24px;
   border: 1px solid $grey;
@@ -296,6 +320,15 @@
     min-height: 200px;
     padding-bottom: 0;
   }
+}
+
+.product__wrapper:hover,
+.product__wrapper:focus {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product__wrapper:active {
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 
 .product__icon {
