@@ -1,0 +1,48 @@
+.form-title {
+  position: relative;
+
+  padding-right: 15px;
+  min-width: 60px;
+
+  @include weight-font (16px, 17px);
+  color: $basic-mint;
+  background-color: inherit;
+  text-transform: uppercase;
+
+  @media (min-width: $min-tablet) {
+    width: 165px;
+  }
+}
+
+.form-title--phone {
+  padding-right: 25px;
+}
+
+.form-title--email {
+  padding-right: 20px;
+}
+
+.form-title::after {
+  @media (max-width: $min-tablet) {
+    content: "";
+    position: absolute;
+    z-index: -10;
+    top: 7px;
+    left: 0;
+    width: 77vw;
+    height: 1px;
+    background-color: $border-mint;
+  }
+}
+
+.form-title--phone::after {
+  @media (max-width: $min-tablet) {
+    top: 20px;
+  }
+}
+
+.form-title--email::after {
+  @media (max-width: $min-tablet) {
+    top: 10px;
+  }
+}

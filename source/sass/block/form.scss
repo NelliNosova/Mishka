@@ -54,6 +54,22 @@
   }
 }
 
+.form__icon {
+  position: absolute;
+  top: 13px;
+  right: 5px;
+  fill-opacity: 0.2;
+
+  @media (min-width: $min-tablet) {
+    top: 5px;
+    right: 20px;
+  }
+
+  @media (min-width: $min-desktop) {
+    right: 10px;
+  }
+}
+
 .form__email {
   @media (min-width: $min-tablet) {
     padding-top: 8px;
@@ -79,6 +95,7 @@
   padding-bottom: 30px;
 
   @include basic-font(16px, 14px);
+  padding-right: 30px;
   color: $darkest-grey;
   box-shadow: none;
 
@@ -98,9 +115,9 @@
   }
 
   @media (min-width: $min-desktop) {
-    width: 700px;
+    width: 732px;
     margin: 0 auto;
-    padding-top: 31px;
+    padding-top: 32px;
   }
 }
 

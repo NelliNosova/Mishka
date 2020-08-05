@@ -11,9 +11,12 @@
 }
 
 .form-fieldset__flex {
+  position: relative;
+
   @media (min-width: $min-tablet) {
     display: flex;
     flex-wrap: wrap;
+    padding-right: 20px;
   }
 }
 
@@ -24,6 +27,7 @@
 }
 
 .form-fieldset__wrapper {
+  position: relative;
   display: flex;
   flex-direction: column;
 
@@ -65,8 +69,9 @@
 }
 
 .form-fieldset__label {
+  position: relative;
   padding-bottom: 24px;
-  padding-left: 64px;
+  padding-left: 60px;
 
   @media (min-width: $min-tablet) {
     padding-bottom: 58px;
@@ -84,9 +89,48 @@
   }
 }
 
+.form-fieldset__label--radio::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 1px;
+
+  @include size (37px, 38px);
+  border: 2px solid $darkest-grey;
+  border-radius: 50%;
+
+  @media (min-width: $min-tablet) {
+    top: -18px;
+
+    @include size (53px, 52px);
+  }
+
+  @media (min-width: $min-desktop) {
+    left: 10px;
+  }
+}
+
+.form-fieldset__input:checked + .form-fieldset__label--radio::before {
+  background-color: $border-mint;
+  box-shadow: inset 0 0 0 9px $basic-white;
+
+  @media (min-width: $min-tablet) {
+    box-shadow: inset 0 0 0 14px $basic-white;
+  }
+}
+
+.form-fieldset__input:hover + .form-fieldset__label::before,
+.form-fieldset__input:focus + .form-fieldset__label::before {
+  border-color: $border-mint;
+}
+
+.form-fieldset__input:active + .form-fieldset__label::before {
+  border-color: $input-grey;
+}
+
 .form-fieldset__label--color {
   padding-bottom: 43px;
-  padding-left: 65px;
+  padding-left: 61px;
 
   @media (min-width: $min-tablet) {
     width: 180px;
@@ -99,6 +143,26 @@
   }
 }
 
+.form-fieldset__label--color::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0;
+
+  @include size (38px, 39px);
+  border: 2px solid $darkest-grey;
+
+  @media (min-width: $min-tablet) {
+    top: -16px;
+
+    @include size (55px, 52px);
+  }
+
+  @media (min-width: $min-desktop) {
+    left: 10px;
+  }
+}
+
 .form-fieldset__label--color:nth-child(4n+2) {
   @media (min-width: $min-tablet) {
     margin-right: 82px;
@@ -106,6 +170,30 @@
 
   @media (min-width: $min-desktop) {
     margin-right: 0;
+  }
+}
+
+.form-fieldset__input:checked + .form-fieldset__label--color::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: 15px;
+
+  @include size (10px, 20px);
+  transform: rotate(45deg);
+
+  border-right: solid 2px $basic-black;
+  border-bottom: solid 2px $basic-black;
+
+  @media (min-width: $min-tablet) {
+    top: -10px;
+    left: 20px;
+
+    @include size (17px, 30px);
+  }
+
+  @media (min-width: $min-desktop) {
+    left: 30px;
   }
 }
 
@@ -120,15 +208,5 @@
 
   @media (min-width: $min-tablet) {
     font-size: 19px;
-  }
-}
-
-.form-title {
-  @include weight-font (16px, 17px);
-  color: $basic-mint;
-  text-transform: uppercase;
-
-  @media (min-width: $min-tablet) {
-    width: 165px;
   }
 }

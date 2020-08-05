@@ -11,7 +11,9 @@ $min-desktop: 1150px;
   white-space: nowrap;
 }
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -84,4 +86,8 @@ img {
   @media (min-width: $min-desktop) {
     @include weight-font(57px, 53px);
   }
+}
+
+.none {
+  display: none;
 }

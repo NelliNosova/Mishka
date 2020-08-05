@@ -1,0 +1,53 @@
+.size {
+  position: relative;
+}
+
+.size__input {
+  position: absolute;
+  appearance: none;
+}
+
+.size__label::before {
+  content: "";
+  position: absolute;
+  z-index: 11;
+  top: -83px;
+  width: 32%;
+  max-width: 112px;
+  height: 52px;
+  padding-top: 17px;
+
+  @include weight-font (16px, 17px);
+  border: 2px solid rgba($darkest-grey, 0.1);
+  text-align: center;
+  cursor: pointer;
+}
+
+.size__input:hover + .size__label::before,
+.size__input:focus + .size__label::before {
+  border: 2px solid rgba($darkest-grey, 0.3);
+}
+
+.size__input:active + .size__label::before,
+.size__input:checked + .size__label::before {
+  outline: none;
+  border: 2px solid $border-mint;
+}
+
+.size__label--s::before {
+  content: "S";
+}
+
+.size__label--m::before {
+  content: "M";
+  left: 34%;
+}
+
+.size__label--l::before {
+  content: "L";
+  left: 69%;
+
+  @media (min-width: $min-tablet) {
+    left: 68%;
+  }
+}

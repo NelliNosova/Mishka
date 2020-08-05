@@ -5,6 +5,22 @@
   }
 }
 
+.advantage-item__icon-wrapper {
+  position: absolute;
+  top: 20px;
+  left: -5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include size (55px, 50px);
+  fill: $basic-mint;
+
+  @media (min-width: $min-tablet) {
+    top: -62px;
+    left: -5px;
+  }
+}
 
 .advantage-item--eco {
   @media (max-width: $min-tablet) {
@@ -34,6 +50,10 @@
   @media (max-width: $min-tablet) {
     order: 4;
   }
+}
+
+.advantage-item--gift::before {
+  background-image: url("../img/icon-feature-gift.svg");
 }
 
 .advantage-item--gift {

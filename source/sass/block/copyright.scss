@@ -1,3 +1,25 @@
 .copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 152px;
+
   @include weight-font(18px, 19px);
+
+  @media (min-width: $min-tablet) {
+    min-width: 182px;
+  }
+}
+
+.copyright__icon {
+  fill: $basic-mint;
+}
+
+.copyright__link:hover .copyright__icon,
+.copyright__link:focus .copyright__icon {
+  fill: $hover-dark-mint;
+}
+
+.copyright__link:active .copyright__icon {
+  fill-opacity: 0.3;
 }

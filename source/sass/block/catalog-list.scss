@@ -1,4 +1,6 @@
 .catalog-list {
+  position: relative;
+
   @include zero;
   margin: 0 auto;
   list-style: none;
@@ -16,7 +18,7 @@
     padding-right: 50px;
     margin: 0 auto;
     max-width: 1150px;
-    padding-top: 100px;
+    padding-top: 102px;
   }
 }
 

@@ -17,33 +17,61 @@
 }
 
 .additional-wraper {
+  display: flex;
+  justify-content: space-between;
+
   @include padding;
   max-width: 320px;
   margin: 0 auto;
 
   @media (min-width: $min-tablet) {
-    max-width: ($min-tablet -100) / 2;
+    min-width: ($min-tablet - 100) / 2;
+    max-width: ($min-desktop - 100) / 2;
     margin: 0;
   }
 
   @media (min-width: $min-desktop) {
     max-width: ($min-desktop - 100) / 2;
-    padding-right: 250px;
   }
+}
+
+.additional-wraper--interior {
+  @media (min-width: $min-tablet) {
+    margin-left: auto;
+  }
+}
+
+.additional-list__item--interior:hover,
+.additional-list__item--interior:focus {
+  background-color: $active-mint;
+}
+
+.additional-list__item--toys:hover,
+.additional-list__item--toys:focus {
+  background-color: $hover-dark-mint;
+}
+
+.additional-list__link-item:hover .additional-list__icon,
+.additional-list__link-item:focus .additional-list__icon {
+  fill-opacity: 0.7;
+}
+
+.additional-list__link-item:active .additional-list__icon {
+  fill-opacity: 0.3;
 }
 
 .additional-list__item {
   padding-top: 24px;
-  padding-bottom: 31px;
+  padding-bottom: 12px;
 
   @media (min-width: $min-tablet) {
     padding-top: 26px;
+    padding-bottom: 25px;
     flex-basis: 50%;
   }
 
   &--interior {
     background-color: $basic-mint;
-
 
     @media (min-width: $min-tablet) {
       padding-left: 50px;
@@ -51,17 +79,45 @@
   }
 
   &--toys {
+    padding-bottom: 14px;
     background-color: $dark-mint;
+
+    @media (min-width: $min-tablet) {
+      padding-right: 50px;
+    }
   }
 }
 
 .additional-list__link-item {
+  text-decoration: none;
+}
+
+.additional-list__link-span {
   display: block;
-  padding-right: 90px;
+  max-width: 160px;
 
   @media (min-width: $min-tablet) {
     padding-left: 8px;
   }
   color: $basic-white;
-  text-decoration: none;
+}
+
+.additional-list__icon {
+  fill: $darkest-mint;
+  fill-opacity: 0.5;
+}
+
+.additional-list__icon-wrapper {
+  text-align: center;
+  vertical-align: middle;
+  min-width: 60px;
+
+  @media (min-width: $min-tablet) {
+    padding-top: 5px;
+    padding-left: 7px;
+  }
+
+  @media (min-width: $min-desktop) {
+    padding-left: 12px;
+  }
 }

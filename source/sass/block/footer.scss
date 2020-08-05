@@ -1,10 +1,10 @@
 .footer {
-  padding-top: 30px;
+  padding-top: 27px;
   background-color: $other-grey;
 
   @media (min-width: $min-tablet) {
-    padding-top: 50px;
-    padding-bottom: 59px;
+    padding-top: 47px;
+    padding-bottom: 10px;
   }
 }
 
@@ -16,20 +16,30 @@
 }
 
 .footer__logo {
+  min-width: 178px;
+
   @media (max-width: $min-tablet) {
     display: none;
   }
 }
 
-.page-footer__copyright {
+.footer__copyright {
   margin: 0 auto;
   padding-top: 28px;
   padding-bottom: 32px;
   padding-left: 40px;
+  padding-right: 39px;
 
   @media (min-width: $min-tablet) {
     margin: 0;
     text-align: left;
-    padding-top: 15px;
+    padding-top: 0;
+    padding-right: 0;
+  }
+
+  @media (min-width: $min-tablet) {
+    /* padding-top: 7px; */
+    padding-bottom: 32px;
+    padding-left: 0;
   }
 }

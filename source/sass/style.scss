@@ -1,3 +1,4 @@
+@import "base/normalize.scss";
 @import "base/color.scss";
 @import "base/fonts.scss";
 @import "base/general.scss";
@@ -6,6 +7,7 @@
 @import "block/page-header.scss";
 @import "block/logo.scss";
 @import "block/header-nav.scss";
+@import "block/product-week.scss";
 @import "block/site-list.scss";
 @import "block/clarification.scss";
 @import "block/page-main.scss";
@@ -20,9 +22,11 @@
 @import "block/contacts.scss";
 @import "block/contacts-table.scss";
 @import "block/footer.scss";
+@import "block/social.scss";
 @import "block/social-list.scss";
 @import "block/copyright.scss";
 @import "block/modal-order.scss";
+@import "block/size.scss";
 @import "block/page-title.scss";
 @import "block/catalog-list.scss";
 @import "block/video-process.scss";
@@ -30,5 +34,6 @@
 @import "block/promise.scss";
 @import "block/form.scss";
 @import "block/form-fieldset.scss";
+@import "block/form-title.scss";
 @import "block/input-text.scss";
 @import "block/name.scss";
