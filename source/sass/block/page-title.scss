@@ -1,4 +1,6 @@
 .page-title {
+  position: relative;
+
   @include zero;
   @include padding;
   margin: 0 auto;
@@ -13,17 +15,41 @@
   @media (min-width: $min-tablet) {
     margin-top: -71px;
     padding-top: 102px;
-    padding-bottom: 73px;
+    padding-bottom: 80px;
 
     @include weight-font (50px, 43px);
   }
 
   @media (min-width: $min-desktop) {
-    padding-bottom: 92px;
+    padding-bottom: 104px;
 
 
     @include weight-font (57px, 53px);
   }
 
   border-top: solid 1px $grey;
+}
+
+
+.page-title::after {
+  @media (min-width: $min-tablet) {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 25px;
+    bottom: -7px;
+    left: 0;
+    background-size: 98%;
+
+
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: repeat-x;
+  }
+
+  @media (min-width: $min-desktop) {
+    height: 25px;
+    bottom: 0;
+    left: 0;
+    background-size: 100%;
+  }
 }

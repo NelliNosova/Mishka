@@ -10,7 +10,7 @@
     height: 20px;
     top: -20px;
     background-image: url("../img/bg-zigzag-fill.svg");
-    background-size: 100%;
+    background-repeat: repeat-x;
   }
 
   @media (min-width: $min-desktop) {
