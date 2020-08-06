@@ -171,6 +171,14 @@
   }
 }
 
+.product__img-area {
+  grid-area: product__img;
+
+  @media (min-width: $min-desktop) {
+    z-index: -1; 
+  }
+}
+
 .product__img {
   grid-area: product__img;
   display: block;
@@ -189,6 +197,16 @@
 .product__img--min {
   @media (min-width: $min-tablet) {
     margin-top: 0;
+  }
+}
+
+.product__img--max {
+  @media (min-width: $min-tablet) {
+    width: 333px;
+  }
+
+  @media (min-width: $min-desktop) {
+    width: 525px;
   }
 }
 
