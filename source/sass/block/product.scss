@@ -32,7 +32,7 @@
 
   @media (min-width: $min-tablet) {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 335px auto;
     grid-template-areas:
       "product__img product__title"
       "product__img product__details"
@@ -73,7 +73,7 @@
 
   @media (min-width: $min-tablet) {
     padding-top: 28px;
-    padding-bottom: 0;
+    padding-bottom: 4px;
     padding-left: 33px;
     padding-right: 20px;
     font-size: 20px;
@@ -160,12 +160,11 @@
   padding-bottom: 40px;
 
   @media (min-width: $min-tablet) {
-    padding-bottom: 180px;
     padding-left: 33px;
+    margin-bottom: auto;
   }
 
   @media (min-width: $min-desktop) {
-    padding-top: 5px;
     padding-left: 27px;
     padding-bottom: 10px;
   }
@@ -175,7 +174,7 @@
   grid-area: product__img;
 
   @media (min-width: $min-desktop) {
-    z-index: -1; 
+    z-index: -1;
   }
 }
 
@@ -197,6 +196,11 @@
 .product__img--min {
   @media (min-width: $min-tablet) {
     margin-top: 0;
+    width: 335px;
+  }
+
+  @media (min-width: $min-desktop) {
+    width: 316px;
   }
 }
 
@@ -221,7 +225,8 @@
 
   @media (min-width: $min-tablet) {
     margin-top: auto;
-    padding-bottom: 25px;
+    padding-left: 0;
+    padding-right: 30px;
   }
 
   @media (min-width: $min-desktop) {
@@ -332,9 +337,13 @@
   padding-bottom: 24px;
   border: 1px solid $grey;
 
-  @media (min-width: $min-desktop) {
+  @media (min-width: $min-tablet) {
     display: flex;
     flex-direction: column;
+    min-height: 335px;
+  }
+
+  @media (min-width: $min-desktop) {
     min-height: 200px;
     padding-bottom: 0;
   }

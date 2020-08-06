@@ -102,6 +102,7 @@
 .site-list__item--order {
   @media (min-width: $min-tablet) {
     padding-top: 33px;
+    padding-right: 0;
   }
 
   @media (min-width: $min-desktop) {
