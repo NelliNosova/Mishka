@@ -1,9 +1,25 @@
 .logo {
   display: block;
+
+  @media (min-width: $min-tablet) {
+    width: 113px;
+  }
+
+  @media (min-width: $min-desktop) {
+    width: 149px;
+  }
 }
 
 .logo--center {
   margin: 22px auto;
+
+  @media (min-width: $min-tablet) {
+    margin-top: 17px;
+  }
+
+  @media (min-width: $min-desktop) {
+    margin-top: 4px;
+  }
 }
 
 .logo--footer {

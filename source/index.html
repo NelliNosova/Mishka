@@ -68,7 +68,11 @@
           </p>
         </nav>
         <a class="page-header__logo">
-          <img class="logo logo--center" src="img/logo-mobile.svg" alt="Логотип Мишка">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="logo logo--center" src="img/logo-mobile.svg" width="86" alt="Логотип Мишка">
+          </picture>
         </a>
       </div>
     </header>
