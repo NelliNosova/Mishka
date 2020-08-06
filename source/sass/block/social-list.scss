@@ -5,7 +5,7 @@
 
   @include zero;
   width: 143px;
-  margin-left: 21%;
+  margin: 0 auto;
   list-style: none;
 
   @media (min-width: $min-tablet) {

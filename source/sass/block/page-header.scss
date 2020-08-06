@@ -4,7 +4,7 @@
 
 
 .page-header__header-nav {
-  @media (max-width: $min-tablet) {
+  @media (max-width: $min-tablet - 1px) {
     width: 260px;
     margin: 0 auto;
   }
@@ -39,7 +39,7 @@
 .container--header {
   position: relative;
 
-  @media (max-width: $min-tablet) {
+  @media (max-width: $min-tablet - 1px) {
     display: flex;
     flex-direction: column-reverse;
   }

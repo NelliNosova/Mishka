@@ -58,7 +58,7 @@
 .contacts__map {
   display: block;
   margin: 0 auto;
-  padding-top: 3px;
+  padding-top: 5px;
   padding-bottom: 39px;
 
   @media (min-width: $min-tablet) {
@@ -86,10 +86,14 @@
 }
 
 .contacts__mail {
-  padding-bottom: 5px;
+  padding-bottom: 2px;
   color: inherit;
   text-decoration: none;
   border-bottom: solid 1px $border-mint;
+
+  @media (min-width: $min-tablet) {
+    padding-bottom: 5px;
+  }
 }
 
 .contacts__mail:hover,
