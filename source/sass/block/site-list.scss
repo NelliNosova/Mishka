@@ -122,11 +122,10 @@
 }
 
 .site-list__item--hide {
-  @media (max-width: $min-desktop) {
     display: none;
-  }
-
+    
   @media (min-width: $min-desktop) {
+    display: block;
     font-size: 15px;
   }
 }
