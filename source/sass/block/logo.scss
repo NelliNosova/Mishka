@@ -4,8 +4,22 @@
 
 .logo--center {
   margin: 22px auto;
+
+  @media (min-width: $min-tablet) {
+    width: 113px;
+    margin-top: 17px;
+  }
+
+  @media (min-width: $min-desktop) {
+    width: 149px;
+    margin-top: 4px;
+  }
 }
 
 .logo--footer {
-  padding-right: 20px;
+  padding-right: 45px;
+
+  @media (min-width: $min-tablet) {
+    width: 150px;
+  }
 }

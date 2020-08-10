@@ -17,10 +17,21 @@
 
 .footer__logo {
   min-width: 178px;
+  padding-top: 4px;
 
-  @media (max-width: $min-tablet) {
+  @media (max-width: $min-tablet - 1px) {
     display: none;
   }
+}
+
+.footer__logo:hover .logo--footer,
+.footer__logo:focus .logo--footer {
+  fill: $hover-dark-mint;
+  outline: none;
+}
+
+.footer__logo:active .logo--footer {
+  fill-opacity: 0.3;
 }
 
 .footer__copyright {

@@ -9,7 +9,7 @@
   text-align: right;
   color: $darkest-grey;
 
-  @media (max-width: $min-tablet) {
+  @media (max-width: $min-tablet - 1) {
     display: none;
   }
 

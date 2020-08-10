@@ -56,11 +56,12 @@
 
   @media (min-width: $min-tablet) {
     @include padding(50px, 50px);
-    padding-top: 29px;
+    margin-top: 28px;
     padding-bottom: 109px;
   }
 
   @media (min-width: $min-desktop) {
+    margin-top: 30px;
     padding-top: 27px;
     padding-bottom: 105px;
   }

@@ -13,6 +13,16 @@
   }
 }
 
+.video__img {
+  @media (min-width: $min-tablet) {
+    width: 668px;
+  }
+
+  @media (min-width: $min-desktop) {
+    width: 682px;
+  }
+}
+
 .video__button-wrap {
   position: absolute;
   top: 0;
@@ -26,7 +36,7 @@
 .video__button {
   border: none;
   background-color: transparent;
-  height: 10%;
+  height: 101px;
   margin-top: auto;
   margin-bottom: auto;
   cursor: pointer;

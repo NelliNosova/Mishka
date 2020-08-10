@@ -4,7 +4,7 @@
 
 
 .page-header__header-nav {
-  @media (max-width: $min-tablet) {
+  @media (max-width: $min-tablet - 1px) {
     width: 260px;
     margin: 0 auto;
   }
@@ -17,25 +17,29 @@
 .page-header__logo {
   z-index: 10;
 
-
   @media (min-width: $min-tablet) {
     position: absolute;
     top: 5px;
   }
 
   @media (min-width: $min-desktop) {
-    left: 46%;
-    /* position: relative; */
-    /* display: block;
-    margin: 0 auto;
-    margin-top: -148px; */
+    left: 43.5%;
   }
+}
+
+.page-header__logo:hover,
+.page-header__logo:focus {
+  opacity: 0.6;
+}
+
+.page-header__logo:active {
+  opacity: 0.3;
 }
 
 .container--header {
   position: relative;
 
-  @media (max-width: $min-tablet) {
+  @media (max-width: $min-tablet - 1px) {
     display: flex;
     flex-direction: column-reverse;
   }
