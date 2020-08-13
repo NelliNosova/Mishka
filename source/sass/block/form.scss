@@ -95,13 +95,14 @@
   padding-bottom: 30px;
 
   @include basic-font(16px, 14px);
-  padding-right: 30px;
+
   color: $darkest-grey;
   box-shadow: none;
 
   @media (min-width: $min-tablet) {
     @include basic-font(30px, 17px);
     padding-top: 11px;
+    padding-right: 30px;
   }
 }
 

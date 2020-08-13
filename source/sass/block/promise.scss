@@ -4,10 +4,14 @@
   padding-bottom: 30px;
 
   @media (min-width: $min-tablet) {
-    padding-top: 69px;
-    padding-bottom: 79px;
+    padding-top: 60px;
+    padding-bottom: 82px;
 
     @include basic-font(30px, 17px);
+  }
+
+  @media (min-width: $min-desktop) {
+    padding-bottom: 80px;
   }
 }
 
@@ -15,6 +19,6 @@
   @media (min-width: $min-desktop) {
     padding-left: 225px;
     padding-right: 225px;
-    padding-top: 120px;
+    padding-top: 108px;
   }
 }
