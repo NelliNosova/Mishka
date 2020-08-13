@@ -7,18 +7,18 @@
     content: "";
     position: absolute;
     width: 100%;
-    height: 20px;
+    height: 25px;
     top: -20px;
     background-image: url("../img/bg-zigzag-fill.svg");
     background-repeat: repeat-x;
-    background-size: 100%;
+    background-size: auto 91%;
   }
 
   @media (min-width: $min-desktop) {
-    height: 25px;
-    top: -25px;
-    background-size: 107%;
-    background-position-x: 20px;
+    height: 30px;
+    top: -26px;
+    background-size: 109%;
+    background-position-x: 10px;
   }
 }
 
@@ -39,8 +39,7 @@
 
   @media (min-width: $min-desktop) {
     height: 35px;
-    bottom: -62px;
-    background-size: 90%;
-    background-position-x: 5px;
+    bottom: -71px;
+    background-size: 91%;
   }
 }

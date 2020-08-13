@@ -66,7 +66,7 @@
 
   @media (min-width: $min-tablet) {
     padding-top: 26px;
-    padding-bottom: 24px;
+    padding-bottom: 26px;
     flex-basis: 50%;
   }
 
@@ -90,6 +90,19 @@
 
 .additional-list__link-item {
   text-decoration: none;
+}
+
+.additional-list__item:hover {
+  margin-top: -5px;
+  padding-bottom: 17px;
+
+  @media (min-width: $min-tablet) {
+    padding-bottom: 31px;
+  }
+}
+
+.additional-list__item--toys:hover {
+  padding-bottom: 19px;
 }
 
 .additional-list__link-span {
