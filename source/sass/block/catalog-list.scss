@@ -1,5 +1,7 @@
 .catalog-list {
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
 
   @include zero;
   margin: 0 auto;
@@ -23,8 +25,12 @@
 }
 
 .catalog-list__item {
+  @media (max-width: $min-tablet - 1px) {
+    width: 320px;
+  }
+
   @media (min-width: $min-desktop) {
-    flex-basis: 314px;
+    flex-basis: 316px;
     padding: 0;
   }
 }
