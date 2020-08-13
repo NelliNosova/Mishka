@@ -4,15 +4,21 @@
 
 .logo--center {
   margin: 22px auto;
+  width: 85.589px;
+  height: 35.034px;
 
   @media (min-width: $min-tablet) {
-    width: 113px;
+    width: 112.389px;
+    height: 46.087px;
     margin-top: 17px;
+    enable-background: new 19.137 15.003 112.389 46.087;
   }
 
   @media (min-width: $min-desktop) {
-    width: 149px;
+    width: 148.051px;
+    height: 72.707px;
     margin-top: 4px;
+    enable-background: new 0 0 148.051 72.707;
   }
 }
 
@@ -21,5 +27,33 @@
 
   @media (min-width: $min-tablet) {
     width: 150px;
+  }
+}
+
+.logo__line {
+  @media (min-width: $min-tablet) {
+    display: none;
+  }
+}
+
+.logo__letters {
+  @media (min-width: $min-tablet) {
+    fill: $basic-white;
+  }
+}
+
+.logo__tablet {
+  display: none;
+
+  @media (min-width: $min-tablet) and (max-width: $min-desktop - 1px) {
+    display: inline-block;
+  }
+}
+
+.logo__desktop {
+  display: none;
+
+  @media (min-width: $min-desktop) {
+    display: inline-block;
   }
 }
