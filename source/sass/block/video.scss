@@ -14,6 +14,8 @@
 }
 
 .video__img {
+  width: 100%;
+
   @media (min-width: $min-tablet) {
     width: 668px;
   }

@@ -1,16 +1,16 @@
 .form-title {
   position: relative;
-
   padding-right: 15px;
   min-width: 60px;
 
   @include weight-font (16px, 17px);
   color: $basic-mint;
-  background-color: inherit;
+  background-color: $basic-white;
   text-transform: uppercase;
 
   @media (min-width: $min-tablet) {
     width: 165px;
+    background-color: inherit;
   }
 }
 
@@ -23,7 +23,7 @@
 }
 
 .form-title::after {
-  @media (max-width: $min-tablet) {
+  @media (max-width: $min-tablet - 1px) {
     content: "";
     position: absolute;
     z-index: -10;

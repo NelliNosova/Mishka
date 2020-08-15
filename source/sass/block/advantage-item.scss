@@ -16,38 +16,38 @@
   @include size (55px, 50px);
   fill: $basic-mint;
 
-  @media (min-width: $min-tablet) {
+  @media (min-width: $min-tablet - 1px) {
     top: -62px;
     left: -5px;
   }
 }
 
 .advantage-item--eco {
-  @media (max-width: $min-tablet) {
+  @media (max-width: $min-tablet - 1px) {
     order: 0;
   }
 }
 
 .advantage-item--price {
-  @media (max-width: $min-tablet) {
+  @media (max-width: $min-tablet - 1px) {
     order: 1;
   }
 }
 
 .advantage-item--like {
-  @media (max-width: $min-tablet) {
+  @media (max-width: $min-tablet - 1px) {
     order: 2;
   }
 }
 
 .advantage-item--love {
-  @media (max-width: $min-tablet) {
+  @media (max-width: $min-tablet - 1px) {
     order: 3;
   }
 }
 
 .advantage-item--rus {
-  @media (max-width: $min-tablet) {
+  @media (max-width: $min-tablet - 1px) {
     order: 4;
   }
 }

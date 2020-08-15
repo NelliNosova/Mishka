@@ -13,6 +13,10 @@
     @include weight-font(22px, 20px);
     margin-bottom: -110px;
   }
+
+  @media (min-width: $min-desktop) {
+    padding-top: 96px;
+  }
 }
 
 .advantage-list__item {

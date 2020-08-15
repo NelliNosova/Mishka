@@ -17,7 +17,7 @@
     position: relative;
     display: block;
     min-height: 455px;
-    padding-left: 757px;
+    padding-left: 761px;
   }
 }
 
@@ -32,12 +32,13 @@
 
 .video-process__icon {
   position: absolute;
-  left: 40px;
-  top: -8px;
+  left: 33px;
+  top: 8px;
   fill: $basic-mint;
 
   @media (min-width: $min-tablet) {
-    top: 33px;
+    top: 31px;
+    left: 41px;
   }
 
   @media (min-width: $min-desktop) {
@@ -94,6 +95,7 @@
   @media (min-width: $min-tablet) {
     padding-top: 0;
     padding-left: 40px;
+    padding-bottom: 40px;
 
     @include basic-font(30px, 15px);
   }
@@ -110,6 +112,7 @@
 
   @media (min-width: $min-tablet) {
     max-width: 584px;
+    margin-bottom: 45px;
   }
 
   @media (min-width: $min-desktop) {
