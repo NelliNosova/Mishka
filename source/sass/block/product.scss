@@ -260,12 +260,10 @@
     padding-bottom: 31px;
 
     @include weight-font(24px, 20px);
-    width: 86.3%;
   }
 
   @media (min-width: $min-desktop) {
     padding-top: 33px;
-    width: 83%;
   }
 }
 
