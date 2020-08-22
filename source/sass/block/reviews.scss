@@ -11,6 +11,7 @@
   background-image: url("../img/bg-zigzag-line.svg");
   background-repeat: repeat-x;
   background-size: 100%;
+  background-color: $basic-white;
 
   @media (min-width: $min-tablet) {
     height: 25px;
@@ -19,7 +20,7 @@
   }
 
   @media (min-width: $min-desktop) {
-    height: 30px;
+    height: 35px;
     bottom: -39px;
     background-size: 90%;
     background-position-x: 5px;

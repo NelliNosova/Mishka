@@ -2,7 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link href="css/style.min.css" rel="stylesheet" />
   </head>
@@ -12,13 +12,11 @@
         <nav class="page-header__header-nav header-nav"> <!-- header-nav--closed -->
           <button class="header-nav__toggle button button--nav" type="button">
             <span class="visually-hidden">Открыть меню</span>
-            <svg class="toggle--open" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19.958px" height="14px" viewBox="0 0 19.958 14" enable-background="new 0 0 19.958 14" xml:space="preserve">
-              <rect width="19.958" height="2"/>
-              <rect y="6" width="19.958" height="2"/>
-              <rect y="12" width="19.958" height="2"/>
+            <svg class="toggle--open" width="19.958" height="14" aria-label="Открыть меню" focusable="false">
+              <use xlink:href="img/sprite.svg#icon-menu-open"></use>
             </svg>
-            <svg class="toggle--close" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20.514px" height="20.512px" viewBox="0 0 20.514 20.512" enable-background="new 0 0 20.514 20.512" xml:space="preserve">
-              <polygon points="20.513,1.414 19.099,0 10.256,8.842 1.414,0 0,1.414 8.842,10.256 0,19.098 1.414,20.512 10.256,11.67 19.099,20.512 20.513,19.098 11.671,10.256 "/>
+            <svg class="toggle--close" width="20.514" height="20.512" aria-label="Закрыть меню" focusable="false">
+              <use xlink:href="img/sprite.svg#icon-menu-close"></use>
             </svg>
           </button>
           <ul class="header-nav__list site-list site-list--lead">
@@ -88,9 +86,9 @@
       <form class="page-main__form form">
         <fieldset class="form__type type form-fieldset">
           <div class="container form-fieldset__flex">
-            <legend class="form-fieldset__legent form-title">
+            <h3 class="form-fieldset__legent form-title">
               Тип
-            </legend>
+            </h3>
             <div class="form-fieldset__wrapper">
               <input class="form-fieldset__input type__input--radio type__input--interior" type="radio" name="type-input" value="interior" id="interior" checked>
               <label class="form-fieldset__label form-fieldset__label--type form-fieldset__label--radio label-item" for="interior">
@@ -105,9 +103,9 @@
         </fieldset>
         <fieldset class="form__color  form-fieldset form-fieldset--color">
           <div class="container form-fieldset__flex">
-            <legend class="form-fieldset__legent form-fieldset__legent--color form-title">
+            <h3 class="form-fieldset__legent form-fieldset__legent--color form-title">
               Цвет
-            </legend>
+            </h3>
             <div class="form-fieldset__wrapper">
               <input class="form-fieldset__input" type="checkbox" id="white" checked>
               <label class="form-fieldset__label form-fieldset__label--color label-item" for="white">
@@ -139,61 +137,61 @@
         </fieldset>
         <fieldset class="form__name name form-fieldset">
           <div class="container form-fieldset__flex">
-            <legend class="form-fieldset__legent form-fieldset__legent--name form-title">
+            <h3 class="form-fieldset__legent form-fieldset__legent--name form-title">
               ФИО
-            </legend>
+            </h3>
             <div class="form-fieldset__wrapper">
               <div class="name__wrapper">
                 <label class="name__label label-item" for="name">
                   Имя:
                 </label>
-                <input class="name__input input-text" id="name" placeholder="Введите ваше имя*" required>
+                <input class="name__input input-text" id="name" type="text" placeholder="Введите ваше имя*" required>
               </div>
               <div class="name__wrapper">
                 <label class="name__label label-item" for="second-name">
                   Фамилия:
                 </label>
-                <input class="name__input input-text" id="second-name" placeholder="Укажите фамилию*" required>
+                <input class="name__input input-text" id="second-name" type="text"  placeholder="Укажите фамилию*" required>
               </div>
               <div class="name__wrapper">
                 <label class="name__label label-item" for="middle-name">
                   Отчество:
                 </label>
-                <input class="name__input input-text" id="middle-name" placeholder="Отчество, если желаете">
+                <input class="name__input input-text" type="text"  id="middle-name" placeholder="Отчество, если желаете">
               </div>
             </div>
           </div>
         </fieldset>
         <div class="form__contact form-fieldset--color">
           <div class="container form-fieldset__flex">
-            <label class="form__phone form-title form-title--phone">
+            <label class="form__phone form-title form-title--phone" for="phone">
               Tел
             </label>
             <div class="form-fieldset__wrapper">
-              <input class="form__phone-input input-text input-text--phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+              <input class="form__phone-input input-text input-text--phone" type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" pattern="+7 [0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}" id="phone" required>
               <svg class="form__icon" width="24.829" height="24.333">
                 <use xlink:href="img/sprite.svg#icon-phone"></use>
               </svg>
             </div>
           </div>
           <div class="container form-fieldset__flex">
-            <label class="form__email form-title form-title--email">
+            <label class="form__email form-title form-title--email" for="email">
               E-mail
             </label>
             <div class="form-fieldset__wrapper">
-              <input class="form__email-input input-text input-text--email" placeholder="Ваш Email*" required>
-              <svg class="form__icon form__icon--email"width="32" height="32">
+              <input class="form__email-input input-text input-text--email" type="email" placeholder="Ваш Email*" id="email" required>
+              <svg class="form__icon form__icon--email" width="32" height="32">
                 <use xlink:href="img/sprite.svg#icon-mail"></use>
               </svg>
             </div>
           </div>
         </div>
         <div class="container form-fieldset__flex form-fieldset__flex--add">
-          <label class="form__add form-title">
+          <label class="form__add form-title" for="fieldset">
             Доп
           </label>
           <div class="form-fieldset__wrapper">
-            <textarea class="form__add-input input-text input-text--wishes">Опишите все ваши пожелания к заказу
+            <textarea class="form__add-input input-text input-text--wishes" id="fieldset">Опишите все ваши пожелания к заказу
             </textarea>
           </div>
           <div class="reverse">
@@ -247,7 +245,7 @@
         </section>
         <div class="footer__copyright copyright">
           Разработано
-          <a class="copyright__link">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="visually-hidden">
               HTMLacademy
             </span>

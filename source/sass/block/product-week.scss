@@ -39,6 +39,7 @@
 
   @media (min-width: $min-desktop) {
     height: 35px;
+    max-width: $min-desktop;
     bottom: -71px;
     background-size: 91%;
   }
