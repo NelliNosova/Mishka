@@ -20,7 +20,8 @@
   display: flex;
   justify-content: space-between;
 
-  @include padding;
+  padding-left: 30px;
+  padding-right: 26px;
   max-width: 320px;
   margin: 0 auto;
 
@@ -32,6 +33,7 @@
 
   @media (min-width: $min-desktop) {
     max-width: ($min-desktop - 100) / 2;
+    padding-right: 33px;
   }
 }
 

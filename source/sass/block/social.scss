@@ -2,12 +2,6 @@
   position: relative;
 }
 
-.social__item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .social__item:hover .social__icon,
 .social__item:focus .social__icon {
   fill: $hover-dark-mint;

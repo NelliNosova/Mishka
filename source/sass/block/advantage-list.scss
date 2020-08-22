@@ -3,10 +3,9 @@
   @include weight-font(20px, 17px);
   list-style: none;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
 
   @media (min-width: $min-tablet) {
-    flex-direction: row;
     flex-wrap: wrap;
     padding-top: 98px;
 
