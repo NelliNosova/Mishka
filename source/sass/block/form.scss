@@ -62,11 +62,20 @@
 
   @media (min-width: $min-tablet) {
     top: 5px;
-    right: 20px;
+    right: 26px;
+
+    &--email {
+      top: 0;
+      right: 22px;
+    }
   }
 
   @media (min-width: $min-desktop) {
-    right: 10px;
+    right: 8px;
+
+    &--email {
+      right: 4px;
+    }
   }
 }
 

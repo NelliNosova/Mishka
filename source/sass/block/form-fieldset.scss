@@ -92,17 +92,18 @@
 .form-fieldset__label--radio::before {
   content: "";
   position: absolute;
-  top: -10px;
-  left: 1px;
+  top: -8px;
+  left: 0;
 
-  @include size (37px, 38px);
+  @include size (40px, 40px);
   border: 2px solid $darkest-grey;
   border-radius: 50%;
 
   @media (min-width: $min-tablet) {
-    top: -18px;
+    top: -17px;
+    left: 5px;
 
-    @include size (53px, 52px);
+    @include size (50px, 50px);
   }
 
   @media (min-width: $min-desktop) {
@@ -112,10 +113,10 @@
 
 .form-fieldset__input:checked + .form-fieldset__label--radio::before {
   background-color: $border-mint;
-  box-shadow: inset 0 0 0 9px $basic-white;
+  box-shadow: inset 0 0 0 10px $basic-white;
 
   @media (min-width: $min-tablet) {
-    box-shadow: inset 0 0 0 14px $basic-white;
+    box-shadow: inset 0 0 0 13px $basic-white;
   }
 }
 
@@ -149,17 +150,18 @@
   top: -10px;
   left: 0;
 
-  @include size (38px, 39px);
+  @include size (38px, 38px);
   border: 2px solid $darkest-grey;
 
   @media (min-width: $min-tablet) {
     top: -16px;
 
-    @include size (55px, 52px);
+    @include size (53px, 53px);
   }
 
   @media (min-width: $min-desktop) {
-    left: 10px;
+    top: -19px;
+    left: 9px;
   }
 }
 
