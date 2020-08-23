@@ -85,12 +85,12 @@
   text-decoration: none;
 }
 
-.product__link:hover,
-.product__link:focus {
+.product__link:hover .product__title,
+.product__link:focus .product__title {
   opacity: 0.6;
 }
 
-.product__link:active {
+.product__link:active .product__title {
   opacity: 0.3;
 }
 
@@ -260,12 +260,10 @@
     padding-bottom: 31px;
 
     @include weight-font(24px, 20px);
-    width: 86.3%;
   }
 
   @media (min-width: $min-desktop) {
     padding-top: 33px;
-    width: 83%;
   }
 }
 

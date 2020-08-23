@@ -11,6 +11,7 @@
   background-image: url("../img/bg-zigzag-line.svg");
   background-repeat: repeat-x;
   background-size: 100%;
+  background-color: $basic-white;
 
   @media (min-width: $min-tablet) {
     height: 25px;
@@ -19,7 +20,7 @@
   }
 
   @media (min-width: $min-desktop) {
-    height: 30px;
+    height: 35px;
     bottom: -39px;
     background-size: 90%;
     background-position-x: 5px;
@@ -41,11 +42,6 @@
 
   @media (min-width: $min-desktop) {
     background-position-x: 50px;
-
-    /* @media (min-resolution: 2dppx) {
-      background-image: url("../img/review@2x.jpg");
-      background-size: 350px auto;
-    } */
   }
 }
 
@@ -61,7 +57,7 @@
 
 .reviews-list__item {
   @include zero;
-  padding-bottom: 30px;
+  padding-bottom: 28px;
 
   @include basic-font(30px);
 
@@ -119,7 +115,7 @@
 .reviews__wrap {
   display: flex;
   justify-content: center;
-  padding-bottom: 37px;
+  padding-bottom: 38px;
 
   @media (min-width: $min-tablet) {
     width: 180px;

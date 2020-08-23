@@ -15,6 +15,9 @@
 
   @media (min-width: $min-desktop) {
     padding-top: 32px;
+    max-width: $min-desktop;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -37,6 +40,12 @@
 
 .page-main__reviews {
   padding-bottom: 54px;
+
+  @media (min-width: $min-desktop) {
+    max-width: $min-desktop;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .page-main__contacts {
@@ -44,7 +53,7 @@
   padding-bottom: 39px;
 
   @media (min-width: $min-tablet) {
-    padding-top: 99px;
+    padding-top: 102px;
     padding-bottom: 58px;
   }
 }
