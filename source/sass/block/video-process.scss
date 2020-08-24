@@ -16,6 +16,7 @@
   @media (min-width: $min-desktop) {
     position: relative;
     display: block;
+    max-width: $min-desktop - 50*2;
     min-height: 455px;
     padding-left: 761px;
     overflow: hidden;
