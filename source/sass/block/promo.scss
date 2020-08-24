@@ -1,7 +1,7 @@
 .promo {
   background-color: $basic-white;
 
-  @media (max-width: $min-tablet) {
+  @media (max-width: $min-tablet - 1) {
     background-image: url("../img/hero-mobile@1x.jpg");
     background-position-x: center;
     background-position-y: 20%;
