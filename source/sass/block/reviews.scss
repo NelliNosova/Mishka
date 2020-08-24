@@ -21,9 +21,8 @@
 
   @media (min-width: $min-desktop) {
     height: 35px;
-    bottom: -39px;
-    background-size: 90%;
-    background-position-x: 5px;
+    bottom: -47px;
+    background-size: 91%;
   }
 }
 
@@ -118,14 +117,14 @@
   padding-bottom: 38px;
 
   @media (min-width: $min-tablet) {
-    width: 180px;
+    width: 176px;
     margin-left: auto;
     margin-top: -85px;
     padding-bottom: 50px;
   }
 
   @media (min-width: $min-desktop) {
-    margin-top: -130px;
+    margin-top: -132px;
     padding-bottom: 100px;
   }
 }

@@ -32,4 +32,8 @@
   padding-right: 26px;
   padding-bottom: 11px;
   border-bottom: 1px solid $grey;
+
+  @media (min-width: $min-tablet) {
+    
+  }
 }
