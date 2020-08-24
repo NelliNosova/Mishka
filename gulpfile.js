@@ -163,5 +163,14 @@ exports.build = gulp.series(
 );
 
 exports.start = gulp.series(
-  build , server, watcher
+  clean,
+  copy,
+  styles,
+  scripts,
+  images,
+  createWebp,
+  sprite,
+  html,
+  server,
+  watcher
 );
