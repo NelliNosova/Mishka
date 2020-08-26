@@ -170,7 +170,7 @@
     margin-right: 82px;
   }
 
-  @media (min-width: $min-desktop) {
+  @media (min-width: 1048px) {
     margin-right: 0;
   }
 }
@@ -200,7 +200,7 @@
 }
 
 .form-fieldset__label--color:not(:nth-child(3n)) {
-  @media (min-width: $min-desktop) {
+  @media (min-width: 1048px) {
     margin-right: 82px;
   }
 }
