@@ -72,6 +72,7 @@
 .contacts__map-area {
   width: 100%;
   border: none;
+  background-repeat: no-repeat;
 
   @media (max-width: $min-tablet - 1) {
     background-image: url("../img/map-mobile@1x.jpg");
