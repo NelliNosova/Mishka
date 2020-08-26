@@ -2,6 +2,7 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 
   @include zero;
   margin: 0 auto;
@@ -14,10 +15,7 @@
   @media (min-width: $min-desktop) {
     display: flex;
     flex-wrap: wrap;
-    gap: 52px;
-
-    padding-left: 48px;
-    padding-right: 50px;
+    justify-content: space-between;
     margin: 0 auto;
     max-width: 1150px;
     padding-top: 90px;
@@ -26,7 +24,12 @@
 
 .catalog-list__item {
   @media (max-width: $min-tablet - 1px) {
-    width: 320px;
+    max-width: $min-phone;
+  }
+
+  @media (min-width: $min-tablet) {
+    width: 100%;
+    max-width: $min-tablet;
   }
 
   @media (min-width: $min-desktop) {

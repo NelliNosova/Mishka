@@ -55,6 +55,12 @@
   @media (min-width: $min-tablet) {
     display: none;
   }
+
+  &:hover,
+  &:active {
+    background-color: transparent;
+    background: none;
+  }
 }
 
 .button--prev-next {

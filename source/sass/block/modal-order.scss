@@ -1,5 +1,8 @@
 .modal-order {
   position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 11;
   width: 100%;
   height: 100%;
   background-color: rgba($basic-white, 0.9);
