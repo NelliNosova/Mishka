@@ -4,21 +4,21 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Мишка</title>
-    <link rel="preload" href="../fonts/opensans.woff2" as="font" crossorigin>
-    <link rel="preload" href="../fonts/opensansbold.woff2" as="font" crossorigin>
+    <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin>
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin>
     <link href="css/style.min.css" rel="stylesheet" />
   </head>
 
   <body class="page__body body">
     <header class="page-header">
       <div class="container container--header">
-        <nav class="page-header__header-nav header-nav"> <!-- header-nav--closed -->
-          <button class="header-nav__toggle button button--nav" type="button">
+        <nav class="page-header__header-nav header-nav"> <!-- header-nav-/-closed -->
+          <button class="header-nav__toggle  button button--nav" type="button">
             <span class="visually-hidden">Открыть меню</span>
-            <svg class="toggle--open" width="19.958" height="14" aria-label="Открыть меню" focusable="false">
+            <svg class="toggle toggle--open" width="19.958" height="14" aria-label="Открыть меню" focusable="false">
               <use xlink:href="img/sprite.svg#icon-menu-open"></use>
             </svg>
-            <svg class="toggle--close" width="20.514" height="20.512" aria-label="Закрыть меню" focusable="false">
+            <svg class="toggle toggle--close" width="20.514" height="20.512" aria-label="Закрыть меню" focusable="false">
               <use xlink:href="img/sprite.svg#icon-menu-close"></use>
             </svg>
           </button>
@@ -122,7 +122,7 @@
       <section class="page-main__product-week product-week">
         <div class="container">
           <h2 class="visually-hidden">Товар недели</h2>
-          <article class="products-week__product product product--full section">
+          <article class="product-week__product product product--full section">
             <h3 class="product__title section-title">
               Вязаные корзинки
             </h3>
@@ -250,7 +250,7 @@
         </div>
       </section>
       <section class="page-main__contacts contacts">
-        <div class="container--contacts">
+        <div class="contacts__container">
           <div class="container container--contacts-min">
             <h2 class="contacts__title">
               Контакты
@@ -277,11 +277,6 @@
             </table>
           </div>
           <iframe class="contacts__map-area" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2spl!4v1598274654307!5m2!1sru!2spl" width="320" height="454" tabindex="0"></iframe>
-          <!-- <picture class="contacts__map-area">
-            <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
-            <img class="contacts__map" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" width="320" alt="Карта">
-          </picture> -->
           <a class="contacts__write-us button button--padding button--write-us">
             Нaпишите нам
           </a>
@@ -350,7 +345,7 @@
         </p>
         <form class="modal-order__form order-form" action="https://echo.htmlacademy.ru" method="post">
           <div class="order-form__radio-size size">
-            <input class="size__input size-input--s" type="radio" name="size" value="small" id="small" aria-label="Размер s" checked>
+            <input class="size__input size-input size-input--s" type="radio" name="size" value="small" id="small" aria-label="Размер s" checked>
             <label class="size__label size__label--s" for="small">
               <span class="visually-hidden">
                 Размер s

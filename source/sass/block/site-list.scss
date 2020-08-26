@@ -114,6 +114,7 @@
 
 .site-list__item-link {
   position: relative;
+  display: block;
   color: inherit;
   text-decoration: none;
 }
@@ -151,7 +152,7 @@
   }
 
   @media (min-width: $min-desktop) {
-    left: -54px;
+    left: -16px;
   }
 }
 

@@ -4,20 +4,20 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Мишка</title>
-    <link rel="preload" href="../fonts/opensans.woff2" as="font" crossorigin>
-    <link rel="preload" href="../fonts/opensansbold.woff2" as="font" crossorigin>
+    <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin>
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin>
     <link href="css/style.min.css" rel="stylesheet" />
   </head>
   <body class="page__body">
     <header class="page-header">
       <div class="container container--header">
-        <nav class="page-header__header-nav header-nav"> <!-- header-nav--closed -->
-          <button class="header-nav__toggle button button--nav" type="button">
+        <nav class="page-header__header-nav header-nav"> <!-- header-nav-/-closed -->
+          <button class="header-nav__toggle  button button--nav" type="button">
             <span class="visually-hidden">Открыть меню</span>
-            <svg class="toggle--open" width="19.958" height="14" aria-label="Открыть меню" focusable="false">
+            <svg class="toggle toggle--open" width="19.958" height="14" aria-label="Открыть меню" focusable="false">
               <use xlink:href="img/sprite.svg#icon-menu-open"></use>
             </svg>
-            <svg class="toggle--close" width="20.514" height="20.512" aria-label="Закрыть меню" focusable="false">
+            <svg class="toggle toggle--close" width="20.514" height="20.512" aria-label="Закрыть меню" focusable="false">
               <use xlink:href="img/sprite.svg#icon-menu-close"></use>
             </svg>
           </button>
@@ -92,18 +92,18 @@
               Тип
             </h3>
             <div class="form-fieldset__wrapper">
-              <input class="form-fieldset__input type__input--radio type__input--interior" type="radio" name="type-input" value="interior" id="interior" checked>
+              <input class="form-fieldset__input type__input type__input--radio type__input--interior" type="radio" name="type-input" value="interior" id="interior" checked>
               <label class="form-fieldset__label form-fieldset__label--type form-fieldset__label--radio label-item" for="interior">
                 Аксессуар для интерьера
               </label>
-              <input class="form-fieldset__input type__input--radio type__input--toys" type="radio" name="type-input" value="toys" id="toys">
+              <input class="form-fieldset__input type__input type__input--radio type__input--toys" type="radio" name="type-input" value="toys" id="toys">
               <label class="form-fieldset__label form-fieldset__label--radio label-item" for="toys">
                 Детская игрушка
               </label>
             </div>
           </div>
         </fieldset>
-        <fieldset class="form__color  form-fieldset form-fieldset--color">
+        <fieldset class="form__color form-fieldset form-fieldset--color">
           <div class="container form-fieldset__flex">
             <h3 class="form-fieldset__legent form-fieldset__legent--color form-title">
               Цвет
@@ -164,7 +164,7 @@
             </div>
           </div>
         </fieldset>
-        <div class="form__contact form-fieldset--color">
+        <div class="form__contact form-fieldset form-fieldset--color">
           <div class="container form-fieldset__flex">
             <label class="form__phone form-title form-title--phone" for="phone">
               Tел
@@ -188,21 +188,23 @@
             </div>
           </div>
         </div>
-        <div class="container form-fieldset__flex form-fieldset__flex--add">
-          <label class="form__add form-title" for="fieldset">
-            Доп
-          </label>
-          <div class="form-fieldset__wrapper">
-            <textarea class="form__add-input input-text input-text--wishes" id="fieldset">Опишите все ваши пожелания к заказу
-            </textarea>
-          </div>
-          <div class="reverse">
-            <p class="form__explanation explanation">
-              *Поля обязательны для заполнения
-            </p>
-            <button class="form__submit button button--padding button--form" type="submit">
-              Отправить заказ
-            </button>
+        <div class="form-fieldset">
+          <div class="container form-fieldset__flex form-fieldset__flex--add">
+            <label class="form__add form-title" for="fieldset">
+              Доп
+            </label>
+            <div class="form-fieldset__wrapper">
+              <textarea class="form__add-input input-text input-text--wishes" id="fieldset">Опишите все ваши пожелания к заказу
+              </textarea>
+            </div>
+            <div class="form__reverse">
+              <p class="form__explanation explanation">
+                *Поля обязательны для заполнения
+              </p>
+              <button class="form__submit button button--padding button--form" type="submit">
+                Отправить заказ
+              </button>
+            </div>
           </div>
         </div>
       </form>

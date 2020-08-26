@@ -115,7 +115,7 @@
   }
 }
 
-.reverse {
+.form__reverse {
   @media (min-width: $min-tablet) {
     display: flex;
     flex-direction: row-reverse;
@@ -128,13 +128,5 @@
     width: 732px;
     margin: 0 auto;
     padding-top: 32px;
-  }
-}
-
-.button--form {
-  @media (min-width: $min-tablet) {
-    margin-left: 0;
-    align-self: flex-start;
-    max-width: 230px;
   }
 }

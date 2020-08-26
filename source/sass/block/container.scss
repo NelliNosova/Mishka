@@ -1,0 +1,99 @@
+.container {
+  @include padding;
+  width: 100%;
+  min-width: 260px;
+  margin: 0 auto;
+
+  @media (min-width: $min-tablet) {
+    @include padding(50px, 50px);
+  }
+
+  @media (min-width: $min-desktop) {
+
+    max-width: 1150px;
+  }
+}
+
+.container--header {
+  position: relative;
+
+  @media (max-width: $min-tablet - 1px) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+.container--promise {
+  @media (min-width: $min-desktop) {
+    padding-left: 225px;
+    padding-right: 225px;
+    padding-top: 108px;
+  }
+}
+
+.container--reviews {
+  position: relative;
+
+  @media (min-width: $min-tablet) {
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/review@2x.jpg");
+      background-size: 350px auto;
+    }
+  }
+
+  @media (min-width: $min-desktop) {
+    background-position-x: 50px;
+  }
+}
+
+.container--min {
+  @media (min-width: $min-desktop) {
+    padding-left: 224px;
+  }
+}
+
+.container--video {
+  border: 1px solid $grey;
+  padding: 0;
+  padding-top: 22px;
+
+  @media (min-width: $min-tablet) {
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: $min-desktop) {
+    position: relative;
+    display: block;
+    max-width: $min-desktop - 50*2;
+    min-height: 455px;
+    padding-left: 761px;
+    overflow: hidden;
+  }
+}
+
+.container--video:hover,
+.container--video:focus {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container--video:active {
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.container--about-us {
+  @media (min-width: $min-desktop) {
+    width: 800px;
+  }
+}
+
+.container--footer {
+  @media (min-width: $min-tablet) {
+    display: flex;
+    justify-content: space-between;
+  }
+}

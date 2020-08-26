@@ -35,12 +35,3 @@
 .page-header__logo:active {
   opacity: 0.3;
 }
-
-.container--header {
-  position: relative;
-
-  @media (max-width: $min-tablet - 1px) {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-}

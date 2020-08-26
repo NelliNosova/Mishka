@@ -9,13 +9,6 @@
   }
 }
 
-.container--footer {
-  @media (min-width: $min-tablet) {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
 .footer__logo {
   min-width: 178px;
   padding-top: 4px;

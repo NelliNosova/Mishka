@@ -26,24 +26,6 @@
   }
 }
 
-.container--reviews {
-  position: relative;
-
-  @media (min-width: $min-tablet) {
-    background-image: url("../img/review@1x.jpg");
-    background-repeat: no-repeat;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/review@2x.jpg");
-      background-size: 350px auto;
-    }
-  }
-
-  @media (min-width: $min-desktop) {
-    background-position-x: 50px;
-  }
-}
-
 .reviews__title {
   @media (min-width: $min-tablet) {
     padding-top: 84px;

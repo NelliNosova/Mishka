@@ -4,15 +4,18 @@
 @import "base/general.scss";
 @import "base/button.scss";
 @import "block/body.scss";
+@import "block/container.scss";
 @import "block/page-header.scss";
 @import "block/logo.scss";
 @import "block/header-nav.scss";
+@import "block/toggle.scss";
 @import "block/product-week.scss";
 @import "block/site-list.scss";
 @import "block/clarification.scss";
 @import "block/page-main.scss";
 @import "block/promo.scss";
 @import "block/promo-tagline.scss";
+@import "block/additional-wraper.scss";
 @import "block/additional-list.scss";
 @import "block/product.scss";
 @import "block/details.scss";
@@ -34,6 +37,7 @@
 @import "block/promise.scss";
 @import "block/form.scss";
 @import "block/form-fieldset.scss";
+@import "block/label-item.scss";
 @import "block/form-title.scss";
 @import "block/input-text.scss";
 @import "block/name.scss";

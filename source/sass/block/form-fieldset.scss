@@ -35,7 +35,6 @@
     flex-direction: row;
     flex-wrap: wrap;
     width: 72%;
-    /* max-width: 680px; */
   }
 
   @media (min-width: $min-desktop) {
@@ -49,6 +48,7 @@
 }
 
 .form-fieldset__legent {
+  @include zero;
   padding-bottom: 35px;
 
   @media (min-width: $min-desktop) {
@@ -202,13 +202,5 @@
 .form-fieldset__label--color:not(:nth-child(3n)) {
   @media (min-width: 1048px) {
     margin-right: 82px;
-  }
-}
-
-.label-item {
-  @include weight-font (18px, 17px);
-
-  @media (min-width: $min-tablet) {
-    font-size: 19px;
   }
 }

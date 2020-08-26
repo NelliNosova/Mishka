@@ -92,3 +92,11 @@
     font-size: 17px;
   }
 }
+
+.button--form {
+  @media (min-width: $min-tablet) {
+    margin-left: 0;
+    align-self: flex-start;
+    max-width: 230px;
+  }
+}

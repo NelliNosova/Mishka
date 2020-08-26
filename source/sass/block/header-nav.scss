@@ -33,14 +33,6 @@
   }
 }
 
-.toggle--close {
-  display: inline-block;
-}
-
-.toggle--open {
-  display: none;
-}
-
 .header-nav--closed .toggle--open {
   display: inline-block;
 }

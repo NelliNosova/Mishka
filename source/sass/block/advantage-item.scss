@@ -22,42 +22,31 @@
   }
 }
 
-.advantage-item--eco {
+.advantage-item {
   @media (max-width: $min-tablet - 1px) {
-    order: 0;
+    &--eco {
+      order: 0;
+    }
+
+    &--price {
+      order: 1;
+    }
+
+    &----like {
+      order: 2;
+    }
+
+    &----love {
+      order: 3;
+    }
+
+    &----rus {
+      order: 4;
+    }
+
+    &----gift {
+      order: 5;
+    }
   }
 }
 
-.advantage-item--price {
-  @media (max-width: $min-tablet - 1px) {
-    order: 1;
-  }
-}
-
-.advantage-item--like {
-  @media (max-width: $min-tablet - 1px) {
-    order: 2;
-  }
-}
-
-.advantage-item--love {
-  @media (max-width: $min-tablet - 1px) {
-    order: 3;
-  }
-}
-
-.advantage-item--rus {
-  @media (max-width: $min-tablet - 1px) {
-    order: 4;
-  }
-}
-
-.advantage-item--gift::before {
-  background-image: url("../img/icon-feature-gift.svg");
-}
-
-.advantage-item--gift {
-  @media (max-width: $min-tablet) {
-    order: 5;
-  }
-}

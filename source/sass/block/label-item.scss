@@ -1,0 +1,7 @@
+.label-item {
+  @include weight-font (18px, 17px);
+
+  @media (min-width: $min-tablet) {
+    font-size: 19px;
+  }
+}

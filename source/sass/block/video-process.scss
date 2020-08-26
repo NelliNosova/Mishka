@@ -2,36 +2,6 @@
   position: relative;
 }
 
-.container--video {
-  border: 1px solid $grey;
-  padding: 0;
-  padding-top: 22px;
-
-  @media (min-width: $min-tablet) {
-    padding-top: 0;
-    display: flex;
-    flex-direction: column;
-  }
-
-  @media (min-width: $min-desktop) {
-    position: relative;
-    display: block;
-    max-width: $min-desktop - 50*2;
-    min-height: 455px;
-    padding-left: 761px;
-    overflow: hidden;
-  }
-}
-
-.container--video:hover,
-.container--video:focus {
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
-}
-
-.container--video:active {
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
-}
-
 .video-process__icon {
   position: absolute;
   left: 33px;

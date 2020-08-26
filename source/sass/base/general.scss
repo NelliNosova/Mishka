@@ -48,34 +48,6 @@ img {
   padding: 0;
 }
 
-.container {
-  @include padding;
-  width: 100%;
-  min-width: 260px;
-  margin: 0 auto;
-
-  @media (min-width: $min-tablet) {
-    @include padding(50px, 50px);
-  }
-
-  @media (min-width: $min-desktop) {
-
-    max-width: 1150px;
-  }
-}
-
-.container--min {
-  @media (min-width: $min-desktop) {
-    padding-left: 224px;
-  }
-}
-
-.container--about-us {
-  @media (min-width: $min-desktop) {
-    width: 800px;
-  }
-}
-
 .section-title {
   @include zero;
   @include weight-font(30px, 25px);
