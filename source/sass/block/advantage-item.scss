@@ -2,28 +2,7 @@
   @media (max-width: $min-tablet) {
     width: 260px;
     margin: 0 auto;
-  }
-}
 
-.advantage-item__icon-wrapper {
-  position: absolute;
-  top: 20px;
-  left: -5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  @include size (55px, 50px);
-  fill: $basic-mint;
-
-  @media (min-width: $min-tablet - 1px) {
-    top: -62px;
-    left: -5px;
-  }
-}
-
-.advantage-item {
-  @media (max-width: $min-tablet - 1px) {
     &--eco {
       order: 0;
     }
@@ -47,5 +26,22 @@
     &----gift {
       order: 5;
     }
+  }
+}
+
+.advantage-item__icon-wrapper {
+  position: absolute;
+  top: 20px;
+  left: -5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include size (55px, 50px);
+  fill: $basic-mint;
+
+  @media (min-width: $min-tablet - 1px) {
+    top: -62px;
+    left: -5px;
   }
 }
