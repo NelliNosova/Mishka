@@ -33,6 +33,7 @@
 
 .container--reviews {
   position: relative;
+  background-color: $basic-white;
 
   @media (min-width: $min-tablet) {
     background-image: url("../img/review@1x.jpg");

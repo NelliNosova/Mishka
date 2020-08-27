@@ -65,7 +65,7 @@
               </a>
             </li>
           </ul>
-          <p class="page-header__clarifiction clarifiction">
+          <p class="page-header__clarification clarification">
             Бесплатная доставка по России
           </p>
         </nav>
@@ -92,32 +92,35 @@
       </div>
       <section class="page-main__catalog nav-additional">
         <h2 class="visually-hidden">Навигация по каталогу товаров</h2>
-        <ul class="nav-additional__list additional-list">
-          <li class="additional-list__item additional-list__item--interior">
-            <a class="additional-list__link-item additional-list__link-item--interior additional-wraper additional-wraper--interior" href="blank.html">
-              <span class="additional-list__link-span">
-                Предметы интерьера
-              </span>
-              <div class="additional-list__icon-wrapper">
-                <svg class="additional-list__icon" width="40" height="62" aria-hidden="true" focusable="false">
-                  <use xlink:href="img/sprite.svg#icon-interior"></use>
-                </svg>
-              </div>
-            </a>
-          </li>
-          <li class="additional-list__item additional-list__item--toys">
-            <a class="additional-list__link-item additional-list__link-item--toys additional-wraper" href="blank.html">
-              <span class="additional-list__link-span">
-                Детские игрушки
-              </span>
-              <div class="additional-list__icon-wrapper">
-                <svg class=" additional-list__icon"  width="60" height="60" aria-hidden="true" focusable="false">
-                  <use xlink:href="img/sprite.svg#icon-toy" ></use>
-                </svg>
-              </div>
-            </a>
-          </li>
-        </ul>
+        <div class="container">
+          <ul class="nav-additional__list additional-list">
+            <li class="additional-list__item additional-list__item--interior">
+              <a class="additional-list__link-item additional-list__link-item--interior additional-wrapper additional-wrapper--interior" href="blank.html">
+                <span class="additional-list__link-span">
+                  Предметы интерьера
+                </span>
+                <div class="additional-list__icon-wrapper">
+                  <svg class="additional-list__icon" width="40" height="62" aria-hidden="true" focusable="false">
+                    <use xlink:href="img/sprite.svg#icon-interior"></use>
+                  </svg>
+                </div>
+              </a>
+            </li>
+            <li class="additional-list__item additional-list__item--toys">
+              <a class="additional-list__link-item additional-list__link-item--toys additional-wrapper" href="blank.html">
+                <span class="additional-list__link-span">
+                  Детские игрушки
+                </span>
+                <div class="additional-list__icon-wrapper">
+                  <svg class=" additional-list__icon"  width="60" height="60" aria-hidden="true" focusable="false">
+                    <use xlink:href="img/sprite.svg#icon-toy" ></use>
+                  </svg>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+
       </section>
       <section class="page-main__product-week product-week">
         <div class="container">
@@ -157,9 +160,9 @@
             <p class="product__price">
               Цена: 990 руб.
             </p>
-            <button class="product__order button button--padding js-order">
+            <a class="product__order button button--padding js-order" href="forml.html">
               Заказать
-            </button>
+            </a>
           </article>
         </div>
       </section>

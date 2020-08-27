@@ -130,3 +130,9 @@
     padding-top: 32px;
   }
 }
+
+.input-text:hover + .form__icon,
+.input-text:focus + .form__icon {
+  fill: $border-mint;
+  fill-opacity: 1;
+}

@@ -44,12 +44,6 @@
   }
 }
 
-.input-text:hover + .form__icon,
-.input-text:focus + .form__icon {
-  fill: $border-mint;
-  fill-opacity: 1;
-}
-
 .input-text--email {
   padding-bottom: 17px;
   padding-top: 20px;

@@ -49,7 +49,7 @@
 
 .button--nav {
   @include size(21px, 20px);
-  fill: $botton-menu;
+  fill: $button-menu;
   border: none;
 
   @media (min-width: $min-tablet) {

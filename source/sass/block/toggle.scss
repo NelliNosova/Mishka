@@ -2,3 +2,27 @@
   display: none;
   position: relative;
 }
+
+.header-nav--closed .toggle--open {
+  display: inline-block;
+
+  @media (min-width: $min-tablet) {
+    display: none;
+  }
+}
+
+.header-nav--closed .toggle--close {
+  display: none;
+}
+
+.header-nav--open .toggle--open {
+  display: none;
+}
+
+.header-nav--open .toggle--close {
+  display: inline-block;
+
+  @media (min-width: $min-tablet) {
+    display: none;
+  }
+}
