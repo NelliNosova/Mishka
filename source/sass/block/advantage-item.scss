@@ -1,5 +1,5 @@
 .advantage-item {
-  @media (max-width: $min-tablet) {
+  @media (max-width: $min-tablet - 1px) {
     width: 260px;
     margin: 0 auto;
 
@@ -11,19 +11,19 @@
       order: 1;
     }
 
-    &----like {
+    &--like {
       order: 2;
     }
 
-    &----love {
+    &--love {
       order: 3;
     }
 
-    &----rus {
+    &--rus {
       order: 4;
     }
 
-    &----gift {
+    &--gift {
       order: 5;
     }
   }

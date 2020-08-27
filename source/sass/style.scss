@@ -1,8 +1,10 @@
 @import "base/normalize.scss";
 @import "base/color.scss";
 @import "base/fonts.scss";
+@import "base/mixin.scss";
 @import "base/general.scss";
 @import "base/button.scss";
+@import "block/page.scss";
 @import "block/body.scss";
 @import "block/container.scss";
 @import "block/page-header.scss";
@@ -22,6 +24,7 @@
 @import "block/advantage-list.scss";
 @import "block/advantage-item.scss";
 @import "block/reviews.scss";
+@import "block/reviews-item.scss";
 @import "block/contacts.scss";
 @import "block/contacts-table.scss";
 @import "block/footer.scss";

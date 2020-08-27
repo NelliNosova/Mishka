@@ -49,6 +49,14 @@
   }
 }
 
+.container--contacts-min {
+  @media (min-width: $min-desktop) {
+    flex-basis: 350px;
+
+    @include zero;
+  }
+}
+
 .container--min {
   @media (min-width: $min-desktop) {
     padding-left: 224px;

@@ -14,14 +14,6 @@
   }
 }
 
-.container--contacts-min {
-  @media (min-width: $min-desktop) {
-    flex-basis: 350px;
-
-    @include zero;
-  }
-}
-
 .contacts__title {
   position: relative;
 

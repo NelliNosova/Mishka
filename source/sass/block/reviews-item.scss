@@ -1,0 +1,14 @@
+.reviews-item {
+  @include zero;
+  padding-bottom: 28px;
+
+  @include basic-font(30px);
+
+  @media (min-width: $min-tablet) {
+    @include basic-font(30px, 17px);
+  }
+
+  @media (min-width: $min-desktop) {
+    padding-bottom: 77px;
+  }
+}
