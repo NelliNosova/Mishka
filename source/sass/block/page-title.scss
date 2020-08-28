@@ -21,8 +21,8 @@
   }
 
   @media (min-width: $min-desktop) {
+    margin-top: -45px;
     padding-bottom: 104px;
-
 
     @include weight-font (57px, 53px);
   }
@@ -40,7 +40,6 @@
     bottom: -7px;
     left: 0;
     background-size: auto 91%;
-
 
     background-image: url("../img/bg-zigzag-fill.svg");
     background-repeat: repeat-x;

@@ -6,6 +6,10 @@
   @media (min-width: $min-tablet) {
     margin-top: -70px;
   }
+
+  @media (min-width: $min-desktop) {
+    margin-top: -44px;
+  }
 }
 
 .page-main__catalog {

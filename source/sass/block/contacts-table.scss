@@ -6,13 +6,15 @@
 .contacts-table__line {
   @media (min-width: $min-tablet) {
     display: inline-block;
+
+    &:not(:nth-child(2n)) {
+      padding-right: 50px;
+    }
   }
   vertical-align: top;
   text-align: left;
-}
 
-.contacts-table__line:not(:nth-child(2n)) {
-  @media (min-width: $min-tablet) {
+  @media (min-width: $min-desktop) {
     padding-right: 50px;
   }
 }

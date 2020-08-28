@@ -157,9 +157,9 @@
     margin-bottom: auto;
   }
 
-  @media (min-width: $min-desktop) {
+  /* @media (min-width: $min-desktop) {
     padding-bottom: 10px;
-  }
+  } */
 }
 
 .product__img-area {
@@ -215,7 +215,7 @@
   @media (min-width: $min-tablet) {
     margin-top: auto;
     padding-left: 0;
-    padding-right: 30px;
+    /* padding-right: 30px; */
   }
 
   @media (min-width: $min-desktop) {
@@ -328,7 +328,7 @@
     flex-direction: column;
     min-height: 335px;
     padding-left: 31px;
-    padding-right: 0;
+    padding-right: 30px;
   }
 
   @media (min-width: $min-desktop) {

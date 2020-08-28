@@ -15,7 +15,7 @@
   @media (min-width: $min-desktop) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     margin: 0 auto;
     max-width: 1150px;
     padding-top: 90px;
@@ -35,5 +35,9 @@
   @media (min-width: $min-desktop) {
     flex-basis: 316px;
     padding: 0;
+
+    &:not(:nth-child(3n)) {
+      margin-right: 50px;
+    }
   }
 }

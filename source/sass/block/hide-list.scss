@@ -1,0 +1,13 @@
+.hide-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  @include zero;
+  list-style: none;
+}
+
+.hide-list__item {
+  flex-basis: 28.5%;
+  padding-right: 38px;
+  padding-bottom: 20px;
+}
