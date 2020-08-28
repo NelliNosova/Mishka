@@ -23,6 +23,12 @@
   }
 }
 
+.container--additional {
+  @media (max-width: $min-tablet - 1px) {
+    padding: 0;
+  }
+}
+
 .container--promise {
   @media (min-width: $min-desktop) {
     padding-left: 225px;

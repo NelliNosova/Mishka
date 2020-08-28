@@ -13,6 +13,7 @@
   }
 
   @media (min-width: $min-tablet) {
+    min-height: 758px;
     background-image: url("../img/hero-tablet@1x.jpg");
     background-position-x: center;
 
@@ -29,7 +30,9 @@
       background-image: url("../img/hero-desktop@2x.jpg");
     }
   }
-  background-repeat: no-repeat;
+  max-width: $min-desktop;
+  margin-left: auto;
+  margin-right: auto;
   border-top: solid 1px $grey;
 }
 

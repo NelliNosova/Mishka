@@ -3,8 +3,7 @@
   justify-content: space-between;
 
   padding-left: 30px;
-  padding-right: 26px;
-  /* max-width: 320px; */
+  padding-right: 26px;  
   margin: 0 auto;
 
   @media (min-width: $min-tablet) {
@@ -17,10 +16,3 @@
     width: 100%;
   }
 }
-
-/* .additional-wrapper--interior {
-  @media (min-width: $min-tablet) {
-    margin-left: auto;
-  }
-}
- */

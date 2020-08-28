@@ -6,6 +6,7 @@
   @media (min-width: $min-tablet) {
     display: flex;
     flex-wrap: wrap;
+    min-height: 126px;
     margin: 0 auto;
     width: 100%;
 
@@ -33,7 +34,7 @@
 }
 
 .additional-list__item {
-  padding-bottom: 12px;
+  padding-bottom: 17px;
 
   @media (min-width: $min-tablet) {
     display: flex;
@@ -46,7 +47,7 @@
   }
 
   &--toys {
-    padding-bottom: 14px;
+    padding-bottom: 19px;
     background-color: $dark-mint;
   }
 }
@@ -86,20 +87,21 @@
 .additional-list__icon {
   fill: $darkest-mint;
   fill-opacity: 0.5;
-}
 
-.additional-list__icon-wrapper {
-  text-align: center;
-  vertical-align: middle;
-  min-width: 60px;
-
-  @media (min-width: $min-tablet) {
-    padding-top: 5px;
-    text-align: right;
+  &--interior {
+    @media (min-width: $min-tablet) {
+      width: 48px;
+      height: 65px;
+      padding-top: 4px;
+    }
   }
 
-  @media (min-width: $min-desktop) {
-    padding-left: 12px;
-    text-align: middle;
+  &--toys {
+    @media (min-width: $min-tablet) {
+      
+      height: 65px;
+      padding-top: 4px;
+    }
   }
+
 }
