@@ -7,22 +7,24 @@
   margin-bottom: 23px;
   border: none;
   box-shadow: inset 0 -2px 0 $basic-black;
-  color: rgba($basic-black, 0.3%);
+  color: $darkest-grey;
   background-color: inherit;
+
+  &::placeholder {
+    color: rgba($basic-black, 0.3%);
+  }
 
   @media (min-width: $min-tablet) {
     font-size: 19px;
   }
 }
 
-.input-text:hover,
-.input-text:focus {
+.input-text:hover {
   box-shadow: inset 0 -2px 0 $border-mint;
 }
 
-.input-text:active {
+.input-text:focus {
   outline: none;
-  color: $darkest-grey;
 }
 
 .input-text--phone {
