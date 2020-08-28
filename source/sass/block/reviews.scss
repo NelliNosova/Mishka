@@ -68,15 +68,13 @@
 }
 
 .reviews__author-mail {
+  display: block;
+
   @include zero;
   @include basic-font(30px);
   font-size: 17px;
   color: $darkest-grey;
   font-style: normal;
-
-  @media (min-width: $min-tablet) {
-    display: block;
-  }
 }
 
 .reviews__wrap {
