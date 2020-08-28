@@ -33,6 +33,16 @@ const styles = () => {
 
 exports.styles = styles;
 
+const stylesCopy = () => {
+  return gulp.src("source/sass/style.scss")
+    .pipe(plumber())
+    .pipe(sourcemap.init())
+    .pipe(sass())
+    .pipe(gulp.dest("build/css"))
+}
+
+exports.stylesCopy = stylesCopy;
+
 // Script
 
 const scripts = () => {
@@ -155,6 +165,7 @@ const watcher = () => {
 exports.build = gulp.series(
   clean,
   copy,
+  stylesCopy,
   styles,
   scripts,
   images,
@@ -166,6 +177,7 @@ exports.build = gulp.series(
 exports.start = gulp.series(
   clean,
   copy,
+  stylesCopy,
   styles,
   scripts,
   images,
