@@ -11,3 +11,8 @@
 + JavaScript
 + Gulp
 
+#### Сборка проекта
+
+* установка зависимостей *npm install*
+* сборка *npm build*
+* запуск в браузере *npm start*
