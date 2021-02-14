@@ -25,6 +25,7 @@
 .catalog-list__item {
   @media (max-width: $min-tablet - 1px) {
     max-width: $min-phone;
+    margin: auto;
   }
 
   @media (min-width: $min-tablet) {
